@@ -1,0 +1,2 @@
+[01-Oct-2017 13:45:11 UTC] PHP Fatal error:  Class 'App\Http\Controllers\Redemption' not found in /home/bryketco/public_html/stock/app/Http/Controllers/FundViewController.php on line 531
+[01-Oct-2017 13:45:19 UTC] PHP Fatal error:  Class 'App\Http\Controllers\Redemption' not found in /home/bryketco/public_html/stock/app/Http/Controllers/FundViewController.php on line 531
