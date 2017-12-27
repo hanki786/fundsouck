@@ -72,7 +72,7 @@
                 </div>
 
 
-                <div class="panel-group col-md-7">
+                <div class="panel-group col-md-5">
                     <div class="panel panel-default">
                         <div class="panel-heading">
                             <h4 class="panel-title">
