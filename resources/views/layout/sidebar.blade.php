@@ -2,14 +2,17 @@
 <nav class="sidebar-nav">
     <ul class="nav">
         <li class="nav-item">
-            <a class="nav-link" href="{{ route('dashboard') }}"><i class="icon-speedometer"></i> Dashboard <span class="badge badge-primary">NEW</span></a>
-        <li class="nav-title">
-            Profile
-        </li>
-            <a class="nav-link" href="{{ route('dashboard') }}"><i class="icon-speedometer"></i> Fund Overview <span class="badge badge-primary">NEW</span></a>
-
-            <a class="nav-link" href="{{ route('dashboard') }}"><i class="icon-speedometer"></i> Fund Attributes <span class="badge badge-primary">NEW</span></a>
         
+        <a class="nav-link" href="{{ route('dashboard') }}"><i class="icon-speedometer"></i> Fund Overview <span class="badge badge-primary">NEW</span></a>
+
+        </li>
+
+        <li class="nav-item">
+        <a class="nav-link" href="{{ route('dashboard') }}"><i class="icon-speedometer"></i> Fund Attributes <span class="badge badge-primary">NEW</span></a>
+        
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="{{ route('dashboard') }}"><i class="icon-speedometer"></i> Dashboard <span class="badge badge-primary">NEW</span></a>
         <li class="nav-title">
             Functions
         </li>
