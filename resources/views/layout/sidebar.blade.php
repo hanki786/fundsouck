@@ -5,46 +5,46 @@
 <nav class="sidebar-nav">
     <ul class="nav">
         <li class="nav-item">
-            <a class="nav-link" href="{{ route('dashboard') }}"><i class="icon-speedometer"></i> Dashboard <span class="badge badge-primary">NEW</span></a>
+            <a class="nav-link" href="{{ route('dashboard') }}"><i class="icon-speedometer"></i> Dashboard </a>
         <li class="nav-title">
             Profile
         </li>
         <li class="nav-item">
-            <a class="nav-link" href="{{ route('dashboard') }}"><i class="icon-speedometer"></i> Fund Overview <span class="badge badge-primary">NEW</span></a>
+            <a class="nav-link" href="{{ route('dashboard') }}"><i class="icon-speedometer"></i> Fund Overview </a>
 </li>
 <li class="nav-item">
-            <a class="nav-link" href="{{ route('dashboard') }}"><i class="icon-speedometer"></i> Fund Attributes <span class="badge badge-primary">NEW</span></a>
+            <a class="nav-link" href="{{ route('dashboard') }}"><i class="icon-speedometer"></i> Fund Attributes </a>
            </li>
 <li class="nav-item">
-            <a class="nav-link" href="{{ route('dashboard') }}"><i class="icon-speedometer"></i> Historical Prices & Charts <span class="badge badge-primary">NEW</span></a>
+            <a class="nav-link" href="{{ route('dashboard') }}"><i class="icon-speedometer"></i> Historical Prices & Charts </a>
            </li>
 <li class="nav-item">
-            <a class="nav-link" href="{{ route('dashboard') }}"><i class="icon-speedometer"></i> Asset Valuation & Flows <span class="badge badge-primary">NEW</span></a>
+            <a class="nav-link" href="{{ route('dashboard') }}"><i class="icon-speedometer"></i> Asset Valuation & Flows </a>
            </li>
 <li class="nav-item">
-            <a class="nav-link" href="{{ route('dashboard') }}"><i class="icon-speedometer"></i> Fees & Expenses <span class="badge badge-primary">NEW</span></a>
+            <a class="nav-link" href="{{ route('dashboard') }}"><i class="icon-speedometer"></i> Fees & Expenses </a>
            </li>
 <li class="nav-item">
-            <a class="nav-link" href="{{ route('dashboard') }}"><i class="icon-speedometer"></i> Performance & Risk Analytics <span class="badge badge-primary">NEW</span></a>
+            <a class="nav-link" href="{{ route('dashboard') }}"><i class="icon-speedometer"></i> Performance & Risk Analytics </a>
            </li>
 <li class="nav-item">
-            <a class="nav-link" href="{{ route('dashboard') }}"><i class="icon-speedometer"></i> Fund Holdings <span class="badge badge-primary">NEW</span></a>
+            <a class="nav-link" href="{{ route('dashboard') }}"><i class="icon-speedometer"></i> Fund Holdings </a>
            </li>
 <li class="nav-item">
-            <a class="nav-link" href="{{ route('dashboard') }}"><i class="icon-speedometer"></i> Fund Documents <span class="badge badge-primary">NEW</span></a>
+            <a class="nav-link" href="{{ route('dashboard') }}"><i class="icon-speedometer"></i> Fund Documents </a>
            </li>
 <li class="nav-item">
-            <a class="nav-link" href="{{ route('dashboard') }}"><i class="icon-speedometer"></i> Fund People <span class="badge badge-primary">NEW</span></a>
+            <a class="nav-link" href="{{ route('dashboard') }}"><i class="icon-speedometer"></i> Fund People </a>
            </li>
 <li class="nav-item">
-            <a class="nav-link" href="{{ route('dashboard') }}"><i class="icon-speedometer"></i> Fund Service Providers <span class="badge badge-primary">NEW</span></a>
+            <a class="nav-link" href="{{ route('dashboard') }}"><i class="icon-speedometer"></i> Fund Service Providers </a>
            </li>
 
 <li class="nav-item">
-            <a class="nav-link" href="{{ route('dashboard') }}"><i class="icon-speedometer"></i> Fund Compliance & Regulations <span class="badge badge-primary">NEW</span></a>
+            <a class="nav-link" href="{{ route('dashboard') }}"><i class="icon-speedometer"></i> Fund Compliance & Regulations </a>
            </li>
         <li class="nav-title">
-            Functions
+            Database Administrative Tools
         </li>
         <li class="nav-item nav-dropdown">
             <a class="nav-link nav-dropdown-toggle" href="#"><i class="icon-puzzle"></i> Fund Shells</a>
