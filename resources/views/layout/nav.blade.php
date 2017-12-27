@@ -25,9 +25,8 @@
             <a class="nav-link" href="#"><i class="icon-location-pin"></i></a>
         </li>-->
         <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle nav-link" data-toggle="dropdown" href="{{ route('logout') }}" role="button" aria-haspopup="true" aria-expanded="false">
-                <img src="{{ asset('images/avatars/6.jpg') }}" class="img-avatar" alt="admin@bootstrapmaster.com">
-                <span class="d-md-down-none">Logout</span>
+            <a class="nav-link nav-link" href="{{ route('logout') }}" role="button">
+                Logout
             </a>
            <!-- <div class="dropdown-menu dropdown-menu-right">
                 <div class="dropdown-header text-center">
