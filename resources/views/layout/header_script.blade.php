@@ -44,11 +44,10 @@
     height: 55px;
     padding: 1.25rem 1rem;
     margin-right: 0;
-    /* background-color: #fff; */
+    background-color: #e2e2e2; 
     background-image: url(../img/logo.png);
     background-repeat: no-repeat;
     background-position: center center;
     background-size: 70px auto;
-    border-bottom: 1px solid #c2cfd6;
 }
 </style>
