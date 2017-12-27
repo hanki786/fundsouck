@@ -1,5 +1,7 @@
 <!-- Bootstrap and necessary plugins -->
-<script src="{{ asset('assets/js/libs/jquery.min.js') }}"></script>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 <script src="{{ asset('assets/js/libs/tether.min.js') }}"></script>
 <script src="{{ asset('assets/js/libs/bootstrap.min.js') }}"></script>
 <script src="{{ asset('assets/js/libs/pace.min.js') }}"></script>
