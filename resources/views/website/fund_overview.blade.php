@@ -102,7 +102,7 @@
                     <div class="panel panel-default">
                         <div class="panel-heading">
                             <h4 class="panel-title">
-                                <a data-toggle="collapse in" href="#7">Fund Key Attributes</a>
+                                <a data-toggle="collapse" href="#7">Fund Key Attributes</a>
                             </h4>
                         </div>
                         <div id="7" class="panel-collapse collapse in">
