@@ -6,6 +6,7 @@ use Illuminate\Http\Request;
 
 use App\Http\Requests;
 use App\Models\User\User;
+use App\Models\FundShells\FundIdentity;
 
 use Carbon\Carbon;
 use DB;
