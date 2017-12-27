@@ -14,8 +14,14 @@
     <div class="container-fluid">
         <div class="row">
             <div class="col-md-12">
-            <h3>Fund Overview
-            </h3>
+            <h4>Fund Overview
+
+       <select class="pull-right" name="fund_identity_id">
+                        @foreach($fund_identities as $fund_identity)
+                            <option value="{{ $fund_identity->id }}">{{ $fund_identity->fund_name }}</option>
+                        @endforeach
+                    </select>
+            </h4>
             <div class="panel-group col-md-7">
                     <div class="panel panel-default">
                         <div class="panel-heading">
