@@ -144,7 +144,7 @@
                                 <a data-toggle="collapse" href="#11">Redemption</a>
                             </h4>
                         </div>
-                        <div id="11" class="panel-collapse collapse">
+                        <div id="11" class="panel-collapse collapse in">
                             <div class="panel-body">
                                 Body 4
                             </div>
