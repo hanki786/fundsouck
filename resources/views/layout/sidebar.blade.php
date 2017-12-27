@@ -1,3 +1,6 @@
+<style>
+.sidebar .nav .nav-item .nav-link.active i, .sidebar .nav .nav-item .navbar .active.dropdown-toggle i, .navbar .sidebar .nav .nav-item .active.dropdown-toggle i { color:#fff;}
+</style>
 <div class="sidebar">
 <nav class="sidebar-nav">
     <ul class="nav">
