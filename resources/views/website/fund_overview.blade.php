@@ -15,11 +15,12 @@
         <div class="row">
             <div class="col-md-12">
             <h3>Fund Overview
-                <select class="pull-right" name="fund_identity_id">
+                <span class="pull-right" >
+                <select name="fund_identity_id">
                         @foreach($fund_identities as $fund_identity)
                             <option value="{{ $fund_identity->id }}">{{ $fund_identity->fund_name }}</option>
                         @endforeach
-                    </select>
+                    </select><span>
             </h3>
             <div class="panel-group">
                     <div class="panel panel-default">
