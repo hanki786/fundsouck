@@ -5,7 +5,14 @@
                 <a class="nav-link" href="{{ route('dashboard') }}"><i class="icon-speedometer"></i> Dashboard <span class="badge badge-primary">NEW</span></a>
 
             <li class="nav-title">
-                UI Elements
+                Functions
+            </li>
+            <li class="nav-item">
+                <ul class="nav-dropdown-items">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#"><i class="icon-puzzle"></i>Fund Overview</a>
+                    </li>
+                </ul>
             </li>
             <li class="nav-item nav-dropdown">
                 <a class="nav-link nav-dropdown-toggle" href="#"><i class="icon-puzzle"></i> Fund Shells</a>
