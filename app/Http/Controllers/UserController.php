@@ -19,7 +19,12 @@ class UserController extends Controller
 {
     public function fund_overview(){
 
-        return view('website.fund_overview');
+        $fund_identities = FundIdentity::all();
+
+        $data_array = [
+            'fund_identities' => $fund_identities
+        ];
+        return view('website.fund_overview',$data_array);
     }
 
     public function getAdminDashboard(){

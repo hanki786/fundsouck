@@ -15,6 +15,13 @@
         <div class="row">
             <div class="col-md-12">
             <h3>Fund Overview</h3>
+            <span class="pull-right">
+                <select class="form-control" name="fund_identity_id">
+                    @foreach($fund_identities as $fund_identity)
+                        <option value="{{ $fund_identity->id }}">{{ $fund_identity->fund_name }}</option>
+                    @endforeach
+                </select>
+            </span>
             <div class="panel-group">
                     <div class="panel panel-default">
                         <div class="panel-heading">
