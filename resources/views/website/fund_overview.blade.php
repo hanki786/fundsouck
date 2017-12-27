@@ -22,7 +22,7 @@
                                 <a data-toggle="collapse" href="#1">Fund Identity</a>
                             </h4>
                         </div>
-                        <div id="1" class="panel-collapse collapse">
+                        <div id="1" class="panel-collapse collapse in">
                             <div class="panel-body">
                                 Body 1
                             </div>
