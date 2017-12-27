@@ -667,7 +667,7 @@
 
 
         <li class="nav-item nav-dropdown">
-            <a class="nav-link nav-dropdown-toggle" href="#"><i class="icon-star"></i> Index Shell</a>
+            <a class="nav-link nav-dropdown-toggle" href="#"> Index Shell</a>
             <ul class="nav-dropdown-items">
 
                 <li class="nav-item nav-dropdown">
@@ -717,7 +717,7 @@
             </ul>
         </li>
         <li class="nav-item nav-dropdown">
-            <a class="nav-link nav-dropdown-toggle" href="#"><i class="icon-star"></i> Company Shell</a>
+            <a class="nav-link nav-dropdown-toggle" href="#"> Company Shell</a>
             <ul class="nav-dropdown-items">
 
                 <li class="nav-item nav-dropdown">
@@ -787,28 +787,28 @@
             Extras
         </li>
         <li class="nav-item nav-dropdown"  style="display:none;">
-            <a class="nav-link nav-dropdown-toggle" href="#"><i class="icon-star"></i> Tools</a>
+            <a class="nav-link nav-dropdown-toggle" href="#"> Tools</a>
             <ul class="nav-dropdown-items">
                 <!--<li class="nav-item">
-                    <a class="nav-link" href="pages-login.html" target="_top"><i class="icon-star"></i> Login</a>
+                    <a class="nav-link" href="pages-login.html" target="_top"> Login</a>
                 </li>!-->
             </ul>
         </li>
 
         <li class="nav-item nav-dropdown"  style="display:none;">
-            <a class="nav-link nav-dropdown-toggle" href="#"><i class="icon-star"></i> Help</a>
+            <a class="nav-link nav-dropdown-toggle" href="#"> Help</a>
             <ul class="nav-dropdown-items">
                <!-- <li class="nav-item">
-                    <a class="nav-link" href="pages-login.html" target="_top"><i class="icon-star"></i> Login</a>
+                    <a class="nav-link" href="pages-login.html" target="_top"> Login</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="pages-add.html" target="_top"><i class="icon-star"></i> add</a>
+                    <a class="nav-link" href="pages-add.html" target="_top"> add</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="pages-404.html" target="_top"><i class="icon-star"></i> Error 404</a>
+                    <a class="nav-link" href="pages-404.html" target="_top"> Error 404</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="pages-500.html" target="_top"><i class="icon-star"></i> Error 500</a>
+                    <a class="nav-link" href="pages-500.html" target="_top"> Error 500</a>
                 </li>!-->
             </ul>
         </li>
