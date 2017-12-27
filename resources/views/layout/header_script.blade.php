@@ -50,4 +50,11 @@
     background-position: center center;
     background-size: 70px auto;
 }
+.panel-group .panel {
+    margin-bottom: 0;
+    border-radius: 4px;
+    -webkit-box-shadow: 4px 9px 36px -14px rgba(0,0,0,0.75) !important;
+    -moz-box-shadow: 4px 9px 36px -14px rgba(0,0,0,0.75) !important;
+    box-shadow: 4px 9px 36px -14px rgba(0,0,0,0.75);
+}
 </style>
