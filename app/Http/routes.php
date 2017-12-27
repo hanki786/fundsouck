@@ -46,7 +46,7 @@ Route::get('profile', function () {
 
 Route::get('/fund_overview', [
         'uses' => 'UserController@fund_overview',
-        'as' => 'dashboard'
+        'as' => 'fund_overview'
 ]);
     
 
@@ -58,9 +58,7 @@ Route::get('login', function () {
 
 
 Route::get('/dashboard', [
-
     'uses' => 'UserController@getAdminDashboard',
-
     'as' => 'dashboard'
 
 ]);
