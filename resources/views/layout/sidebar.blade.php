@@ -15,6 +15,34 @@
 <li class="nav-item">
             <a class="nav-link" href="{{ route('dashboard') }}"><i class="icon-speedometer"></i> Fund Attributes <span class="badge badge-primary">NEW</span></a>
            </li>
+<li class="nav-item">
+            <a class="nav-link" href="{{ route('dashboard') }}"><i class="icon-speedometer"></i> Historical Prices & Charts <span class="badge badge-primary">NEW</span></a>
+           </li>
+<li class="nav-item">
+            <a class="nav-link" href="{{ route('dashboard') }}"><i class="icon-speedometer"></i> Asset Valuation & Flows <span class="badge badge-primary">NEW</span></a>
+           </li>
+<li class="nav-item">
+            <a class="nav-link" href="{{ route('dashboard') }}"><i class="icon-speedometer"></i> Fees & Expenses <span class="badge badge-primary">NEW</span></a>
+           </li>
+<li class="nav-item">
+            <a class="nav-link" href="{{ route('dashboard') }}"><i class="icon-speedometer"></i> Performance & Risk Analytics <span class="badge badge-primary">NEW</span></a>
+           </li>
+<li class="nav-item">
+            <a class="nav-link" href="{{ route('dashboard') }}"><i class="icon-speedometer"></i> Fund Holdings <span class="badge badge-primary">NEW</span></a>
+           </li>
+<li class="nav-item">
+            <a class="nav-link" href="{{ route('dashboard') }}"><i class="icon-speedometer"></i> Fund Documents <span class="badge badge-primary">NEW</span></a>
+           </li>
+<li class="nav-item">
+            <a class="nav-link" href="{{ route('dashboard') }}"><i class="icon-speedometer"></i> Fund People <span class="badge badge-primary">NEW</span></a>
+           </li>
+<li class="nav-item">
+            <a class="nav-link" href="{{ route('dashboard') }}"><i class="icon-speedometer"></i> Fund Service Providers <span class="badge badge-primary">NEW</span></a>
+           </li>
+
+<li class="nav-item">
+            <a class="nav-link" href="{{ route('dashboard') }}"><i class="icon-speedometer"></i> Fund Compliance & Regulations <span class="badge badge-primary">NEW</span></a>
+           </li>
         <li class="nav-title">
             Functions
         </li>
