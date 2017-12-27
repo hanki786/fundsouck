@@ -15,9 +15,14 @@
         </li>
     </ul>-->
     <ul class="nav navbar-nav ml-auto">
-      <!--  <li class="nav-item d-md-down-none">
-            <a class="nav-link" href="#"><i class="icon-bell"></i><span class="badge badge-pill badge-danger">5</span></a>
-        </li>
+
+       <li class="nav-item d-md-down-none">
+       <select name="fund_identity_id">
+                        @foreach($fund_identities as $fund_identity)
+                            <option value="{{ $fund_identity->id }}">{{ $fund_identity->fund_name }}</option>
+                        @endforeach
+                    </select>
+        </li><!-- 
         <li class="nav-item d-md-down-none">
             <a class="nav-link" href="#"><i class="icon-list"></i></a>
         </li>
