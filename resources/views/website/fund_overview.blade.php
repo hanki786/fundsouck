@@ -36,7 +36,7 @@
                                 <a data-toggle="collapse" href="#2">Fund Objective & Strategy</a>
                             </h4>
                         </div>
-                        <div id="2" class="panel-collapse collapse">
+                        <div id="2" class="panel-collapse collapse in">
                             <div class="panel-body">
                                 Body 2
                             </div>
@@ -49,7 +49,7 @@
                                 <a data-toggle="collapse" href="#3">Fund Asset Attributes</a>
                             </h4>
                         </div>
-                        <div id="3" class="panel-collapse collapse">
+                        <div id="3" class="panel-collapse collapse in">
                             <div class="panel-body">
                                 Body 3
                             </div>
@@ -62,7 +62,7 @@
                                 <a data-toggle="collapse" href="#4">Fund Classification & Benchmarks</a>
                             </h4>
                         </div>
-                        <div id="4" class="panel-collapse collapse">
+                        <div id="4" class="panel-collapse collapse in">
                             <div class="panel-body">
                                 Body 4
                             </div>
@@ -102,10 +102,10 @@
                     <div class="panel panel-default">
                         <div class="panel-heading">
                             <h4 class="panel-title">
-                                <a data-toggle="collapse" href="#2">Fund Objective & Strategy</a>
+                                <a data-toggle="collapse in" href="#2">Fund Key Attributes</a>
                             </h4>
                         </div>
-                        <div id="2" class="panel-collapse collapse">
+                        <div id="2" class="panel-collapse collapse in">
                             <div class="panel-body">
                                 Body 2
                             </div>
@@ -115,7 +115,7 @@
                     <div class="panel panel-default">
                         <div class="panel-heading">
                             <h4 class="panel-title">
-                                <a data-toggle="collapse" href="#3">Fund Asset Attributes</a>
+                                <a data-toggle="collapse" href="#3">Fund Sales & Distribution</a>
                             </h4>
                         </div>
                         <div id="3" class="panel-collapse collapse">
@@ -125,10 +125,23 @@
                         </div>
                     </div>
 
-                    <div class="panel panel-default">
+                    <div class="panel panel-default col-md-6">
                         <div class="panel-heading">
                             <h4 class="panel-title">
-                                <a data-toggle="collapse" href="#4">Fund Classification & Benchmarks</a>
+                                <a data-toggle="collapse" href="#4">Subscription</a>
+                            </h4>
+                        </div>
+                        <div id="4" class="panel-collapse collapse">
+                            <div class="panel-body">
+                                Body 4
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="panel panel-default col-md-6">
+                        <div class="panel-heading">
+                            <h4 class="panel-title">
+                                <a data-toggle="collapse" href="#4">Subscription</a>
                             </h4>
                         </div>
                         <div id="4" class="panel-collapse collapse">
