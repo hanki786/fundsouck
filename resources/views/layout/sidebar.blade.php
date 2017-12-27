@@ -7,7 +7,7 @@
             <li class="nav-title">
                 Functions
             </li>
-            <li class="nav-item">
+            <li class="nav-item nav-dropdown">
                 <ul class="nav-dropdown-items">
                     <li class="nav-item">
                         <a class="nav-link" href="#"><i class="icon-puzzle"></i>Fund Overview</a>
