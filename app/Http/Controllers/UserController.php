@@ -17,6 +17,11 @@ use Illuminate\Support\Facades\Input;
 
 class UserController extends Controller
 {
+    public function fund_overview(){
+
+        return view('website.fund_overview');
+    }
+
     public function getAdminDashboard(){
         return view('admin.dashboard');
     }

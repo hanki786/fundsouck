@@ -10,7 +10,7 @@
             Profile
         </li>
         <li class="nav-item">
-            <a class="nav-link" href="{{ route('dashboard') }}"> Fund Overview </a>
+            <a class="nav-link" href="{{ route('fund_overview') }}"> Fund Overview </a>
 </li>
 <li class="nav-item">
             <a class="nav-link" href="{{ route('dashboard') }}"> Fund Attributes </a>

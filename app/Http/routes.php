@@ -44,6 +44,11 @@ Route::get('profile', function () {
     return view('website.profile');
 });
 
+Route::get('/fund_overview', [
+        'uses' => 'UserController@fund_overview',
+        'as' => 'dashboard'
+]);
+    
 
 Route::get('login', function () {
 
