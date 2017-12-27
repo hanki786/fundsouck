@@ -8,10 +8,155 @@
                 Functions
             </li>
             <li class="nav-item nav-dropdown">
+                <a class="nav-link nav-dropdown-toggle" href="#"><i class="icon-puzzle"></i> Profile</a>
                 <ul class="nav-dropdown-items">
-                    <li class="nav-item">
-                        <a class="nav-link" href="#"><i class="icon-puzzle"></i>Fund Overview</a>
+                    <li class="nav-item nav-dropdown">
+                        <a class="nav-link nav-dropdown-toggle" href="#"><i class="icon-puzzle"></i>Funds</a>
+                        <ul class="nav-dropdown-items">
+                        
+                            <li class="nav-item nav-dropdown">
+                                <a class="nav-link nav-dropdown-toggle" href="#"><i class="icon-puzzle"></i>Fund Identity</a>
+                                    <ul class="nav-dropdown-items">
+
+                                        <li class="nav-item">
+                                            <a class="nav-link" href="{{ route('add-fundidentity-on-admin-side') }}"><i class="icon-puzzle"></i> Create</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link" href="{{ route('list-fundidentity-on-admin-side') }}"><i class="icon-puzzle"></i> List</a>
+                                        </li>
+
+                                    </ul>
+                            </li>
+
+                            <li class="nav-item nav-dropdown">
+                                <a class="nav-link nav-dropdown-toggle" href="#"><i class="icon-puzzle"></i>	Fund Objective & Strategy</a>
+                                <ul class="nav-dropdown-items">
+
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="{{ route('add-fundObjectiveStrategy-on-admin-side') }}"><i class="icon-puzzle"></i> Create</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="{{ route('list-fundObjectiveStrategy-on-admin-side') }}"><i class="icon-puzzle"></i> List</a>
+                                    </li>
+
+                                </ul>
+                            </li>
+                            <li class="nav-item nav-dropdown">
+                                <a class="nav-link nav-dropdown-toggle" href="#"><i class="icon-puzzle"></i>FI&P</a>
+                                    <ul class="nav-dropdown-items">
+
+                                        <li class="nav-item">
+                                            <a class="nav-link" href="{{ route('add-fundidentitypolicy-on-admin-side') }}"><i class="icon-puzzle"></i> Create</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link" href="{{ route('list-fundidentitypolicy-on-admin-side') }}"><i class="icon-puzzle"></i> List</a>
+                                        </li>
+
+                                    </ul>
+                            </li>
+                        </ul>
                     </li>
+                    <li class="nav-item nav-dropdown">
+                        <a class="nav-link nav-dropdown-toggle" href="#"><i class="icon-puzzle"></i>Fund Attributes</a>
+                        <ul class="nav-dropdown-items">
+                        <li class="nav-item nav-dropdown">
+                                <a class="nav-link nav-dropdown-toggle" href="#"><i class="icon-puzzle"></i> FA</a>
+                                <ul class="nav-dropdown-items">
+
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="{{ route('add-fundAttributes-on-admin-side') }}"><i class="icon-puzzle"></i> Create</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="{{ route('list-fundAttributes-on-admin-side') }}"><i class="icon-puzzle"></i> List</a>
+                                    </li>
+
+                                </ul>
+                            </li>
+
+                            <li class="nav-item nav-dropdown">
+                                <a class="nav-link nav-dropdown-toggle" href="#"><i class="icon-puzzle"></i> Fund Key Attributes</a>
+                                <ul class="nav-dropdown-items">
+
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="{{ route('add-fundKeyAttributes-on-admin-side') }}"><i class="icon-puzzle"></i> Create</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="{{ route('list-fundKeyAttributes-on-admin-side') }}"><i class="icon-puzzle"></i> List</a>
+                                    </li>
+
+                                </ul>
+                            </li>
+
+                            <li class="nav-item nav-dropdown">
+                                <a class="nav-link nav-dropdown-toggle" href="#"><i class="icon-puzzle"></i> Fund Asset Attributes</a>
+                                <ul class="nav-dropdown-items">
+
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="{{ route('add-fundAssetAttributes-on-admin-side') }}"><i class="icon-puzzle"></i> Create</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="{{ route('list-fundAssetAttributes-on-admin-side') }}"><i class="icon-puzzle"></i> List</a>
+                                    </li>
+
+                                </ul>
+                            </li>
+
+                            <li class="nav-item nav-dropdown">
+                                <a class="nav-link nav-dropdown-toggle" href="#"><i class="icon-puzzle"></i> Fund Sales & Distribution</a>
+                                <ul class="nav-dropdown-items">
+
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="{{ route('add-fundSalesDistribution-on-admin-side') }}"><i class="icon-puzzle"></i> Create</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="{{ route('list-fundSalesDistribution-on-admin-side') }}"><i class="icon-puzzle"></i> List</a>
+                                    </li>
+
+                                </ul>
+                            </li>
+
+                            <li class="nav-item nav-dropdown">
+                                <a class="nav-link nav-dropdown-toggle" href="#"><i class="icon-puzzle"></i> Fund History</a>
+                                <ul class="nav-dropdown-items">
+
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="{{ route('add-fundHistory-on-admin-side') }}"><i class="icon-puzzle"></i> Create</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="{{ route('list-fundHistory-on-admin-side') }}"><i class="icon-puzzle"></i> List</a>
+                                    </li>
+
+                                </ul>
+                            </li>
+
+                            <li class="nav-item nav-dropdown">
+                                <a class="nav-link nav-dropdown-toggle" href="#"><i class="icon-puzzle"></i> Related Funds</a>
+                                <ul class="nav-dropdown-items">
+
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="{{ route('add-relatedFunds-on-admin-side') }}"><i class="icon-puzzle"></i> Create</a>
+                                    </li>
+
+                                      <li class="nav-item">
+                                        <a class="nav-link" href="{{ route('list-relatedFunds-on-admin-side') }}"><i class="icon-puzzle"></i> List</a>
+                                    </li>
+
+                        </ul>
+                    </li>
+
+                    <li class="nav-item nav-dropdown">
+                        <a class="nav-link nav-dropdown-toggle" href="#"><i class="icon-puzzle"></i> Fund Flags</a>
+                        <ul class="nav-dropdown-items">
+
+                            <li class="nav-item">
+                                <a class="nav-link" href="{{ route('add-fundFlags-on-admin-side') }}"><i class="icon-puzzle"></i> Create</a>
+                            </li>
+
+                             <li class="nav-item">
+                        <a class="nav-link" href="{{ route('list-fundFlags-on-admin-side') }}"><i class="icon-puzzle"></i> List</a>
+                    </li>
+
+
                 </ul>
             </li>
             <li class="nav-item nav-dropdown">
