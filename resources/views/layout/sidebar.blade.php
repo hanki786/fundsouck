@@ -663,9 +663,6 @@
 
             </ul>
         </li>
-
-
-
         <li class="nav-item nav-dropdown">
             <a class="nav-link nav-dropdown-toggle" href="#"> Index Shell</a>
             <ul class="nav-dropdown-items">
@@ -794,7 +791,6 @@
                 </li>!-->
             </ul>
         </li>
-
         <li class="nav-item nav-dropdown"  style="display:none;">
             <a class="nav-link nav-dropdown-toggle" href="#"> Help</a>
             <ul class="nav-dropdown-items">

@@ -1,26 +1,34 @@
-<meta charset="utf-8">
-<meta http-equiv="X-UA-Compatible" content="IE=edge">
 
-<link rel="shortcut icon" href="{{ asset('images/favicon.png') }}">
+<meta charset="utf-8" />
+<link rel="apple-touch-icon" sizes="76x76" href="assets/img/apple-icon.png">
+<link rel="icon" type="image/png" sizes="96x96" href="assets/img/favicon.png">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
 
-<!-- Icons -->
-<link rel="stylesheet" href="{{ asset('assets/css/font-awesome.min.css') }}">
-<link rel="stylesheet" href="{{ asset('assets/css/simple-line-icons.css') }}">
+<title>Paper Dashboard by Creative Tim</title>
 
-<!-- Main styles for this application -->
-<link rel="stylesheet" href="{{ asset('assets/css/bootstrap.min.css') }}">
-<link rel="stylesheet" href="{{ asset('assets/css/style.css') }}">
+<meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0' name='viewport' />
+<meta name="viewport" content="width=device-width" />
 
-<!-- Font Awesome -->
-<link href="{{ asset('vendors/font-awesome/css/font-awesome.min.css') }}" rel="stylesheet">
-<!-- Datatables -->
-<link href="{{ asset('vendors/datatables.net-bs/css/dataTables.bootstrap.min.css') }}" rel="stylesheet">
-<link href="{{ asset('vendors/datatables.net-buttons-bs/css/buttons.bootstrap.min.css') }}" rel="stylesheet">
-<link href="{{ asset('vendors/datatables.net-fixedheader-bs/css/fixedHeader.bootstrap.min.css') }}" rel="stylesheet">
-<link href="{{ asset('vendors/datatables.net-responsive-bs/css/responsive.bootstrap.min.css') }}" rel="stylesheet">
-<link href="{{ asset('vendors/datatables.net-scroller-bs/css/scroller.bootstrap.min.css') }}" rel="stylesheet">
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 
+<!-- Bootstrap core CSS     -->
+<link href="{{ asset('website/assets/css/bootstrap.min.css') }}" rel="stylesheet" />
+
+<!-- Animation library for notifications   -->
+<link href="{{ asset('website/assets/css/animate.min.css') }}" rel="stylesheet"/>
+
+<!--  Paper Dashboard core CSS    -->
+<link href="{{ asset('website/assets/css/paper-dashboard.css') }}" rel="stylesheet"/>
+
+
+<!--  CSS for Demo Purpose, don't include it in your project     -->
+<link href="{{ asset('website/assets/css/demo.css') }}" rel="stylesheet" />
+
+
+<!--  Fonts and icons     -->
+<link href="http://maxcdn.bootstrapcdn.com/font-awesome/latest/css/font-awesome.min.css" rel="stylesheet">
+<link href='https://fonts.googleapis.com/css?family=Muli:400,300' rel='stylesheet' type='text/css'>
+<link href="{{ asset('website/assets/css/themify-icons.css') }}" rel="stylesheet">
+<!--
 <style>
 .btn-primary {
     color: #fff;
@@ -36,7 +44,7 @@
     position: fixed;
     z-index: 1020;
     width: 100%;
-    background-color: #e2e2e2;
+    background-color: #29363d;
 }
 .app-header.navbar .navbar-brand {
     display: inline-block;
@@ -53,8 +61,17 @@
 .panel-group .panel {
     margin-bottom: 0;
     border-radius: 4px;
-    -webkit-box-shadow: 4px 9px 36px -14px rgba(0,0,0,0.75) !important;
-    -moz-box-shadow: 4px 9px 36px -14px rgba(0,0,0,0.75) !important;
-    box-shadow: 4px 9px 36px -14px rgba(0,0,0,0.75);
 }
-</style>
+body {
+  font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+  font-size: 14px;
+  line-height: 1.42857143;
+  color: #333;
+  background-color: #f5f5f5;
+}
+.panel-default>.panel-heading {
+  color: #f5f5f5;
+  background-color: #29363d;
+  border-color: #ddd;
+}
+</style>-->
