@@ -30,11 +30,11 @@
                     <div class="col-sm-12">
 
                         <div class="card">
-                            <div class="card-header">
-                                <strong>Add Semi Annual Report </strong>
-                                <small>Form</small>
+                            <div class="header">
+                                <h4 class="title">Add Semi Annual Report </h4>
+                                <p class="category">Please fill all the information</p>
                             </div>
-                            <div class="card-body">
+                            <div class="content">
                                 <div class="row">
                                     <div class="col-sm-6">
                                         @if($errors->any())
@@ -46,7 +46,7 @@
                                         @endif
                      <div class="form-group">
                                             <label for="name">Fund Identity</label>
-                                            <select type="text" class="form-control" id="fund_identity_id" name="fund_identity_id">
+                                            <select type="text" class="form-control border-input" id="fund_identity_id" name="fund_identity_id">
                                                 <option value="">Select an option</option>
                                                 @foreach($fund_identities as $fund_identity)
                                                     <option value="{{ $fund_identity->id }}">{{ $fund_identity->fund_name }}</option>
@@ -56,19 +56,19 @@
                                         <div class="form-group">
                                             <label for="semi_annual_report">Semi Annual Report</label>
                                             <input type="file" value="{{ old('semi_annual_report') }}"
-                                                   class="form-control" name="semi_annual_report"  >
+                                                   class="form-control border-input" name="semi_annual_report"  >
                                         </div>
 
                                         <div class="form-group">
                                             <label for="semi_annual_report_year">Semi Annual Report Year</label>
                                             <input type="number" value="{{ old('semi_annual_report_year') }}"
-                                                   class="form-control" name="semi_annual_report_year" placeholder="2002">
+                                                   class="form-control border-input" name="semi_annual_report_year" placeholder="2002">
                                         </div>
 
                                         <div class="form-group">
                                             <label for="semi_annual_report_date">Semi Annual Report Date</label>
                                             <input type="date" value="{{ old('semi_annual_report_date') }}"
-                                                   class="form-control" name="semi_annual_report_date" >
+                                                   class="form-control border-input" name="semi_annual_report_date" >
                                         </div>
 
                                     </div>
@@ -76,9 +76,9 @@
 
                             </div>
 
-                            <div class="card-footer">
-                                <button type="submit" class="btn btn-sm btn-primary"><i class="fa fa-dot-circle-o"></i> Submit</button>
-                                <button type="reset" class="btn btn-sm btn-danger"><i class="fa fa-ban"></i> Reset</button>
+                            <div class="footer">
+                                <button type="submit" class="btn btn-info btn-fill"><i class="fa fa-dot-circle-o"></i> Submit</button>
+                                <button type="reset" class="btn btn-danger btn-fill"><i class="fa fa-ban"></i> Reset</button>
                             </div>
                         </div>
 

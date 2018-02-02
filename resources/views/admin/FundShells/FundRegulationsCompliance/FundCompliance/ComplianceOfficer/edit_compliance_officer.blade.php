@@ -32,11 +32,11 @@
                     <div class="col-sm-12">
 
                         <div class="card">
-                            <div class="card-header">
-                                <strong>Edit Compliance Officer</strong>
-                                <small>Form</small>
+                            <div class="header">
+                                <h4 class="title">Edit Compliance Officer</h4>
+                                <p class="category">Please fill all the information</p>
                             </div>
-                            <div class="card-body">
+                            <div class="content">
                                 <div class="row">
                                     <div class="col-md-3"></div>
                                     <div class="col-sm-6">
@@ -62,44 +62,44 @@
 
                                         <div class="form-group">
                                             <label for="telephone">Telephone</label>
-                                            <input type="number" class="form-control" name="telephone"
+                                            <input type="number" class="form-control border-input" name="telephone"
                                                    placeholder="Enter Telephone Number" value="{{ $compliance_officer->telephone}}">
                                         </div>
 
 
                                         <div class="form-group">
                                             <label for="fax">Fax</label>
-                                            <input type="number" class="form-control" name="fax" placeholder="Enter Fax Number"
+                                            <input type="number" class="form-control border-input" name="fax" placeholder="Enter Fax Number"
                                                    value="{{ $compliance_officer->fax}}">
                                         </div>
 
                                         <div class="form-group">
                                             <label for="email">Email</label>
-                                            <input type="email" class="form-control" name="email" placeholder="Enter Email Address"
+                                            <input type="email" class="form-control border-input" name="email" placeholder="Enter Email Address"
                                                    value="{{ $compliance_officer->user_id}}">
                                         </div>
 
                                         <div class="form-group">
                                             <label for="url">URL</label>
-                                            <input type="text" class="form-control" name="url" placeholder="Enter URL"
+                                            <input type="text" class="form-control border-input" name="url" placeholder="Enter URL"
                                                    value="{{ $compliance_officer->url}}">
                                         </div>
 
                                         <div class="form-group">
                                             <label for="address">Address</label>
-                                            <input type="text" class="form-control" name="address" placeholder="Enter Address"
+                                            <input type="text" class="form-control border-input" name="address" placeholder="Enter Address"
                                                    value="{{ $compliance_officer->address}}">
                                         </div>
 
                                         <div class="form-group">
                                             <label for="city">City</label>
-                                            <input type="text" class="form-control" name="city" placeholder="Enter City"
+                                            <input type="text" class="form-control border-input" name="city" placeholder="Enter City"
                                                    value="{{ $compliance_officer->city}}">
                                         </div>
 
                                         <div class="form-group">
                                             <label for="postal_code">Postal Code</label>
-                                            <input type="text" class="form-control" name="postal_code" placeholder="Enter Postal Code"
+                                            <input type="text" class="form-control border-input" name="postal_code" placeholder="Enter Postal Code"
                                                    value="{{ $compliance_officer->postal_code}}">
                                         </div>
 
@@ -121,9 +121,9 @@
 
                             </div>
 
-                            <div class="card-footer">
-                                <button type="submit" class="btn btn-sm btn-primary"><i class="fa fa-dot-circle-o"></i> Submit</button>
-                                <button type="reset" class="btn btn-sm btn-danger"><i class="fa fa-ban"></i> Reset</button>
+                            <div class="footer">
+                                <button type="submit" class="btn btn-info btn-fill"><i class="fa fa-dot-circle-o"></i> Submit</button>
+                                <button type="reset" class="btn btn-danger btn-fill"><i class="fa fa-ban"></i> Reset</button>
                             </div>
                         </div>
 

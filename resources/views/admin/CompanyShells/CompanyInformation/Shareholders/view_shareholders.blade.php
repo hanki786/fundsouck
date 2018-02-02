@@ -31,11 +31,11 @@
                     <div class="col-sm-12">
 
                         <div class="card">
-                            <div class="card-header">
-                                <strong>Edit Shareholders</strong>
-                                <small>Form</small>
+                            <div class="header">
+                                <h4 class="title">Edit Shareholders</h4>
+                                <p class="category">Please fill all the information</p>
                             </div>
-                            <div class="card-body">
+                            <div class="content">
                                 <div class="row">
                                     <div class="col-sm-3">
                                     </div>
@@ -43,13 +43,13 @@
 
                                         <div class="form-group">
                                             <label for="shareholder_name">Shareholder Name</label>
-                                            <input disabled type="text" value="{{  $shareholders->shareholder_name }}" class="form-control" name="shareholder_name" placeholder="Enter Shareholder Name ">
+                                            <input disabled type="text" value="{{  $shareholders->shareholder_name }}" class="form-control border-input" name="shareholder_name" placeholder="Enter Shareholder Name ">
                                         </div>
 
 
                                         <div class="form-group">
                                             <label for="percentage">Percentage</label>
-                                            <input disabled type="text" value="{{ $shareholders->percentage }}" class="form-control" name="percentage" placeholder="Enter Percentage">
+                                            <input disabled type="text" value="{{ $shareholders->percentage }}" class="form-control border-input" name="percentage" placeholder="Enter Percentage">
                                         </div>
 
 

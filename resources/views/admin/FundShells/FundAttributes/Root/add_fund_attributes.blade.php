@@ -26,11 +26,11 @@
                 <div class="row">
                     <div class="col-md-12">
                         <div class="card">
-                            <div class="card-header">
-                                <strong>Fund Attributes</strong>
-                                <small>Form</small>
+                            <div class="header">
+                                <h4 class="title">Fund Attributes</h4>
+                                <p class="category">Please fill all the information</p>
                             </div>
-                            <div class="card-body">
+                            <div class="content">
                                 <div class="row">
                                     <div class="col-md-12">
                                     @if($errors->any())
@@ -45,7 +45,7 @@
                                     
                                     <div class="form-group">
                                             <label for="name">Fund Key Attributes</label>
-                                            <select type="text" class="form-control" id="fund_key_attribute_id" name="fund_key_attribute_id">
+                                            <select type="text" class="form-control border-input" id="fund_key_attribute_id" name="fund_key_attribute_id">
                                                 <option value="">Select an option</option>
                                                 @foreach($fund_key_attributes as $row)
                                                     <option value="{{ $row->id }}">FKA - {{ $row->id }} - {{ $row->fund_currency }} - {{ $row->inception_price_type }}</option>
@@ -55,7 +55,7 @@
                                         
                                         <div class="form-group">
                                             <label for="name">Fund Asset Attributes</label>
-                                            <select type="text" class="form-control" id="fund_asset_attribute_id" name="fund_asset_attribute_id">
+                                            <select type="text" class="form-control border-input" id="fund_asset_attribute_id" name="fund_asset_attribute_id">
                                                 <option value="">Select an option</option>
                                                 @foreach($fund_asset_attributes as $row)
                                                     <option value="{{ $row->id }}">{{ $row->asset_class }} - {{ $row->asset_universe }}</option>
@@ -65,7 +65,7 @@
                                         
                                         <div class="form-group">
                                             <label for="name">Fund Sales Distribution</label>
-                                            <select type="text" class="form-control" id="fund_sales_distribution_id" name="fund_sales_distribution_id">
+                                            <select type="text" class="form-control border-input" id="fund_sales_distribution_id" name="fund_sales_distribution_id">
                                                 <option value="">Select an option</option>
                                                 @foreach($fund_sales_distributions as $row)
                                                     <option value="{{ $row->id }}">FSD - {{ $row->id }} - {{ $row->countries_of_distribution }}</option>
@@ -75,7 +75,7 @@
                                         
                                         <div class="form-group">
                                             <label for="name">Fund History</label>
-                                            <select type="text" class="form-control" id="fund_history_id" name="fund_history_id">
+                                            <select type="text" class="form-control border-input" id="fund_history_id" name="fund_history_id">
                                                 <option value="">Select an option</option>
                                                 @foreach($fund_histories as $row)
                                                     <option value="{{ $row->id }}">{{ $row->primary_share_class_name }}</option>
@@ -88,7 +88,7 @@
                                         
                                         <div class="form-group">
                                             <label for="name">Related Fund</label>
-                                            <select type="text" class="form-control" id="related_fund_id" name="related_fund_id">
+                                            <select type="text" class="form-control border-input" id="related_fund_id" name="related_fund_id">
                                                 <option value="">Select an option</option>
                                                 @foreach($related_funds as $row)
                                                     <option value="{{ $row->id }}">{{ $row->vehicle_name }}</option>
@@ -98,7 +98,7 @@
                                         
                                         <div class="form-group">
                                             <label for="name">Fund Flag</label>
-                                            <select type="text" class="form-control" id="fund_flag_id" name="fund_flag_id">
+                                            <select type="text" class="form-control border-input" id="fund_flag_id" name="fund_flag_id">
                                                 <option value="">Select an option</option>
                                                 @foreach($fund_flags as $row)
                                                     <option value="{{ $row->id }}">FF - {{ $row->id }}</option>
@@ -108,7 +108,7 @@
                                         
                                         <div class="form-group">
                                             <label for="name">Investory Type</label>
-                                            <select type="text" class="form-control" id="investor_type_id" name="investor_type_id">
+                                            <select type="text" class="form-control border-input" id="investor_type_id" name="investor_type_id">
                                                 <option value="">Select an option</option>
                                                 @foreach($investor_types as $row)
                                                     <option value="{{ $row->id }}">IN TYP - {{ $row->id }}</option>
@@ -118,7 +118,7 @@
                                         
                                         <div class="form-group">
                                             <label for="name">Themes Attributes</label>
-                                            <select type="text" class="form-control" id="themes_attribute_id" name="themes_attribute_id">
+                                            <select type="text" class="form-control border-input" id="themes_attribute_id" name="themes_attribute_id">
                                                 <option value="">Select an option</option>
                                                 @foreach($themes_attributes as $row)
                                                     <option value="{{ $row->id }}">{{ $row->index_replication_method }}</option>
@@ -129,11 +129,11 @@
                                 </div>
                             </div>
 
-                            <div class="card-footer">
-                                <button type="submit" class="btn btn-primary"><i class="fa fa-save"></i>
+                            <div class="footer">
+                                <button type="submit" class="btn btn-info btn-fill"><i class="fa fa-save"></i>
                                     Save
                                 </button>
-                                <button type="reset" class="btn btn-danger"><i class="fa fa-ban"></i> Reset
+                                <button type="reset" class="btn btn-danger btn-fill"><i class="fa fa-ban"></i> Reset
                                 </button>
                             </div>
                         </div>

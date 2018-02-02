@@ -32,27 +32,27 @@
                     <div class="col-sm-12">
 
                         <div class="card">
-                            <div class="card-header">
-                                <strong>Address</strong>
+                            <div class="header">
+                                <h4 class="title">Address</h4>
                             </div>
-                            <div class="card-body">
+                            <div class="content">
                                 <div class="row">
 
                                     <div class="col-sm-6">
 
                                         <div class="form-group">
                                             <label for="line_1">Line 1</label>
-                                            <input disabled type="text" value="{{ $address->line_1 }}" class="form-control" name="line_1" placeholder="Line 1 ">
+                                            <input disabled type="text" value="{{ $address->line_1 }}" class="form-control border-input" name="line_1" placeholder="Line 1 ">
                                         </div>
 
 
                                         <div class="form-group">
                                             <label for="line_2">Line 2</label>
-                                            <input disabled type="text" value="{{$address->line_2 }}" class="form-control" name="line_2" placeholder="Line 2">
+                                            <input disabled type="text" value="{{$address->line_2 }}" class="form-control border-input" name="line_2" placeholder="Line 2">
                                         </div>
                                         <div class="form-group">
                                             <label for="city">City</label>
-                                            <input disabled type="text" value="{{ $address->city }}" class="form-control" name="city" placeholder="City">
+                                            <input disabled type="text" value="{{ $address->city }}" class="form-control border-input" name="city" placeholder="City">
                                         </div>
 
 
@@ -62,13 +62,13 @@
 
                                         <div class="form-group">
                                             <label for="postal_code">Postal Code</label>
-                                            <input disabled type="text" value="{{ $address->postal_code }}" class="form-control" name="postal_code" placeholder="Postal Code">
+                                            <input disabled type="text" value="{{ $address->postal_code }}" class="form-control border-input" name="postal_code" placeholder="Postal Code">
                                         </div>
 
 
                                         <div class="form-group">
                                             <label for="country">Country</label>
-                                            <input disabled type="text" value="{{ $address->country }}" class="form-control" name="country" placeholder="Country">
+                                            <input disabled type="text" value="{{ $address->country }}" class="form-control border-input" name="country" placeholder="Country">
                                         </div>
 
 

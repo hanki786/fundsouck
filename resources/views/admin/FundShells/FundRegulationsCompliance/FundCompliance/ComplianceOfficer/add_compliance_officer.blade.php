@@ -31,11 +31,11 @@
                     <div class="col-sm-12">
 
                         <div class="card">
-                            <div class="card-header">
-                                <strong>Add Compliance Officer</strong>
-                                <small>Form</small>
+                            <div class="header">
+                                <h4 class="title">Add Compliance Officer</h4>
+                                <p class="category">Please fill all the information</p>
                             </div>
-                            <div class="card-body">
+                            <div class="content">
                                 <div class="row">
                                     <div class="col-md-3"></div>
                                     <div class="col-sm-6">
@@ -49,7 +49,7 @@
 
                                         <div class="form-group">
                                             <label for="name">Fund Identity</label>
-                                            <select type="text" class="form-control" id="fund_identity_id" name="fund_identity_id">
+                                            <select type="text" class="form-control border-input" id="fund_identity_id" name="fund_identity_id">
                                                 <option value="">Select an option</option>
                                                 @foreach($fund_identities as $fund_identity)
                                                     <option value="{{ $fund_identity->id }}">{{ $fund_identity->fund_name }}</option>
@@ -65,38 +65,38 @@
 
                                     <div class="form-group">
                                         <label for="telephone">Telephone</label>
-                                        <input type="number" class="form-control" name="telephone" placeholder="Enter Telephone Number">
+                                        <input type="number" class="form-control border-input" name="telephone" placeholder="Enter Telephone Number">
                                     </div>
 
 
                                     <div class="form-group">
                                         <label for="fax">Fax</label>
-                                        <input type="number" class="form-control" name="fax" placeholder="Enter Fax Number">
+                                        <input type="number" class="form-control border-input" name="fax" placeholder="Enter Fax Number">
                                     </div>
 
                                     <div class="form-group">
                                         <label for="email">Email</label>
-                                        <input type="email" class="form-control" name="email" placeholder="Enter Email Address">
+                                        <input type="email" class="form-control border-input" name="email" placeholder="Enter Email Address">
                                     </div>
 
                                     <div class="form-group">
                                         <label for="url">URL</label>
-                                        <input type="text" class="form-control" name="url" placeholder="Enter URL">
+                                        <input type="text" class="form-control border-input" name="url" placeholder="Enter URL">
                                     </div>
 
                                     <div class="form-group">
                                         <label for="address">Address</label>
-                                        <input type="text" class="form-control" name="address" placeholder="Enter Address">
+                                        <input type="text" class="form-control border-input" name="address" placeholder="Enter Address">
                                     </div>
 
                                     <div class="form-group">
                                         <label for="city">City</label>
-                                        <input type="text" class="form-control" name="city" placeholder="Enter City">
+                                        <input type="text" class="form-control border-input" name="city" placeholder="Enter City">
                                     </div>
 
                                     <div class="form-group">
                                         <label for="postal_code">Postal Code</label>
-                                        <input type="text" class="form-control" name="postal_code" placeholder="Enter Postal Code">
+                                        <input type="text" class="form-control border-input" name="postal_code" placeholder="Enter Postal Code">
                                     </div>
 
                                     <div class="form-group">
@@ -116,9 +116,9 @@
 
                             </div>
 
-                            <div class="card-footer">
-                                <button type="submit" class="btn btn-sm btn-primary"><i class="fa fa-dot-circle-o"></i> Submit</button>
-                                <button type="reset" class="btn btn-sm btn-danger"><i class="fa fa-ban"></i> Reset</button>
+                            <div class="footer">
+                                <button type="submit" class="btn btn-info btn-fill"><i class="fa fa-dot-circle-o"></i> Submit</button>
+                                <button type="reset" class="btn btn-danger btn-fill"><i class="fa fa-ban"></i> Reset</button>
                             </div>
                         </div>
 

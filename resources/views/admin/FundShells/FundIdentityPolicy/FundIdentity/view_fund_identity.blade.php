@@ -28,22 +28,22 @@
                 <div class="row">
                     <div class="col-md-12">
                         <div class="card">
-                            <div class="card-header">
-                                <strong>Fund Identity</strong>
+                            <div class="header">
+                                <h4 class="title">Fund Identity</h4>
                             </div>
-                            <div class="card-body">
+                            <div class="content">
                                 <div class="row">
                                     <div class="col-md-3"></div>
                                     <div class="col-sm-6">
 
                                         <div class="form-group">
                                             <label for="name">Fund Name</label>
-                                            <input type="text" class="form-control" name="fund_name"
+                                            <input type="text" class="form-control border-input" name="fund_name"
                                                     value="{{$fund_identity->fund_name}}" disabled>
                                         </div>
                                         <div class="form-group">
                                             <label for="short_name">Fund Short Name</label>
-                                            <input type="text" class="form-control" id="short_name" name="fund_short_name"
+                                            <input type="text" class="form-control border-input" id="short_name" name="fund_short_name"
                                                    value="{{$fund_identity->fund_short_name}}" disabled>
                                         </div>
                                     </div>

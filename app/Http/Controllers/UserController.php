@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\FundShells\FundObjectiveStrategy;
 use Illuminate\Http\Request;
 
 use App\Http\Requests;
@@ -29,7 +30,14 @@ class UserController extends Controller
     }
 
     public function getAdminDashboard(){
-        return view('admin.dashboard');
+        $fund_identities = FundIdentity::all();
+        $fund_objective_strategies = FundObjectiveStrategy::all();
+
+        $data_array = [
+            'fund_identities' => $fund_identities,
+            'fund_objective_strategies' => $fund_objective_strategies
+        ];
+        return view('admin.dashboard',$data_array);
     }
 
     public function login(Request $request)

@@ -31,11 +31,11 @@
                     <div class="col-sm-12">
 
                         <div class="card">
-                            <div class="card-header">
-                                <strong>Edit Fund Flags</strong>
-                                <small>Form</small>
+                            <div class="header">
+                                <h4 class="title">Edit Fund Flags</h4>
+                                <p class="category">Please fill all the information</p>
                             </div>
-                            <div class="card-body">
+                            <div class="content">
                                 <div class="row">
                                     <div class="col-md-3"></div>
                                     <div class="col-sm-6">
@@ -226,9 +226,9 @@
 
                             </div>
 
-                            <div class="card-footer">
-                                <button type="submit" class="btn btn-sm btn-primary"><i class="fa fa-dot-circle-o"></i> Save</button>
-                                <button type="reset" class="btn btn-sm btn-danger"><i class="fa fa-ban"></i> Cancel</button>
+                            <div class="footer">
+                                <button type="submit" class="btn btn-info btn-fill"><i class="fa fa-dot-circle-o"></i> Save</button>
+                                <button type="reset" class="btn btn-danger btn-fill"><i class="fa fa-ban"></i> Cancel</button>
                             </div>
                         </div>
 

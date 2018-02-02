@@ -30,10 +30,10 @@
             <div class="row">
                 <div class="col-lg-12">
                     <div class="card">
-                        <div class="card-header">
+                        <div class="header">
                             <i class="fa fa-align-justify"></i> Address Table
                         </div>
-                        <div class="card-body">
+                        <div class="content">
                             <table class="table table-bordered table-striped table-sm">
                                 <thead>
                                 <tr>

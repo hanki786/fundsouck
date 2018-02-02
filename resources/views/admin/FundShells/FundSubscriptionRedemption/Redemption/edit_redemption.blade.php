@@ -31,11 +31,11 @@
                     <div class="col-sm-12">
 
                         <div class="card">
-                            <div class="card-header">
-                                <strong>Edit Redemption</strong>
-                                <small>Form</small>
+                            <div class="header">
+                                <h4 class="title">Edit Redemption</h4>
+                                <p class="category">Please fill all the information</p>
                             </div>
-                            <div class="card-body">
+                            <div class="content">
                                 <div class="row">
                                     <div class="col-md-3"></div>
                                     <div class="col-sm-6">
@@ -55,7 +55,7 @@
                                         <div class="form-group">
                                             <label for="minimum">Minimum</label>
                                             <input type="number" value="{{ $redemption->minimum}}"
-                                                   class="form-control" name="minimum" placeholder="Enter Minimum ">
+                                                   class="form-control border-input" name="minimum" placeholder="Enter Minimum ">
                                         </div>
 
                                         @php
@@ -77,7 +77,7 @@
                                         <div class="form-group">
                                             <label for="payment_period">Payment Period</label>
                                             <input type="text" value="{{ $redemption->payment_period}}"
-                                                   class="form-control" name="payment_period" placeholder="Enter Payment Period">
+                                                   class="form-control border-input" name="payment_period" placeholder="Enter Payment Period">
                                         </div>
 
                                         <div class="form-group">
@@ -105,7 +105,7 @@
                                         <div class="form-group">
                                             <label for="last_update_date">Last Update Date</label>
                                             <input type="date" value="{{ $redemption->last_update_date}}"
-                                                   class="form-control" name="last_update_date" placeholder="Enter ">
+                                                   class="form-control border-input" name="last_update_date" placeholder="Enter ">
                                         </div>
 
                                     </div>
@@ -115,9 +115,9 @@
 
                             </div>
 
-                            <div class="card-footer">
-                                <button type="submit" class="btn btn-sm btn-primary"><i class="fa fa-dot-circle-o"></i> Submit</button>
-                                <button type="reset" class="btn btn-sm btn-danger"><i class="fa fa-ban"></i> Reset</button>
+                            <div class="footer">
+                                <button type="submit" class="btn btn-info btn-fill"><i class="fa fa-dot-circle-o"></i> Submit</button>
+                                <button type="reset" class="btn btn-danger btn-fill"><i class="fa fa-ban"></i> Reset</button>
                             </div>
                         </div>
 

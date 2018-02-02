@@ -419,7 +419,6 @@ hr {
 
 .btn,
 .navbar .navbar-nav > li > a.btn {
-  border-radius: 20px;
   box-sizing: border-box;
   border-width: 2px;
   background-color: transparent;
@@ -1516,7 +1515,7 @@ textarea.form-control {
     border-radius: 50%;
     margin-right: 5px; }
   .card .footer {
-    padding: 0;
+    padding: 15px;
     line-height: 30px; }
     .card .footer .legend {
       padding: 5px 0; }

@@ -32,11 +32,11 @@
                     <div class="col-sm-12">
 
                         <div class="card">
-                            <div class="card-header">
-                                <strong>Add Address</strong>
-                                <small>Form</small>
+                            <div class="header">
+                                <h4 class="title">Add Address</h4>
+                                <p class="category">Please fill all the information</p>
                             </div>
-                            <div class="card-body">
+                            <div class="content">
                                 <div class="row">
 
                                     <div class="col-sm-6">
@@ -50,17 +50,17 @@
 
                                         <div class="form-group">
                                             <label for="line_1">Line 1</label>
-                                            <input type="text" value="{{ old('line_1') }}" class="form-control" name="line_1" placeholder="Line 1 ">
+                                            <input type="text" value="{{ old('line_1') }}" class="form-control border-input" name="line_1" placeholder="Line 1 ">
                                         </div>
 
 
                                         <div class="form-group">
                                             <label for="line_2">Line 2</label>
-                                            <input type="text" value="{{ old('line_2') }}" class="form-control" name="line_2" placeholder="Line 2">
+                                            <input type="text" value="{{ old('line_2') }}" class="form-control border-input" name="line_2" placeholder="Line 2">
                                         </div>
                                          <div class="form-group">
                                             <label for="city">City</label>
-                                            <input type="text" value="{{ old('city') }}" class="form-control" name="city" placeholder="City">
+                                            <input type="text" value="{{ old('city') }}" class="form-control border-input" name="city" placeholder="City">
                                         </div>
 
 
@@ -70,7 +70,7 @@
 
                                         <div class="form-group">
                                             <label for="postal_code">Postal Code</label>
-                                            <input type="text" value="{{ old('postal_code') }}" class="form-control" name="postal_code" placeholder="Postal Code">
+                                            <input type="text" value="{{ old('postal_code') }}" class="form-control border-input" name="postal_code" placeholder="Postal Code">
                                         </div>
 
 
@@ -92,9 +92,9 @@
                                 </div>
                             </div>
 
-                            <div class="card-footer">
-                                <button type="submit" class="btn btn-sm btn-primary"><i class="fa fa-dot-circle-o"></i> Submit</button>
-                                <button type="reset" class="btn btn-sm btn-danger"><i class="fa fa-ban"></i> Reset</button>
+                            <div class="footer">
+                                <button type="submit" class="btn btn-info btn-fill"><i class="fa fa-dot-circle-o"></i> Submit</button>
+                                <button type="reset" class="btn btn-danger btn-fill"><i class="fa fa-ban"></i> Reset</button>
                             </div>
                         </div>
 

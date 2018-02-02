@@ -32,30 +32,30 @@
                     <div class="col-sm-12">
 
                         <div class="card">
-                            <div class="card-header">
-                                <strong>Annual</strong>
+                            <div class="header">
+                                <h4 class="title">Annual</h4>
                             </div>
-                            <div class="card-body">
+                            <div class="content">
                                 <div class="row">
                                     <div class="col-sm-6">
 
                                         <div class="form-group">
                                             <label for="actual">Actual</label>
                                             <input type="text" value="{{ $annual->actual}}" disabled
-                                                   class="form-control" name="actual" placeholder="Enter Actual ">
+                                                   class="form-control border-input" name="actual" placeholder="Enter Actual ">
                                         </div>
 
 
                                         <div class="form-group">
                                             <label for="min">Minimum</label>
                                             <input type="text" value="{{ $annual->min}}" disabled
-                                                   class="form-control" name="min" placeholder="Enter Minimum">
+                                                   class="form-control border-input" name="min" placeholder="Enter Minimum">
                                         </div>
 
                                         <div class="form-group">
                                             <label for="max">Maximum</label>
                                             <input type="text" value="{{ $annual->max}}" disabled
-                                                   class="form-control" name="max" placeholder="Enter Maximum">
+                                                   class="form-control border-input" name="max" placeholder="Enter Maximum">
                                         </div>
 
                                     </div>

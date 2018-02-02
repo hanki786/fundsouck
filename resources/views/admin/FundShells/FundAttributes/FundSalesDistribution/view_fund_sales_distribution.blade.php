@@ -30,10 +30,10 @@
                     <div class="col-sm-12">
 
                         <div class="card">
-                            <div class="card-header">
-                                <strong>Fund Sales & Distribution</strong>
+                            <div class="header">
+                                <h4 class="title">Fund Sales & Distribution</h4>
                             </div>
-                            <div class="card-body">
+                            <div class="content">
                                 <div class="row">
                                     <div class="col-md-3"></div>
                                     <div class="col-sm-6">
@@ -55,12 +55,12 @@
 
                                         <div class="form-group">
                                             <label for="registration_date">Registration Date</label>
-                                            <input type="date" class="form-control" name="registration_date" placeholder="dd/mm/yyyy" value="{{ $fund_sales_distribution->registration_date}}" disabled>
+                                            <input type="date" class="form-control border-input" name="registration_date" placeholder="dd/mm/yyyy" value="{{ $fund_sales_distribution->registration_date}}" disabled>
                                         </div>
 
                                         <div class="form-group">
                                             <label for="de_registration_date">De-Registration Date</label>
-                                            <input type="date" class="form-control" name="de_registration_date" placeholder="dd/mm/yyyy" value="{{ $fund_sales_distribution->de_registration_date}}" disabled>
+                                            <input type="date" class="form-control border-input" name="de_registration_date" placeholder="dd/mm/yyyy" value="{{ $fund_sales_distribution->de_registration_date}}" disabled>
                                         </div>
 
                                     </div>

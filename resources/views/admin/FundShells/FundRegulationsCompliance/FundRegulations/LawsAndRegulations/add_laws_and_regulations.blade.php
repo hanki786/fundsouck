@@ -31,11 +31,11 @@
                     <div class="col-sm-12">
 
                         <div class="card">
-                            <div class="card-header">
-                                <strong>Add Law and Regulation</strong>
-                                <small>Form</small>
+                            <div class="header">
+                                <h4 class="title">Add Law and Regulation</h4>
+                                <p class="category">Please fill all the information</p>
                             </div>
-                            <div class="card-body">
+                            <div class="content">
                                 <div class="row">
                                     <div class="col-md-3"></div>
                                     <div class="col-sm-6">
@@ -82,17 +82,17 @@
 
                                     <div class="form-group">
                                         <label for="giin_number">GIIN Number</label>
-                                        <input type="text" class="form-control" name="giin_number" placeholder="Enter GIIN Number">
+                                        <input type="text" class="form-control border-input" name="giin_number" placeholder="Enter GIIN Number">
                                     </div>
 
                                     <div class="form-group">
                                         <label for="lei_code">LEI Code</label>
-                                        <input type="text" class="form-control" name="lei_code" placeholder="Enter LEI Code">
+                                        <input type="text" class="form-control border-input" name="lei_code" placeholder="Enter LEI Code">
                                     </div>
 
                                     <div class="form-group">
                                         <label for="last_update_date">Last Update Date</label>
-                                        <input type="date" class="form-control" name="last_update_date" placeholder="Enter City">
+                                        <input type="date" class="form-control border-input" name="last_update_date" placeholder="Enter City">
                                     </div>
 
                                     </div>
@@ -101,9 +101,9 @@
 
                             </div>
 
-                            <div class="card-footer">
-                                <button type="submit" class="btn btn-sm btn-primary"><i class="fa fa-dot-circle-o"></i> Submit</button>
-                                <button type="reset" class="btn btn-sm btn-danger"><i class="fa fa-ban"></i> Reset</button>
+                            <div class="footer">
+                                <button type="submit" class="btn btn-info btn-fill"><i class="fa fa-dot-circle-o"></i> Submit</button>
+                                <button type="reset" class="btn btn-danger btn-fill"><i class="fa fa-ban"></i> Reset</button>
                             </div>
                         </div>
 

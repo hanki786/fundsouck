@@ -31,42 +31,42 @@
                     <div class="col-sm-12">
 
                         <div class="card">
-                            <div class="card-header">
-                                <strong>Fund Performance</strong>
+                            <div class="header">
+                                <h4 class="title">Fund Performance</h4>
                             </div>
-                            <div class="card-body">
+                            <div class="content">
                                 <div class="row">
                                     <div class="col-sm-6">
 
                                         <div class="form-group">
                                             <label for="annual_compound_return">Annual Compound Return</label>
                                             <input type="text" value="{{ $fund_performance->annual_compound_return }}"
-                                                   class="form-control" name="annual_compound_return"  placeholder="0.48" disabled>
+                                                   class="form-control border-input" name="annual_compound_return"  placeholder="0.48" disabled>
                                         </div>
 
                                         <div class="form-group">
                                             <label for="annualised_distribution_yield">Annualised Distribution Yield</label>
                                             <input type="text" value="{{ $fund_performance->annualised_distribution_yield }}"
-                                                   class="form-control" name="annualised_distribution_yield" placeholder="7.52" disabled>
+                                                   class="form-control border-input" name="annualised_distribution_yield" placeholder="7.52" disabled>
                                         </div>
 
                                         <div class="form-group">
                                             <label for="indexed_performance">Indexed Performance</label>
                                             <input type="text" value="{{ $fund_performance->indexed_performance }}"
-                                                   class="form-control" name="indexed_performance" placeholder="2.19" disabled>
+                                                   class="form-control border-input" name="indexed_performance" placeholder="2.19" disabled>
                                         </div>
 
                                         <div class="form-group">
                                             <label for="percentage_growth">Percentage Growth</label>
 
                                             <input type="text" value="{{ $fund_performance->percentage_growth }}"
-                                                   class="form-control" name="percentage_growth" placeholder="100.15" disabled>
+                                                   class="form-control border-input" name="percentage_growth" placeholder="100.15" disabled>
                                         </div>
 
                                         <div class="form-group">
                                             <label for="average_gain">Average Gain</label>
                                             <input type="text" value="{{ $fund_performance->average_gain }}"
-                                                   class="form-control" name="average_gain" placeholder="6.52" disabled>
+                                                   class="form-control border-input" name="average_gain" placeholder="6.52" disabled>
                                         </div>
 
 
@@ -76,31 +76,31 @@
                                         <div class="form-group">
                                             <label for="average_loss">Average Loss</label>
                                             <input type="text" value="{{ $fund_performance->average_loss }}"
-                                                   class="form-control" name="average_loss" placeholder="15.2" disabled>
+                                                   class="form-control border-input" name="average_loss" placeholder="15.2" disabled>
                                         </div>
 
                                         <div class="form-group">
                                             <label for="average_return">Average Return</label>
                                             <input type="text" value="{{ $fund_performance->average_return }}"
-                                                   class="form-control" name="average_return" placeholder="0.007" disabled>
+                                                   class="form-control border-input" name="average_return" placeholder="0.007" disabled>
                                         </div>
 
                                         <div class="form-group">
                                             <label for="relative_average_return">Relative Average Return</label>
                                             <input type="text" value="{{ $fund_performance->relative_average_return }}"
-                                                   class="form-control" name="relative_average_return" placeholder="10" disabled>
+                                                   class="form-control border-input" name="relative_average_return" placeholder="10" disabled>
                                         </div>
 
                                         <div class="form-group">
                                             <label for="relative_performance">Relative Performance</label>
                                             <input type="text" value="{{ $fund_performance->relative_performance }}"
-                                                   class="form-control" name="relative_performance" placeholder="5" disabled>
+                                                   class="form-control border-input" name="relative_performance" placeholder="5" disabled>
                                         </div>
 
                                         <div class="form-group">
                                             <label for="performance">Performance</label>
                                             <input type="text" value="{{ $fund_performance->performance }}"
-                                                   class="form-control" name="performance" placeholder="10" disabled>
+                                                   class="form-control border-input" name="performance" placeholder="10" disabled>
                                         </div>
 
                                     </div>

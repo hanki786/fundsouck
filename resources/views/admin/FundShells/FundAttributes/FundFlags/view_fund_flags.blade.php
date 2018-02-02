@@ -30,11 +30,11 @@
                     <div class="col-sm-12">
 
                         <div class="card">
-                            <div class="card-header">
-                                <strong>Edit Fund Flags</strong>
-                                <small>Form</small>
+                            <div class="header">
+                                <h4 class="title">Edit Fund Flags</h4>
+                                <p class="category">Please fill all the information</p>
                             </div>
-                            <div class="card-body">
+                            <div class="content">
                                 <div class="row">
                                     <div class="col-md-3"></div>
                                     <div class="col-sm-6">

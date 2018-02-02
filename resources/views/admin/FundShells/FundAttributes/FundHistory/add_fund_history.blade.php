@@ -30,11 +30,11 @@
                     <div class="col-sm-12">
 
                         <div class="card">
-                            <div class="card-header">
-                                <strong>Add Fund History</strong>
-                                <small>Form</small>
+                            <div class="header">
+                                <h4 class="title">Add Fund History</h4>
+                                <p class="category">Please fill all the information</p>
                             </div>
-                            <div class="card-body">
+                            <div class="content">
                                 <div class="row">
                                     <div class="col-md-3"></div>
                                     <div class="col-sm-6">
@@ -48,7 +48,7 @@
 
                                     <div class="form-group">
                                         <label for="liquidation_date">Liquidation Date</label>
-                                        <input type="date" class="form-control" name="liquidation_date" placeholder="dd/mm/yyyy">
+                                        <input type="date" class="form-control border-input" name="liquidation_date" placeholder="dd/mm/yyyy">
                                     </div>
 
                                     <div class="form-group">
@@ -63,32 +63,32 @@
 
                                             <div class="form-group">
                                                 <label for="successor_code">Successor Code</label>
-                                                <input type="text" class="form-control" id="successor_code" name="successor_code" placeholder="Successor Code">
+                                                <input type="text" class="form-control border-input" id="successor_code" name="successor_code" placeholder="Successor Code">
                                             </div>
 
                                     <div class="form-group">
                                         <label for="succession_date">Succession Date</label>
-                                        <input type="date" class="form-control" name="succession_date" placeholder="dd/mm/yyyy">
+                                        <input type="date" class="form-control border-input" name="succession_date" placeholder="dd/mm/yyyy">
                                     </div>
 
                                     <div class="form-group">
                                         <label for="extended_history_date">Extended History Date</label>
-                                        <input type="date" class="form-control" name="extended_history_date" placeholder="dd/mm/yyyy">
+                                        <input type="date" class="form-control border-input" name="extended_history_date" placeholder="dd/mm/yyyy">
                                     </div>
 
                                     <div class="form-group">
                                         <label for="available_history_date">Available History Date</label>
-                                        <input type="date" class="form-control" name="available_history_date" placeholder="dd/mm/yyyy">
+                                        <input type="date" class="form-control border-input" name="available_history_date" placeholder="dd/mm/yyyy">
                                     </div>
 
                                     <div class="form-group">
                                         <label for="primary_share_class_name">Primary Share Class Name</label>
-                                        <input type="text" class="form-control" name="primary_share_class_name" placeholder="Enter Primary Share Class Name">
+                                        <input type="text" class="form-control border-input" name="primary_share_class_name" placeholder="Enter Primary Share Class Name">
                                     </div>
 
                                     <div class="form-group">
                                         <label for="portfolio_name">Portfolio Name</label>
-                                        <input type="text" class="form-control" name="portfolio_name" placeholder="Enter Portfolio Name">
+                                        <input type="text" class="form-control border-input" name="portfolio_name" placeholder="Enter Portfolio Name">
                                     </div>
 
 
@@ -98,9 +98,9 @@
 
                             </div>
 
-                            <div class="card-footer">
-                                <button type="submit" class="btn btn-sm btn-primary"><i class="fa fa-dot-circle-o"></i> Submit</button>
-                                <button type="reset" class="btn btn-sm btn-danger"><i class="fa fa-ban"></i> Reset</button>
+                            <div class="footer">
+                                <button type="submit" class="btn btn-info btn-fill"><i class="fa fa-dot-circle-o"></i> Submit</button>
+                                <button type="reset" class="btn btn-danger btn-fill"><i class="fa fa-ban"></i> Reset</button>
                             </div>
                         </div>
 

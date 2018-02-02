@@ -32,30 +32,30 @@
                     <div class="col-sm-12">
 
                         <div class="card">
-                            <div class="card-header">
-                                <strong>Initial</strong>
+                            <div class="header">
+                                <h4 class="title">Initial</h4>
                             </div>
-                            <div class="card-body">
+                            <div class="content">
                                 <div class="row">
                                     <div class="col-sm-6">
 
                                         <div class="form-group">
                                             <label for="actual">Actual</label>
                                             <input type="text" value="{{ $initial->actual}}" disabled
-                                                   class="form-control" name="actual" placeholder="Enter Actual ">
+                                                   class="form-control border-input" name="actual" placeholder="Enter Actual ">
                                         </div>
 
 
                                         <div class="form-group">
                                             <label for="min">Minimum</label>
                                             <input type="text" value="{{ $initial->min}}" disabled
-                                                   class="form-control" name="min" placeholder="Enter Minimum">
+                                                   class="form-control border-input" name="min" placeholder="Enter Minimum">
                                         </div>
 
                                         <div class="form-group">
                                             <label for="max">Maximum</label>
                                             <input type="text" value="{{ $initial->max}}" disabled
-                                                   class="form-control" name="max" placeholder="Enter Maximum">
+                                                   class="form-control border-input" name="max" placeholder="Enter Maximum">
                                         </div>
 
                                     </div>
@@ -63,7 +63,7 @@
                                         <div class="form-group">
                                             <label for="amount">Amount</label>
                                             <input type="number" value="{{ $initial->amount}}" disabled
-                                                   class="form-control" name="amount" placeholder="Enter Amount">
+                                                   class="form-control border-input" name="amount" placeholder="Enter Amount">
                                         </div>
 
                                         <div class="form-group">

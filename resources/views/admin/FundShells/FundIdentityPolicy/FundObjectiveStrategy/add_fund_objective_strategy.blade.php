@@ -28,11 +28,11 @@
             <div class="row">
                 <div class="col-sm-12">
                     <div class="card">
-                        <div class="card-header">
-                            <strong>	Fund Objective & Strategy</strong>
-                            <small>Form</small>
+                        <div class="header">
+                            <h4 class="title">	Fund Objective & Strategy</h4>
+                            <p class="category">Please fill all the information</p>
                         </div>
-                        <div class="card-body">
+                        <div class="content">
                             <div class="row">
                                 <div class="col-sm-6">
                                     @if($errors->any())
@@ -44,7 +44,7 @@
                                     @endif
                                     <div class="form-group">
                                             <label for="name">Fund Identity</label>
-                                            <select type="text" class="form-control" id="fund_identity_id" name="fund_identity_id">
+                                            <select type="text" class="form-control border-input" id="fund_identity_id" name="fund_identity_id">
                                                 <option value="">Select an option</option>
                                                 @foreach($fund_identities as $fund_identity)
                                                     <option value="{{ $fund_identity->id }}">{{ $fund_identity->fund_name }}</option>
@@ -53,17 +53,17 @@
                                         </div>
                                 <div class="form-group">
                                     <label for="short_objective">Short Objective</label>
-                                    <input type="text" value="{{ old('short_objective') }}" class="form-control" name="short_objective" placeholder="Enter short objective">
+                                    <input type="text" value="{{ old('short_objective') }}" class="form-control border-input" name="short_objective" placeholder="Enter short objective">
                                 </div>
 
                                 <div class="form-group">
                                     <label for="detailed_objective">Detailed Objective</label>
-                                    <textarea class="form-control" rows="3" name="detailed_objective" placeholder="Write detailed objective" >{{ old('detailed_objective') }}</textarea>
+                                    <textarea class="form-control border-input" rows="3" name="detailed_objective" placeholder="Write detailed objective" >{{ old('detailed_objective') }}</textarea>
                                 </div>
 
                                 <div class="form-group">
                                     <label for="investment_strategy">Investment Strategy</label>
-                                    <textarea class="form-control" rows="3" name="investment_strategy" placeholder="Write Investment Strategy...">{{ old('investment_strategy') }}</textarea>
+                                    <textarea class="form-control border-input" rows="3" name="investment_strategy" placeholder="Write Investment Strategy...">{{ old('investment_strategy') }}</textarea>
                                 </div>
 
                                 </div>
@@ -75,7 +75,7 @@
                                     @endphp
                                     <div class="form-group">
                                         <label for="recommended_investment_horizon">Recommended Investment Horizon</label>
-                                        <select class="form-control" name="recommended_investment_horizon">
+                                        <select class="form-control border-input" name="recommended_investment_horizon">
                                             <option value="">Select an option</option>
                                             @foreach($rihs as $i_key => $rih)
                                                 <option {{ old('recommended_investment_horizon')==$rih?'selected':'' }}>{{ $rih }}</option>
@@ -89,7 +89,7 @@
 
                                     <div class="form-group">
                                         <label for="risk_profile">Risk Profile</label>
-                                        <select class="form-control" name="risk_profile">
+                                        <select class="form-control border-input" name="risk_profile">
                                             <option value="">Select an option</option>
                                             @foreach($risks as $i_key => $risk)
                                                 <option {{ old('risk_profile')==$risk?'selected':'' }}>{{ $risk }}</option>
@@ -108,7 +108,7 @@
 
                                     <div class="form-group">
                                         <label for="risk_type">Risk Type</label>
-                                        <select class="form-control" name="risk_type">
+                                        <select class="form-control border-input" name="risk_type">
                                             <option value="">Select an option</option>
                                             @foreach($risk_types as $i_key => $risk)
                                                 <option {{ old('risk_type')==$risk?'selected':'' }}>{{ $risk }}</option>
@@ -120,9 +120,9 @@
 
                         </div>
 
-                        <div class="card-footer">
-                            <button type="submit" class="btn btn-sm btn-primary"><i class="fa fa-dot-circle-o"></i> Submit</button>
-                            <button type="reset" class="btn btn-sm btn-danger"><i class="fa fa-ban"></i> Reset</button>
+                        <div class="footer">
+                            <button type="submit" class="btn btn-info btn-fill"><i class="fa fa-dot-circle-o"></i> Submit</button>
+                            <button type="reset" class="btn btn-danger btn-fill"><i class="fa fa-ban"></i> Reset</button>
                         </div>
                     </div>
 

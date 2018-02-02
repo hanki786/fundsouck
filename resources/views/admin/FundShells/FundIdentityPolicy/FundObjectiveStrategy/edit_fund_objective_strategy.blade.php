@@ -33,11 +33,11 @@
                     <div class="col-sm-12">
 
                         <div class="card">
-                            <div class="card-header">
-                                <strong>Edit Fund Objective & Strategy</strong>
-                                <small>Form</small>
+                            <div class="header">
+                                <h4 class="title">Edit Fund Objective & Strategy</h4>
+                                <p class="category">Please fill all the information</p>
                             </div>
-                            <div class="card-body">
+                            <div class="content">
                                 <div class="row">
                                     <div class="col-sm-6">
                                         @if($errors->any())
@@ -55,18 +55,18 @@
 
                                     <div class="form-group">
                                         <label for="short_objective">Short Objective</label>
-                                        <input type="text" class="form-control" name="short_objective" placeholder="Enter short objective"
+                                        <input type="text" class="form-control border-input" name="short_objective" placeholder="Enter short objective"
                                                value={{$fund_objective->short_objective}}>
                                     </div>
 
                                     <div class="form-group">
                                         <label for="detailed_objective">Detailed Objective</label>
-                                        <textarea class="form-control" rows="3" name="detailed_objective" placeholder="Write detailed objective">{{$fund_objective->detailed_objective}}</textarea>
+                                        <textarea class="form-control border-input" rows="3" name="detailed_objective" placeholder="Write detailed objective">{{$fund_objective->detailed_objective}}</textarea>
                                     </div>
 
                                     <div class="form-group">
                                         <label for="investment_strategy">Investment Strategy</label>
-                                        <textarea class="form-control" rows="3" name="investment_strategy" placeholder="Write Investment Strategy...">{{$fund_objective->investment_strategy}}</textarea>
+                                        <textarea class="form-control border-input" rows="3" name="investment_strategy" placeholder="Write Investment Strategy...">{{$fund_objective->investment_strategy}}</textarea>
                                     </div>
 
 
@@ -80,7 +80,7 @@
 
                                         <div class="form-group">
                                             <label for="recommended_investment_horizon">Recommended Investment Horizon</label>
-                                            <select class="form-control" name="recommended_investment_horizon">
+                                            <select class="form-control border-input" name="recommended_investment_horizon">
 
                                                 <option value="">Select an option</option>
                                                 @foreach($rihs as $i_key => $rih)
@@ -97,7 +97,7 @@
 
                                         <div class="form-group">
                                             <label for="risk_profile">Risk Profile</label>
-                                            <select class="form-control" name="risk_profile">
+                                            <select class="form-control border-input" name="risk_profile">
                                                 @foreach($risks as $i_key => $risk)
                                                     <option {{ $fund_objective->risk_profile == $risk?'selected':'' }}>{{ $risk }}</option>
                                                 @endforeach
@@ -114,7 +114,7 @@
 
                                         <div class="form-group">
                                             <label for="risk_type">Risk Type</label>
-                                            <select class="form-control" name="risk_type">
+                                            <select class="form-control border-input" name="risk_type">
                                                 @foreach($risk_types as $i_key => $risk)
                                                     <option {{ $fund_objective->types_of_risk == $risk?'selected':'' }}>{{ $risk }}</option>
                                                 @endforeach
@@ -126,9 +126,9 @@
 
                             </div>
 
-                            <div class="card-footer">
-                                <button type="submit" class="btn btn-sm btn-primary"><i class="fa fa-dot-circle-o"></i> Save</button>
-                                <button type="reset" class="btn btn-sm btn-danger"><i class="fa fa-ban"></i> Cancel</button>
+                            <div class="footer">
+                                <button type="submit" class="btn btn-info btn-fill"><i class="fa fa-dot-circle-o"></i> Save</button>
+                                <button type="reset" class="btn btn-danger btn-fill"><i class="fa fa-ban"></i> Cancel</button>
                             </div>
                         </div>
 

@@ -31,10 +31,10 @@
                     <div class="col-sm-12">
 
                         <div class="card">
-                            <div class="card-header">
-                                <strong>Law and Regulation</strong>
+                            <div class="header">
+                                <h4 class="title">Law and Regulation</h4>
                             </div>
-                            <div class="card-body">
+                            <div class="content">
                                 <div class="row">
                                     <div class="col-md-3"></div>
                                     <div class="col-sm-6">
@@ -75,19 +75,19 @@
 
                                         <div class="form-group">
                                             <label for="giin_number">GIIN Number</label>
-                                            <input type="text" class="form-control" name="giin_number" placeholder="Enter GIIN Number"
+                                            <input type="text" class="form-control border-input" name="giin_number" placeholder="Enter GIIN Number"
                                                    value="{{ $law_regulations->giin_number}}" disabled>
                                         </div>
 
                                         <div class="form-group">
                                             <label for="lei_code">LEI Code</label>
-                                            <input type="text" class="form-control" name="lei_code" placeholder="Enter LEI Code"
+                                            <input type="text" class="form-control border-input" name="lei_code" placeholder="Enter LEI Code"
                                                    value="{{ $law_regulations->lei_code}}" disabled>
                                         </div>
 
                                         <div class="form-group">
                                             <label for="last_update_date">Last Update Date</label>
-                                            <input type="date" class="form-control" name="last_update_date" placeholder="Enter City"
+                                            <input type="date" class="form-control border-input" name="last_update_date" placeholder="Enter City"
                                                    value="{{ $law_regulations->last_update_date}}" disabled>
                                         </div>
 

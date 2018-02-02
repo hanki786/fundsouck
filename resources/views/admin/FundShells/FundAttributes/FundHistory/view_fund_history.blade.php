@@ -30,17 +30,17 @@
                     <div class="col-sm-12">
 
                         <div class="card">
-                            <div class="card-header">
-                                <strong>Fund History</strong>
+                            <div class="header">
+                                <h4 class="title">Fund History</h4>
                             </div>
-                            <div class="card-body">
+                            <div class="content">
                                 <div class="row">
                                     <div class="col-md-3"></div>
                                     <div class="col-sm-6">
 
                                         <div class="form-group">
                                             <label for="liquidation_date">Liquidation Date</label>
-                                            <input type="date" class="form-control" name="liquidation_date" placeholder="dd/mm/yyyy"
+                                            <input type="date" class="form-control border-input" name="liquidation_date" placeholder="dd/mm/yyyy"
                                                    value="{{$fund_history->liquidation_date}}" disabled>
                                         </div>
 
@@ -56,46 +56,46 @@
 
                                             <div class="form-group">
                                                 <label for="successor_code">Successor Code</label>
-                                                    <input  class="form-control" name="successor_code"
+                                                    <input  class="form-control border-input" name="successor_code"
                                                            value="{{$fund_history->successor_code}}" disabled>
 
                                             </div>
 
                                         <div class="form-group">
                                             <label for="succession_date">Succession Date</label>
-                                            <input type="date" class="form-control" name="succession_date" placeholder="dd/mm/yyyy"
+                                            <input type="date" class="form-control border-input" name="succession_date" placeholder="dd/mm/yyyy"
                                                    value="{{$fund_history->succession_date}}" disabled>
                                         </div>
 
                                         <div class="form-group">
                                             <label for="extended_history_date">Extended History Date</label>
-                                            <input type="date" class="form-control" name="extended_history_date" placeholder="dd/mm/yyyy" value="{{$fund_history->extended_history_date}}" disabled>
+                                            <input type="date" class="form-control border-input" name="extended_history_date" placeholder="dd/mm/yyyy" value="{{$fund_history->extended_history_date}}" disabled>
                                         </div>
 
                                         <div class="form-group">
                                             <label for="available_history_date">Available History Date</label>
-                                            <input type="date" class="form-control" name="available_history_date" placeholder="dd/mm/yyyy" value="{{$fund_history->available_history_date}}" disabled>
+                                            <input type="date" class="form-control border-input" name="available_history_date" placeholder="dd/mm/yyyy" value="{{$fund_history->available_history_date}}" disabled>
                                         </div>
 
                                         <div class="form-group">
                                             <label for="primary_share_class_name">Primary Share Class Name</label>
-                                            <input type="text" class="form-control" name="primary_share_class_name" placeholder="Enter Primary Share Class Name" value="{{$fund_history->primary_share_class_name}}" disabled>
+                                            <input type="text" class="form-control border-input" name="primary_share_class_name" placeholder="Enter Primary Share Class Name" value="{{$fund_history->primary_share_class_name}}" disabled>
                                         </div>
 
                                             <div class="form-group">
                                                 <label for="primary_share_class_code">Primary Share Class Code</label>
-                                                <input type="text" class="form-control" name="primary_share_class_code" placeholder="Enter Primary Share Class Code" value="{{$fund_history->primary_share_class_code}}" disabled>
+                                                <input type="text" class="form-control border-input" name="primary_share_class_code" placeholder="Enter Primary Share Class Code" value="{{$fund_history->primary_share_class_code}}" disabled>
                                             </div>
 
                                         <div class="form-group">
                                             <label for="portfolio_name">Portfolio Name</label>
-                                            <input type="text" class="form-control" name="portfolio_name" placeholder="Enter Portfolio Name" value="{{$fund_history->portfolio_name}}" disabled>
+                                            <input type="text" class="form-control border-input" name="portfolio_name" placeholder="Enter Portfolio Name" value="{{$fund_history->portfolio_name}}" disabled>
                                         </div>
 
 
                                             <div class="form-group">
                                                 <label for="portfolio_code">Portfolio Code</label>
-                                                <input type="text" class="form-control" name="portfolio_code" placeholder="Enter Portfolio Code" value="{{$fund_history->portfolio_code}}" disabled>
+                                                <input type="text" class="form-control border-input" name="portfolio_code" placeholder="Enter Portfolio Code" value="{{$fund_history->portfolio_code}}" disabled>
                                             </div>
 
 

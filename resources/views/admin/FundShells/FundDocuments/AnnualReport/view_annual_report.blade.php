@@ -30,29 +30,29 @@
                     <div class="col-sm-12">
 
                         <div class="card">
-                            <div class="card-header">
-                                <strong>Annual Report </strong>
+                            <div class="header">
+                                <h4 class="title">Annual Report </h4>
                             </div>
-                            <div class="card-body">
+                            <div class="content">
                                 <div class="row">
                                     <div class="col-sm-6">
 
                                         <div class="form-group">
                                             <label for="financial_statement">Financial Statement</label>
                                             <input type="text" value="{{ $annual_report->financial_statement }}"
-                                                   class="form-control" name="financial_statement"  disabled>
+                                                   class="form-control border-input" name="financial_statement"  disabled>
                                         </div>
 
                                         <div class="form-group">
                                             <label for="financial_statement_year">Financial Statement Year</label>
                                             <input type="number" value="{{ $annual_report->financial_statement_year }}"
-                                                   class="form-control" name="financial_statement_year" placeholder="2002" disabled>
+                                                   class="form-control border-input" name="financial_statement_year" placeholder="2002" disabled>
                                         </div>
 
                                         <div class="form-group">
                                             <label for="financial_statement_date">Financial Statement Date</label>
                                             <input type="date" value="{{ $annual_report->financial_statement_date }}"
-                                                   class="form-control" name="financial_statement_date" disabled>
+                                                   class="form-control border-input" name="financial_statement_date" disabled>
                                         </div>
 
                                     </div>

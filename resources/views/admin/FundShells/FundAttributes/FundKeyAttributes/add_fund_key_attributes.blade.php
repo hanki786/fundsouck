@@ -30,11 +30,11 @@
                     <div class="col-sm-12">
 
                         <div class="card">
-                            <div class="card-header">
-                                <strong>Add Fund Key Attributes</strong>
-                                <small>Form</small>
+                            <div class="header">
+                                <h4 class="title">Add Fund Key Attributes</h4>
+                                <p class="category">Please fill all the information</p>
                             </div>
-                            <div class="card-body">
+                            <div class="content">
                                 <div class="row">
                                     <div class="col-sm-6">
                                         @if($errors->any())
@@ -61,7 +61,7 @@
                                     <div class="form-group">
                                         <label for="inception_date">Inception Date</label>
                                         <input type="date" value="{{ old('inception_date') }}"
-                                               class="form-control" name="inception_date" placeholder="dd/mm/yyyy">
+                                               class="form-control border-input" name="inception_date" placeholder="dd/mm/yyyy">
                                     </div>
 
                                             @php
@@ -70,7 +70,7 @@
 
                                     <div class="form-group">
                                         <label for="inception_price_type">Inception Price Type</label>
-                                        <select class="form-control" name="inception_price_type">
+                                        <select class="form-control border-input" name="inception_price_type">
                                             <option value="">Select an option</option>
                                             @foreach($price as $i_key => $risk)
                                                 <option {{ old('inception_price_type')==$risk?'selected':'' }}>{{ $risk }}</option>
@@ -81,13 +81,13 @@
                                     <div class="form-group">
                                         <label for="inception_price">Inception Price</label>
                                         <input type="text" value="{{ old('inception_price') }}"
-                                               class="form-control" name="inception_price" placeholder="100.15">
+                                               class="form-control border-input" name="inception_price" placeholder="100.15">
                                     </div>
 
                                     <div class="form-group">
                                         <label for="re_launch_date">Re-Launch Date</label>
                                         <input type="date" value="{{ old('re_launch_date') }}"
-                                               class="form-control" name="re_launch_date" placeholder="dd/mm/yyyy">
+                                               class="form-control border-input" name="re_launch_date" placeholder="dd/mm/yyyy">
                                     </div>
 
 
@@ -96,40 +96,40 @@
                                         <div class="form-group">
                                             <label for="re_launch_price">Re-Launch Price</label>
                                             <input type="text" value="{{ old('re_launch_price') }}"
-                                                   class="form-control" name="re_launch_price" placeholder="100.15">
+                                                   class="form-control border-input" name="re_launch_price" placeholder="100.15">
                                         </div>
 
                                         <div class="form-group">
                                             <label for="maturity_date">Maturity Date</label>
                                             <input type="date" value="{{ old('maturity_date') }}"
-                                                   class="form-control" name="maturity_date" placeholder="dd/mm/yyyy">
+                                                   class="form-control border-input" name="maturity_date" placeholder="dd/mm/yyyy">
                                         </div>
 
                                         <div class="form-group">
                                             <label for="fy_start_date">FY Start Date</label>
                                             <input type="date" value="{{ old('fy_start_date') }}"
-                                                   class="form-control" name="fy_start_date" placeholder="dd/mm/yyyy">
+                                                   class="form-control border-input" name="fy_start_date" placeholder="dd/mm/yyyy">
                                         </div>
 
                                         <div class="form-group">
                                             <label for="fy_end_date">FY End Date</label>
                                             <input type="date" value="{{ old('fy_end_date') }}"
-                                                   class="form-control" name="fy_end_date" placeholder="dd/mm/yyyy">
+                                                   class="form-control border-input" name="fy_end_date" placeholder="dd/mm/yyyy">
                                         </div>
 
                                         <div class="form-group">
                                             <label for="guarantee">Guarantee (%)</label>
                                             <input type="number" value="{{ old('guarantee') }}"
-                                                   class="form-control" name="guarantee" placeholder="0%">
+                                                   class="form-control border-input" name="guarantee" placeholder="0%">
                                         </div>
                                     </div>
                                 </div>
 
                             </div>
 
-                            <div class="card-footer">
-                                <button type="submit" class="btn btn-sm btn-primary"><i class="fa fa-dot-circle-o"></i> Submit</button>
-                                <button type="reset" class="btn btn-sm btn-danger"><i class="fa fa-ban"></i> Reset</button>
+                            <div class="footer">
+                                <button type="submit" class="btn btn-info btn-fill"><i class="fa fa-dot-circle-o"></i> Submit</button>
+                                <button type="reset" class="btn btn-danger btn-fill"><i class="fa fa-ban"></i> Reset</button>
                             </div>
                         </div>
 

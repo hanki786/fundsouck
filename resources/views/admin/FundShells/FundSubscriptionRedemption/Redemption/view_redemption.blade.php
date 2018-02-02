@@ -31,10 +31,10 @@
                     <div class="col-sm-12">
 
                         <div class="card">
-                            <div class="card-header">
-                                <strong>View Redemption</strong>
+                            <div class="header">
+                                <h4 class="title">View Redemption</h4>
                             </div>
-                            <div class="card-body">
+                            <div class="content">
                                 <div class="row">
                                     <div class="col-md-3"></div>
                                     <div class="col-sm-6">
@@ -42,7 +42,7 @@
                                         <div class="form-group">
                                             <label for="minimum">Minimum</label>
                                             <input type="number" value="{{ $redemption->minimum}}"
-                                                   class="form-control" name="minimum" placeholder="Enter Minimum " disabled>
+                                                   class="form-control border-input" name="minimum" placeholder="Enter Minimum " disabled>
                                         </div>
 
                                         @php
@@ -64,7 +64,7 @@
                                         <div class="form-group">
                                             <label for="payment_period">Payment Period</label>
                                             <input type="text" value="{{ $redemption->payment_period}}"
-                                                   class="form-control" name="payment_period"
+                                                   class="form-control border-input" name="payment_period"
                                                    placeholder="Enter Payment Period" disabled>
                                         </div>
 
@@ -92,7 +92,7 @@
 
                                         <div class="form-group">
                                             <label for="last_update_date">Last Update Date</label>
-                                            <input type="date" value="{{ $redemption->last_update_date}}" class="form-control"
+                                            <input type="date" value="{{ $redemption->last_update_date}}" class="form-control border-input"
                                                    name="last_update_date" disabled>
                                         </div>
 

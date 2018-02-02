@@ -30,11 +30,11 @@
                     <div class="col-sm-12">
 
                         <div class="card">
-                            <div class="card-header">
-                                <strong>Add Subscription</strong>
-                                <small>Form</small>
+                            <div class="header">
+                                <h4 class="title">Add Subscription</h4>
+                                <p class="category">Please fill all the information</p>
                             </div>
-                            <div class="card-body">
+                            <div class="content">
                                 <div class="row">
                                     <div class="col-md-3"></div>
                                     <div class="col-sm-6">
@@ -48,17 +48,17 @@
 
                                     <div class="form-group">
                                         <label for="minimum_initial">Minimum Initial</label>
-                                        <input type="number" class="form-control" name="minimum_initial" placeholder="Enter Minimum Initial">
+                                        <input type="number" class="form-control border-input" name="minimum_initial" placeholder="Enter Minimum Initial">
                                     </div>
 
                                     <div class="form-group">
                                         <label for="additional">Additional</label>
-                                        <input type="number" class="form-control" name="additional" placeholder="Enter Additional">
+                                        <input type="number" class="form-control border-input" name="additional" placeholder="Enter Additional">
                                     </div>
 
                                     <div class="form-group">
                                         <label for="minimum_balance">Minimum Balance</label>
-                                        <input type="number" class="form-control" name="minimum_balance" placeholder="Enter Minimum Balance">
+                                        <input type="number" class="form-control border-input" name="minimum_balance" placeholder="Enter Minimum Balance">
                                     </div>
 
                                     <div class="form-group">
@@ -100,9 +100,9 @@
 
                             </div>
 
-                            <div class="card-footer">
-                                <button type="submit" class="btn btn-sm btn-primary"><i class="fa fa-dot-circle-o"></i> Submit</button>
-                                <button type="reset" class="btn btn-sm btn-danger"><i class="fa fa-ban"></i> Reset</button>
+                            <div class="footer">
+                                <button type="submit" class="btn btn-info btn-fill"><i class="fa fa-dot-circle-o"></i> Submit</button>
+                                <button type="reset" class="btn btn-danger btn-fill"><i class="fa fa-ban"></i> Reset</button>
                             </div>
                         </div>
 

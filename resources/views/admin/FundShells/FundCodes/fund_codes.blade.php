@@ -27,10 +27,10 @@
                 <div class="row">
                     <div class="col-lg-12">
                         <div class="card">
-                            <div class="card-header">
+                            <div class="header">
                                 <i class="fa fa-align-justify"></i> Fund Codes Table
                             </div>
-                            <div class="card-body table-responsive">
+                            <div class="content table-responsive">
                                 <table class="table table-bordered table-striped table-sm">
                                     <thead>
                                     <tr>

@@ -30,29 +30,29 @@
                     <div class="col-sm-12">
 
                         <div class="card">
-                            <div class="card-header">
-                                <strong>Semi Annual Report </strong>
+                            <div class="header">
+                                <h4 class="title">Semi Annual Report </h4>
                             </div>
-                            <div class="card-body">
+                            <div class="content">
                                 <div class="row">
                                     <div class="col-sm-6">
 
                                         <div class="form-group">
                                             <label for="semi_annual_report">Semi Annual Report</label>
                                             <input type="text" value="{{ $semi_annual_report->semi_annual_report  }}"
-                                                   class="form-control" name="semi_annual_report" disabled >
+                                                   class="form-control border-input" name="semi_annual_report" disabled >
                                         </div>
 
                                         <div class="form-group">
                                             <label for="semi_annual_report_year">Semi Annual Report Year</label>
                                             <input type="number" value="{{ $semi_annual_report->semi_annual_report_year  }}"
-                                                   class="form-control" name="semi_annual_report_year" placeholder="2002" disabled>
+                                                   class="form-control border-input" name="semi_annual_report_year" placeholder="2002" disabled>
                                         </div>
 
                                         <div class="form-group">
                                             <label for="semi_annual_report_date">Semi Annual Report Date</label>
                                             <input type="date" value="{{ $semi_annual_report->semi_annual_report_date  }}"
-                                                   class="form-control" name="semi_annual_report_date" disabled>
+                                                   class="form-control border-input" name="semi_annual_report_date" disabled>
                                         </div>
 
                                     </div>

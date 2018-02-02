@@ -31,10 +31,10 @@
                     <div class="col-sm-12">
 
                         <div class="card">
-                            <div class="card-header">
-                                <strong>Index Time Series</strong>
+                            <div class="header">
+                                <h4 class="title">Index Time Series</h4>
                             </div>
-                            <div class="card-body">
+                            <div class="content">
                                 <div class="row">
                                     <div class="col-md-3">
                                     </div>
@@ -42,23 +42,23 @@
 
                                         <div class="form-group">
                                             <label for="index_price">Index Price</label>
-                                            <input type="text" disabled value="{{ $index_time_series->index_price}}" class="form-control" name="index_price" placeholder="Enter Index Price ">
+                                            <input type="text" disabled value="{{ $index_time_series->index_price}}" class="form-control border-input" name="index_price" placeholder="Enter Index Price ">
                                         </div>
 
 
                                         <div class="form-group">
                                             <label for="index_price_date">Index Price Date</label>
-                                            <input type="date" disabled value="{{ $index_time_series->index_price_date }}" class="form-control" name="index_price_date">
+                                            <input type="date" disabled value="{{ $index_time_series->index_price_date }}" class="form-control border-input" name="index_price_date">
                                         </div>
 
                                         <div class="form-group">
                                             <label for="index_net_return">Index Net Return</label>
-                                            <input type="text" disabled value="{{ $index_time_series->index_net_return }}" class="form-control" name="index_net_return" placeholder="Enter Index Net Return">
+                                            <input type="text" disabled value="{{ $index_time_series->index_net_return }}" class="form-control border-input" name="index_net_return" placeholder="Enter Index Net Return">
                                         </div>
 
                                         <div class="form-group">
                                             <label for="index_gross_return">Index Gross Return</label>
-                                            <input type="text" disabled value="{{ $index_time_series->index_gross_return }}" class="form-control" name="index_gross_return" placeholder="Enter Index Gross Return">
+                                            <input type="text" disabled value="{{ $index_time_series->index_gross_return }}" class="form-control border-input" name="index_gross_return" placeholder="Enter Index Gross Return">
                                         </div>
 
 

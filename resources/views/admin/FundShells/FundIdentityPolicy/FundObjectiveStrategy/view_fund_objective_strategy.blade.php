@@ -32,10 +32,10 @@
                     <div class="col-sm-12">
 
                         <div class="card">
-                            <div class="card-header">
-                                <strong>Fund Objective & Strategy</strong>
+                            <div class="header">
+                                <h4 class="title">Fund Objective & Strategy</h4>
                             </div>
-                            <div class="card-body">
+                            <div class="content">
                                 <div class="row">
                                     <div class="col-md-3"></div>
                                     <div class="col-sm-6">
@@ -43,23 +43,23 @@
 
                                         <div class="form-group">
                                             <label for="short_objective">Short Objective</label>
-                                            <input type="text" class="form-control" name="short_objective" placeholder="Enter short objective"
+                                            <input type="text" class="form-control border-input" name="short_objective" placeholder="Enter short objective"
                                                    value="{{$fund_objective->short_objective}}" disabled>
                                         </div>
 
                                         <div class="form-group">
                                             <label for="detailed_objective">Detailed Objective</label>
-                                            <textarea class="form-control" rows="3" name="detailed_objective" placeholder="Write detailed objective" disabled>{{$fund_objective->detailed_objective}}</textarea>
+                                            <textarea class="form-control border-input" rows="3" name="detailed_objective" placeholder="Write detailed objective" disabled>{{$fund_objective->detailed_objective}}</textarea>
                                         </div>
 
                                         <div class="form-group">
                                             <label for="investment_strategy">Investment Strategy</label>
-                                            <textarea class="form-control" rows="3" name="investment_strategy" placeholder="Write Investment Strategy..." disabled>{{$fund_objective->investment_strategy}}</textarea>
+                                            <textarea class="form-control border-input" rows="3" name="investment_strategy" placeholder="Write Investment Strategy..." disabled>{{$fund_objective->investment_strategy}}</textarea>
                                         </div>
 
                                         <div class="form-group">
                                             <label for="recommended_investment_horizon">Recommended Investment Horizon</label>
-                                            <select class="form-control" name="recommended_investment_horizon" disabled>
+                                            <select class="form-control border-input" name="recommended_investment_horizon" disabled>
                                                 <option {{ $fund_objective->recommended_investment_horizon == "1 Month"?'selected':'' }}>1 Month</option>
                                                 <option {{ $fund_objective->recommended_investment_horizon == "3 Months"?'selected':'' }}>3 Months</option>
                                                 <option {{ $fund_objective->recommended_investment_horizon == "6 Months"?'selected':'' }}>6 Months</option>
@@ -81,7 +81,7 @@
 
                                         <div class="form-group">
                                             <label for="risk_profile">Risk Profile</label>
-                                            <select class="form-control" name="risk_profile" disabled>
+                                            <select class="form-control border-input" name="risk_profile" disabled>
                                                 <option {{ $fund_objective->risk_profile == "Low"?'selected':'' }}>Low</option>
                                                 <option {{ $fund_objective->risk_profile == "Low to Medium"?'selected':'' }}>Low to Medium</option>
                                                 <option {{ $fund_objective->risk_profile == "Medium"?'selected':'' }}>Medium</option>
@@ -92,7 +92,7 @@
 
                                         <div class="form-group">
                                             <label for="risk_type">Risk Type</label>
-                                            <select class="form-control" name="risk_type" disabled>
+                                            <select class="form-control border-input" name="risk_type" disabled>
                                                 <option {{ $fund_objective->types_of_risk == "Interest Rate Risk"?'selected':'' }}>Interest Rate Risk</option>
                                                 <option {{ $fund_objective->types_of_risk == "Business Risk"?'selected':'' }}>Business Risk</option>
                                                 <option {{ $fund_objective->types_of_risk == "Credit Risk"?'selected':'' }}>Credit Risk</option>

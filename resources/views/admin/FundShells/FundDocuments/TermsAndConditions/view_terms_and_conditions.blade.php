@@ -30,22 +30,22 @@
                     <div class="col-sm-12">
 
                         <div class="card">
-                            <div class="card-header">
-                                <strong>Term and Condition </strong>
+                            <div class="header">
+                                <h4 class="title">Term and Condition </h4>
                             </div>
-                            <div class="card-body">
+                            <div class="content">
                                 <div class="row">
                                     <div class="col-sm-6">
                                         <div class="form-group">
                                             <label for="propsectus">Propsectus</label>
                                             <input type="text" value="{{ $terms_and_conditions->propsectus }}"
-                                                   class="form-control" name="propsectus"  disabled>
+                                                   class="form-control border-input" name="propsectus"  disabled>
                                         </div>
 
                                         <div class="form-group">
                                             <label for="prospectus_date">Prospectus Date</label>
                                             <input type="date" value="{{ $terms_and_conditions->prospectus_date }}"
-                                                   class="form-control" name="prospectus_date"  disabled>
+                                                   class="form-control border-input" name="prospectus_date"  disabled>
                                         </div>
 
 

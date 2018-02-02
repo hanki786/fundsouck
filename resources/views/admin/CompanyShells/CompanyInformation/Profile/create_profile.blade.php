@@ -31,11 +31,11 @@
                     <div class="col-sm-12">
 
                         <div class="card">
-                            <div class="card-header">
-                                <strong>Create Profile</strong>
-                                <small>Form</small>
+                            <div class="header">
+                                <h4 class="title">Create Profile</h4>
+                                <p class="category">Please fill all the information</p>
                             </div>
-                            <div class="card-body">
+                            <div class="content">
                                 <div class="row">
                                     <div class="col-sm-6">
                                         @if($errors->any())
@@ -47,7 +47,7 @@
                                         @endif
                                         <div class="form-group">
                                             <label for="name">Fund Identity</label>
-                                            <select type="text" class="form-control" id="fund_identity_id" name="fund_identity_id">
+                                            <select type="text" class="form-control border-input" id="fund_identity_id" name="fund_identity_id">
                                                 <option value="">Select an option</option>
                                                 @foreach($fund_identities as $fund_identity)
                                                     <option value="{{ $fund_identity->id }}">{{ $fund_identity->fund_name }}</option>
@@ -56,18 +56,18 @@
                                         </div>
                                         <div class="form-group">
                                             <label for="legal_name">Legal Name</label>
-                                            <input type="text" value="{{ old('legal_name') }}" class="form-control" name="legal_name" placeholder="Enter Legal Name ">
+                                            <input type="text" value="{{ old('legal_name') }}" class="form-control border-input" name="legal_name" placeholder="Enter Legal Name ">
                                         </div>
 
 
                                         <div class="form-group">
                                             <label for="common_name">Common Name</label>
-                                            <input type="text" value="{{ old('common_name') }}" class="form-control" name="common_name" placeholder="Enter Common Name">
+                                            <input type="text" value="{{ old('common_name') }}" class="form-control border-input" name="common_name" placeholder="Enter Common Name">
                                         </div>
 
                                         <div class="form-group">
                                             <label for="commercial_registration_number">Commercial Registration Number</label>
-                                            <input type="text" value="{{ old('commercial_registration_number') }}" class="form-control" name="commercial_registration_number" placeholder="Enter 	Commercial Registration Number">
+                                            <input type="text" value="{{ old('commercial_registration_number') }}" class="form-control border-input" name="commercial_registration_number" placeholder="Enter 	Commercial Registration Number">
                                         </div>
 
                                             @php
@@ -87,13 +87,13 @@
 
                                         <div class="form-group">
                                             <label for="chairman">Chairman</label>
-                                            <input type="text" value="{{ old('chairman') }}" class="form-control" name="chairman" placeholder="Enter Chairman Name ">
+                                            <input type="text" value="{{ old('chairman') }}" class="form-control border-input" name="chairman" placeholder="Enter Chairman Name ">
                                         </div>
 
 
                                         <div class="form-group">
                                             <label for="ceo">CEO</label>
-                                            <input type="text" value="{{ old('ceo') }}" class="form-control" name="ceo" placeholder="Enter CEO Name">
+                                            <input type="text" value="{{ old('ceo') }}" class="form-control border-input" name="ceo" placeholder="Enter CEO Name">
                                         </div>
 
                                     </div>
@@ -102,23 +102,23 @@
 
                                         <div class="form-group">
                                             <label for="register_number">Register Number</label>
-                                            <input type="text" value="{{ old('register_number') }}" class="form-control" name="register_number" placeholder="Enter 	Register Number">
+                                            <input type="text" value="{{ old('register_number') }}" class="form-control border-input" name="register_number" placeholder="Enter 	Register Number">
                                         </div>
 
 
                                         <div class="form-group">
                                             <label for="regulator_authorization_number">Regulator Authorization Number</label>
-                                            <input type="text" value="{{ old('regulator_authorization_number') }}" class="form-control" name="regulator_authorization_number" placeholder="Enter Regulator Authorization Number">
+                                            <input type="text" value="{{ old('regulator_authorization_number') }}" class="form-control border-input" name="regulator_authorization_number" placeholder="Enter Regulator Authorization Number">
                                         </div>
 
                                         <div class="form-group">
                                             <label for="authorization_date">Authorization Date</label>
-                                            <input type="date" value="{{ old('authorization_date') }}" class="form-control" name="authorization_date">
+                                            <input type="date" value="{{ old('authorization_date') }}" class="form-control border-input" name="authorization_date">
                                         </div>
 
                                         <div class="form-group">
                                             <label for="share_capital">Share Capital</label>
-                                            <input type="text" value="{{ old('share_capital') }}" class="form-control" name="share_capital" placeholder="Enter Share Capital">
+                                            <input type="text" value="{{ old('share_capital') }}" class="form-control border-input" name="share_capital" placeholder="Enter Share Capital">
                                         </div>
 
                                         <div class="form-group">
@@ -138,9 +138,9 @@
                                 </div>
                             </div>
 
-                            <div class="card-footer">
-                                <button type="submit" class="btn btn-sm btn-primary"><i class="fa fa-dot-circle-o"></i> Submit</button>
-                                <button type="reset" class="btn btn-sm btn-danger"><i class="fa fa-ban"></i> Reset</button>
+                            <div class="footer">
+                                <button type="submit" class="btn btn-info btn-fill"><i class="fa fa-dot-circle-o"></i> Submit</button>
+                                <button type="reset" class="btn btn-danger btn-fill"><i class="fa fa-ban"></i> Reset</button>
                             </div>
                         </div>
 

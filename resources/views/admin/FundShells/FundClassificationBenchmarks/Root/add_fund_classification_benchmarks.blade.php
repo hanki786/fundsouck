@@ -26,11 +26,11 @@
                 <div class="row">
                     <div class="col-md-12">
                         <div class="card">
-                            <div class="card-header">
-                                <strong>Fund Classification & Benchmarks</strong>
-                                <small>Form</small>
+                            <div class="header">
+                                <h4 class="title">Fund Classification & Benchmarks</h4>
+                                <p class="category">Please fill all the information</p>
                             </div>
-                            <div class="card-body">
+                            <div class="content">
                                 <div class="row">
                                     <div class="col-md-12">
                                         @if($errors->any())
@@ -45,7 +45,7 @@
                                     
                                         <div class="form-group">
                                             <label for="name">Fund Benchmarks</label>
-                                            <select type="text" class="form-control" id="fund_benchmark_id" name="fund_benchmark_id">
+                                            <select type="text" class="form-control border-input" id="fund_benchmark_id" name="fund_benchmark_id">
                                                 <option value="">Select an option</option>
                                                 @foreach($fund_benchmarks as $row)
                                                     <option value="{{ $row->id }}">{{ $row->fund_manager_benchmark }}</option>
@@ -58,7 +58,7 @@
                                         
                                     <div class="form-group">
                                             <label for="name">Fund Classification</label>
-                                            <select type="text" class="form-control" id="fund_classification_id" name="fund_classification_id">
+                                            <select type="text" class="form-control border-input" id="fund_classification_id" name="fund_classification_id">
                                                 <option value="">Select an option</option>
                                                 @foreach($fund_classifications as $row)
                                                     <option value="{{ $row->id }}">{{ $row->fund_souk_classification }}</option>
@@ -70,11 +70,11 @@
                                 </div>
                             </div>
 
-                            <div class="card-footer">
-                                <button type="submit" class="btn btn-primary"><i class="fa fa-save"></i>
+                            <div class="footer">
+                                <button type="submit" class="btn btn-info btn-fill"><i class="fa fa-save"></i>
                                     Save
                                 </button>
-                                <button type="reset" class="btn btn-danger"><i class="fa fa-ban"></i> Reset
+                                <button type="reset" class="btn btn-danger btn-fill"><i class="fa fa-ban"></i> Reset
                                 </button>
                             </div>
                         </div>

@@ -32,11 +32,11 @@
                     <div class="col-sm-12">
 
                         <div class="card">
-                            <div class="card-header">
-                                <strong>Edit Fund Asset Attributes</strong>
-                                <small>Form</small>
+                            <div class="header">
+                                <h4 class="title">Edit Fund Asset Attributes</h4>
+                                <p class="category">Please fill all the information</p>
                             </div>
-                            <div class="card-body">
+                            <div class="content">
                                 <div class="row">
 
                                     <div class="col-sm-6">

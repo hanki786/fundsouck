@@ -31,11 +31,11 @@
                     <div class="col-sm-12">
 
                         <div class="card">
-                            <div class="card-header">
-                                <strong>Add Index Time Series</strong>
-                                <small>Form</small>
+                            <div class="header">
+                                <h4 class="title">Add Index Time Series</h4>
+                                <p class="category">Please fill all the information</p>
                             </div>
-                            <div class="card-body">
+                            <div class="content">
                                 <div class="row">
                                     <div class="col-md-3">
                                     </div>
@@ -50,23 +50,23 @@
 
                                         <div class="form-group">
                                             <label for="index_price">Index Price</label>
-                                            <input type="text" value="{{ old('index_price') }}" class="form-control" name="index_price" placeholder="Enter Index Price ">
+                                            <input type="text" value="{{ old('index_price') }}" class="form-control border-input" name="index_price" placeholder="Enter Index Price ">
                                         </div>
 
 
                                         <div class="form-group">
                                             <label for="index_price_date">Index Price Date</label>
-                                            <input type="date" value="{{ old('index_price_date') }}" class="form-control" name="index_price_date">
+                                            <input type="date" value="{{ old('index_price_date') }}" class="form-control border-input" name="index_price_date">
                                         </div>
 
                                         <div class="form-group">
                                             <label for="index_net_return">Index Net Return</label>
-                                            <input type="text" value="{{ old('index_net_return') }}" class="form-control" name="index_net_return" placeholder="Enter Index Net Return">
+                                            <input type="text" value="{{ old('index_net_return') }}" class="form-control border-input" name="index_net_return" placeholder="Enter Index Net Return">
                                         </div>
 
                                         <div class="form-group">
                                             <label for="index_gross_return">Index Gross Return</label>
-                                            <input type="text" value="{{ old('index_gross_return') }}" class="form-control" name="index_gross_return" placeholder="Enter Index Gross Return">
+                                            <input type="text" value="{{ old('index_gross_return') }}" class="form-control border-input" name="index_gross_return" placeholder="Enter Index Gross Return">
                                         </div>
 
 
@@ -77,9 +77,9 @@
                                 </div>
                             </div>
 
-                            <div class="card-footer">
-                                <button type="submit" class="btn btn-sm btn-primary"><i class="fa fa-dot-circle-o"></i> Submit</button>
-                                <button type="reset" class="btn btn-sm btn-danger"><i class="fa fa-ban"></i> Reset</button>
+                            <div class="footer">
+                                <button type="submit" class="btn btn-info btn-fill"><i class="fa fa-dot-circle-o"></i> Submit</button>
+                                <button type="reset" class="btn btn-danger btn-fill"><i class="fa fa-ban"></i> Reset</button>
                             </div>
                         </div>
 

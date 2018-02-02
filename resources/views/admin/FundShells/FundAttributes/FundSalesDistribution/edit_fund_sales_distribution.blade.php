@@ -31,11 +31,11 @@
                     <div class="col-sm-12">
 
                         <div class="card">
-                            <div class="card-header">
-                                <strong>Edit Fund Sales & Distribution</strong>
-                                <small>Form</small>
+                            <div class="header">
+                                <h4 class="title">Edit Fund Sales & Distribution</h4>
+                                <p class="category">Please fill all the information</p>
                             </div>
-                            <div class="card-body">
+                            <div class="content">
                                 <div class="row">
                                     <div class="col-md-3"></div>
                                     <div class="col-sm-6">
@@ -68,12 +68,12 @@
 
                                     <div class="form-group">
                                         <label for="registration_date">Registration Date</label>
-                                        <input type="date" class="form-control" name="registration_date" placeholder="dd/mm/yyyy" value="{{ $fund_sales_distribution->registration_date}}">
+                                        <input type="date" class="form-control border-input" name="registration_date" placeholder="dd/mm/yyyy" value="{{ $fund_sales_distribution->registration_date}}">
                                     </div>
 
                                     <div class="form-group">
                                         <label for="de_registration_date">De-Registration Date</label>
-                                        <input type="date" class="form-control" name="de_registration_date" placeholder="dd/mm/yyyy" value="{{ $fund_sales_distribution->de_registration_date}}">
+                                        <input type="date" class="form-control border-input" name="de_registration_date" placeholder="dd/mm/yyyy" value="{{ $fund_sales_distribution->de_registration_date}}">
                                     </div>
 
                                     </div>
@@ -82,9 +82,9 @@
 
                             </div>
 
-                            <div class="card-footer">
-                                <button type="submit" class="btn btn-sm btn-primary"><i class="fa fa-dot-circle-o"></i> Save</button>
-                                <button type="reset" class="btn btn-sm btn-danger"><i class="fa fa-ban"></i> Reset</button>
+                            <div class="footer">
+                                <button type="submit" class="btn btn-info btn-fill"><i class="fa fa-dot-circle-o"></i> Save</button>
+                                <button type="reset" class="btn btn-danger btn-fill"><i class="fa fa-ban"></i> Reset</button>
                             </div>
                         </div>
 

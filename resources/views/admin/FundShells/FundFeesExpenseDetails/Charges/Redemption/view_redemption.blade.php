@@ -32,10 +32,10 @@
                     <div class="col-sm-12">
 
                         <div class="card">
-                            <div class="card-header">
-                                <strong>Redemption</strong>
+                            <div class="header">
+                                <h4 class="title">Redemption</h4>
                             </div>
-                            <div class="card-body">
+                            <div class="content">
                                 <div class="row">
 
                                     <div class="col-sm-6">
@@ -50,26 +50,26 @@
                                         <div class="form-group">
                                             <label for="actual">Actual</label>
                                             <input type="text" value="{{ $redemption->actual }}"  disabled
-                                                   class="form-control" name="actual" placeholder="Enter Actual ">
+                                                   class="form-control border-input" name="actual" placeholder="Enter Actual ">
                                         </div>
 
 
                                         <div class="form-group">
                                             <label for="min">Minimum</label>
                                             <input type="text" value="{{ $redemption->min }}"   disabled
-                                                   class="form-control" name="min" placeholder="Enter Minimum">
+                                                   class="form-control border-input" name="min" placeholder="Enter Minimum">
                                         </div>
 
                                         <div class="form-group">
                                             <label for="max">Maximum</label>
                                             <input type="text" value="{{ $redemption->max }}"   disabled
-                                                   class="form-control" name="max" placeholder="Enter Maximum">
+                                                   class="form-control border-input" name="max" placeholder="Enter Maximum">
                                         </div>
 
                                         <div class="form-group">
                                             <label for="amount">Amount</label>
                                             <input type="number" value="{{ $redemption->amount }}"   disabled
-                                                   class="form-control" name="amount" placeholder="Enter Amount">
+                                                   class="form-control border-input" name="amount" placeholder="Enter Amount">
                                         </div>
 
                                     </div>
@@ -78,7 +78,7 @@
                                         <div class="form-group">
                                             <label for="payment_deadline">Payment Deadline</label>
                                             <input type="date" value="{{ $redemption->payment_deadline }}"  disabled
-                                                   class="form-control" name="payment_deadline"
+                                                   class="form-control border-input" name="payment_deadline"
                                                    placeholder="Enter Payment Deadline">
                                         </div>
 
@@ -98,7 +98,7 @@
                                         <div class="form-group">
                                             <label for="early_redemption_fees">Early Redemption Fees</label>
                                             <input type="number" value="{{ $redemption->early_redemption_fees }}"  disabled
-                                                   class="form-control" name="early_redemption_fees" placeholder="Enter Early Redemption Fees">
+                                                   class="form-control border-input" name="early_redemption_fees" placeholder="Enter Early Redemption Fees">
                                         </div>
 
                                     </div>

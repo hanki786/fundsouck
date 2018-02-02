@@ -31,11 +31,11 @@
                     <div class="col-sm-12">
 
                         <div class="card">
-                            <div class="card-header">
-                                <strong>Add Fund Performance</strong>
-                                <small>Form</small>
+                            <div class="header">
+                                <h4 class="title">Add Fund Performance</h4>
+                                <p class="category">Please fill all the information</p>
                             </div>
-                            <div class="card-body">
+                            <div class="content">
                                 <div class="row">
                                     <div class="col-sm-6">
                                         @if($errors->any())
@@ -49,32 +49,32 @@
                                         <div class="form-group">
                                             <label for="annual_compound_return">Annual Compound Return</label>
                                             <input type="text" value="{{ old('annual_compound_return') }}"
-                                                   class="form-control" name="annual_compound_return"  placeholder="0.48">
+                                                   class="form-control border-input" name="annual_compound_return"  placeholder="0.48">
                                         </div>
 
                                         <div class="form-group">
                                             <label for="annualised_distribution_yield">Annualised Distribution Yield</label>
                                             <input type="text" value="{{ old('annualised_distribution_yield') }}"
-                                                   class="form-control" name="annualised_distribution_yield" placeholder="7.52">
+                                                   class="form-control border-input" name="annualised_distribution_yield" placeholder="7.52">
                                         </div>
 
                                         <div class="form-group">
                                             <label for="indexed_performance">Indexed Performance</label>
                                             <input type="text" value="{{ old('indexed_performance') }}"
-                                                   class="form-control" name="indexed_performance" placeholder="2.19">
+                                                   class="form-control border-input" name="indexed_performance" placeholder="2.19">
                                         </div>
 
                                         <div class="form-group">
                                             <label for="percentage_growth">Percentage Growth</label>
 
                                             <input type="text" value="{{ old('percentage_growth') }}"
-                                                   class="form-control" name="percentage_growth" placeholder="100.15">
+                                                   class="form-control border-input" name="percentage_growth" placeholder="100.15">
                                         </div>
 
                                         <div class="form-group">
                                             <label for="average_gain">Average Gain</label>
                                             <input type="text" value="{{ old('average_gain') }}"
-                                                   class="form-control" name="average_gain" placeholder="6.52">
+                                                   class="form-control border-input" name="average_gain" placeholder="6.52">
                                         </div>
 
 
@@ -84,31 +84,31 @@
                                         <div class="form-group">
                                             <label for="average_loss">Average Loss</label>
                                             <input type="text" value="{{ old('average_loss') }}"
-                                                   class="form-control" name="average_loss" placeholder="15.2">
+                                                   class="form-control border-input" name="average_loss" placeholder="15.2">
                                         </div>
 
                                         <div class="form-group">
                                             <label for="average_return">Average Return</label>
                                             <input type="text" value="{{ old('average_return') }}"
-                                                   class="form-control" name="average_return" placeholder="0.007">
+                                                   class="form-control border-input" name="average_return" placeholder="0.007">
                                         </div>
 
                                         <div class="form-group">
                                             <label for="relative_average_return">Relative Average Return</label>
                                             <input type="text" value="{{ old('relative_average_return') }}"
-                                                   class="form-control" name="relative_average_return" placeholder="10">
+                                                   class="form-control border-input" name="relative_average_return" placeholder="10">
                                         </div>
 
                                         <div class="form-group">
                                             <label for="relative_performance">Relative Performance</label>
                                             <input type="text" value="{{ old('relative_performance') }}"
-                                                   class="form-control" name="relative_performance" placeholder="5">
+                                                   class="form-control border-input" name="relative_performance" placeholder="5">
                                         </div>
 
                                         <div class="form-group">
                                             <label for="performance">Performance</label>
                                             <input type="text" value="{{ old('performance') }}"
-                                                   class="form-control" name="performance" placeholder="10">
+                                                   class="form-control border-input" name="performance" placeholder="10">
                                         </div>
 
                                     </div>
@@ -116,9 +116,9 @@
 
                             </div>
 
-                            <div class="card-footer">
-                                <button type="submit" class="btn btn-sm btn-primary"><i class="fa fa-dot-circle-o"></i> Submit</button>
-                                <button type="reset" class="btn btn-sm btn-danger"><i class="fa fa-ban"></i> Reset</button>
+                            <div class="footer">
+                                <button type="submit" class="btn btn-info btn-fill"><i class="fa fa-dot-circle-o"></i> Submit</button>
+                                <button type="reset" class="btn btn-danger btn-fill"><i class="fa fa-ban"></i> Reset</button>
                             </div>
                         </div>
 

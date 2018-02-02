@@ -30,11 +30,11 @@
                     <div class="col-sm-12">
 
                         <div class="card">
-                            <div class="card-header">
-                                <strong>Add Terms and Conditions </strong>
-                                <small>Form</small>
+                            <div class="header">
+                                <h4 class="title">Add Terms and Conditions </h4>
+                                <p class="category">Please fill all the information</p>
                             </div>
-                            <div class="card-body">
+                            <div class="content">
                                 <div class="row">
                                     <div class="col-sm-6">
                                         @if($errors->any())
@@ -45,7 +45,7 @@
                                             </div>
                                         @endif
                                         <div class="form-group">
-                                            <select type="text" class="form-control" id="fund_identity_id" name="fund_identity_id">
+                                            <select type="text" class="form-control border-input" id="fund_identity_id" name="fund_identity_id">
                                                 <option value="">Select an option</option>
                                                 @foreach($fund_identities as $fund_identity)
                                                     <option value="{{ $fund_identity->id }}">{{ $fund_identity->fund_name }}</option>
@@ -55,13 +55,13 @@
                                         <div class="form-group">
                                             <label for="propsectus">Propsectus</label>
                                             <input type="file" value="{{ old('propsectus') }}"
-                                                   class="form-control" name="propsectus"  >
+                                                   class="form-control border-input" name="propsectus"  >
                                         </div>
 
                                         <div class="form-group">
                                             <label for="prospectus_date">Prospectus Date</label>
                                             <input type="date" value="{{ old('prospectus_date') }}"
-                                                   class="form-control" name="prospectus_date" >
+                                                   class="form-control border-input" name="prospectus_date" >
                                         </div>
 
 
@@ -70,9 +70,9 @@
 
                             </div>
 
-                            <div class="card-footer">
-                                <button type="submit" class="btn btn-sm btn-primary"><i class="fa fa-dot-circle-o"></i> Submit</button>
-                                <button type="reset" class="btn btn-sm btn-danger"><i class="fa fa-ban"></i> Reset</button>
+                            <div class="footer">
+                                <button type="submit" class="btn btn-info btn-fill"><i class="fa fa-dot-circle-o"></i> Submit</button>
+                                <button type="reset" class="btn btn-danger btn-fill"><i class="fa fa-ban"></i> Reset</button>
                             </div>
                         </div>
 

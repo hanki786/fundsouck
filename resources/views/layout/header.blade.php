@@ -13,12 +13,15 @@
 </head>
 <body>
 <div class="wrapper">
+<?php
+$fund_identities = App\Models\FundShells\FundIdentity::all(); ?>
     @include('layout.nav')
     <!-- Main content -->
         <div class="main-panel">
             <!-- START: PAGE CONTAINER -->
 
         @include('layout.sub_nav')
+            <br>
         @yield('content')
         <!-- END: PAGE CONTAINER -->
             <!-- /.conainer-fluid -->

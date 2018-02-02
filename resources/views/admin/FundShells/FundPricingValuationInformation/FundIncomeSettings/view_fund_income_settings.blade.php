@@ -30,29 +30,29 @@
                     <div class="col-sm-12">
 
                         <div class="card">
-                            <div class="card-header">
-                                <strong>Fund Income Settings</strong>
+                            <div class="header">
+                                <h4 class="title">Fund Income Settings</h4>
                             </div>
-                            <div class="card-body">
+                            <div class="content">
                                 <div class="row">
                                     <div class="col-sm-6">
 
                                         <div class="form-group">
                                             <label for="ex_dividend_date">Ex-Dividend Date</label>
                                             <input type="text" value="{{ $fund_income_settings->ex_dividend_date }}"
-                                                   class="form-control" name="ex_dividend_date" disabled>
+                                                   class="form-control border-input" name="ex_dividend_date" disabled>
                                         </div>
 
                                         <div class="form-group">
                                             <label for="dividend_amount">Dividend Amount</label>
                                             <input type="text" value="{{ $fund_income_settings->dividend_amount }}"
-                                                   class="form-control" name="dividend_amount" placeholder="372,687,887.52"  disabled>
+                                                   class="form-control border-input" name="dividend_amount" placeholder="372,687,887.52"  disabled>
                                         </div>
 
                                         <div class="form-group">
                                             <label for="payment_date">Payment Date</label>
                                             <input type="date" value="{{ $fund_income_settings->payment_date }}"
-                                                   class="form-control" name="payment_date"  disabled>
+                                                   class="form-control border-input" name="payment_date"  disabled>
                                         </div>
 
 
@@ -150,7 +150,7 @@
                                         <div class="form-group">
                                             <label for="reinvest_date">Reinvest Date</label>
                                             <input type="date" value="{{ $fund_income_settings->reinvest_date }}"
-                                                   class="form-control" name="reinvest_date"  disabled>
+                                                   class="form-control border-input" name="reinvest_date"  disabled>
                                         </div>
 
                                     </div>

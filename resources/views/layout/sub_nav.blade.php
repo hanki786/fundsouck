@@ -20,17 +20,14 @@
                 </li>
                 <li class="dropdown">
                     <a href="#" class="dropdown-toggle" data-toggle="dropdown">
-                        <i class="ti-bell"></i>
-                        <p class="notification">5</p>
-                        <p>Notifications</p>
+                        <i class="ti-pie-chart"></i>
+                        <p>Fund Identities</p>
                         <b class="caret"></b>
                     </a>
                     <ul class="dropdown-menu">
-                        <li><a href="#">Notification 1</a></li>
-                        <li><a href="#">Notification 2</a></li>
-                        <li><a href="#">Notification 3</a></li>
-                        <li><a href="#">Notification 4</a></li>
-                        <li><a href="#">Another notification</a></li>
+                        @foreach($fund_identities as $fund_identity)
+                            <li><a href="#{{ $fund_identity->id }}">{{ $fund_identity->fund_name }}</a></li>
+                        @endforeach
                     </ul>
                 </li>
                 <li>

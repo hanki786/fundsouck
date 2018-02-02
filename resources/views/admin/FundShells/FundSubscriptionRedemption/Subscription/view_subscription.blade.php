@@ -30,10 +30,10 @@
                     <div class="col-sm-12">
 
                         <div class="card">
-                            <div class="card-header">
-                                <strong>Subscription</strong>
+                            <div class="header">
+                                <h4 class="title">Subscription</h4>
                             </div>
-                            <div class="card-body">
+                            <div class="content">
                                 <div class="row">
                                     <div class="col-md-3"></div>
                                     <div class="col-sm-6">
@@ -41,19 +41,19 @@
 
                                         <div class="form-group">
                                             <label for="minimum_initial">Minimum Initial</label>
-                                            <input type="number" class="form-control" name="minimum_initial" disabled
+                                            <input type="number" class="form-control border-input" name="minimum_initial" disabled
                                                    placeholder="Enter Minimum Initial" value="{{ $subscription->minimum_initial}}">
                                         </div>
 
                                         <div class="form-group">
                                             <label for="additional">Additional</label>
-                                            <input type="number" class="form-control" name="additional" placeholder="Enter Additional"
+                                            <input type="number" class="form-control border-input" name="additional" placeholder="Enter Additional"
                                                    value="{{ $subscription->additional}}" disabled>
                                         </div>
 
                                         <div class="form-group">
                                             <label for="minimum_balance">Minimum Balance</label>
-                                            <input type="number" class="form-control" name="minimum_balance" disabled
+                                            <input type="number" class="form-control border-input" name="minimum_balance" disabled
                                                    placeholder="Enter Minimum Balance" value="{{ $subscription->minimum_balance}}">
                                         </div>
 

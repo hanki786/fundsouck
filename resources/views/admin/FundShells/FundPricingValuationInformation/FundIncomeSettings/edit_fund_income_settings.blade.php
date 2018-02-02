@@ -31,11 +31,11 @@
                     <div class="col-sm-12">
 
                         <div class="card">
-                            <div class="card-header">
-                                <strong>Edit Fund Income Settings</strong>
-                                <small>Form</small>
+                            <div class="header">
+                                <h4 class="title">Edit Fund Income Settings</h4>
+                                <p class="category">Please fill all the information</p>
                             </div>
-                            <div class="card-body">
+                            <div class="content">
                                 <div class="row">
                                     <div class="col-sm-6">
                                         @if($errors->any())
@@ -54,19 +54,19 @@
                                             <div class="form-group">
                                             <label for="ex_dividend_date">Ex-Dividend Date</label>
                                             <input type="text" value="{{ $fund_income_settings->ex_dividend_date }}"
-                                                   class="form-control" name="ex_dividend_date" >
+                                                   class="form-control border-input" name="ex_dividend_date" >
                                         </div>
 
                                         <div class="form-group">
                                             <label for="dividend_amount">Dividend Amount</label>
                                             <input type="text" value="{{ $fund_income_settings->dividend_amount }}"
-                                                   class="form-control" name="dividend_amount" placeholder="372,687,887.52">
+                                                   class="form-control border-input" name="dividend_amount" placeholder="372,687,887.52">
                                         </div>
 
                                         <div class="form-group">
                                             <label for="payment_date">Payment Date</label>
                                             <input type="date" value="{{ $fund_income_settings->payment_date }}"
-                                                   class="form-control" name="payment_date" >
+                                                   class="form-control border-input" name="payment_date" >
                                         </div>
 
 
@@ -164,7 +164,7 @@
                                         <div class="form-group">
                                             <label for="reinvest_date">Reinvest Date</label>
                                             <input type="date" value="{{ $fund_income_settings->reinvest_date }}"
-                                                   class="form-control" name="reinvest_date" >
+                                                   class="form-control border-input" name="reinvest_date" >
                                         </div>
 
                                     </div>
@@ -172,9 +172,9 @@
 
                             </div>
 
-                            <div class="card-footer">
-                                <button type="submit" class="btn btn-sm btn-primary"><i class="fa fa-dot-circle-o"></i> Submit</button>
-                                <button type="reset" class="btn btn-sm btn-danger"><i class="fa fa-ban"></i> Reset</button>
+                            <div class="footer">
+                                <button type="submit" class="btn btn-info btn-fill"><i class="fa fa-dot-circle-o"></i> Submit</button>
+                                <button type="reset" class="btn btn-danger btn-fill"><i class="fa fa-ban"></i> Reset</button>
                             </div>
                         </div>
 

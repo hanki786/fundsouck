@@ -30,11 +30,11 @@
                     <div class="col-sm-12">
 
                         <div class="card">
-                            <div class="card-header">
-                                <strong>Add Key Investor Information Document </strong>
-                                <small>Form</small>
+                            <div class="header">
+                                <h4 class="title">Add Key Investor Information Document </h4>
+                                <p class="category">Please fill all the information</p>
                             </div>
-                            <div class="card-body">
+                            <div class="content">
                                 <div class="row">
                                     <div class="col-sm-6">
                                         @if($errors->any())
@@ -48,19 +48,19 @@
                                         <div class="form-group">
                                             <label for="financial_statement">Financial Statement</label>
                                             <input type="text" value="{{ old('financial_statement') }}"
-                                                   class="form-control" name="financial_statement"  >
+                                                   class="form-control border-input" name="financial_statement"  >
                                         </div>
 
                                         <div class="form-group">
                                             <label for="financial_statement_year">Financial Statement Year</label>
                                             <input type="number" value="{{ old('financial_statement_year') }}"
-                                                   class="form-control" name="financial_statement_year" placeholder="2002">
+                                                   class="form-control border-input" name="financial_statement_year" placeholder="2002">
                                         </div>
 
                                         <div class="form-group">
                                             <label for="financial_statement_date">Financial Statement Date</label>
                                             <input type="date" value="{{ old('financial_statement_date') }}"
-                                                   class="form-control" name="financial_statement_date" >
+                                                   class="form-control border-input" name="financial_statement_date" >
                                         </div>
 
                                     </div>
@@ -68,9 +68,9 @@
 
                             </div>
 
-                            <div class="card-footer">
-                                <button type="submit" class="btn btn-sm btn-primary"><i class="fa fa-dot-circle-o"></i> Submit</button>
-                                <button type="reset" class="btn btn-sm btn-danger"><i class="fa fa-ban"></i> Reset</button>
+                            <div class="footer">
+                                <button type="submit" class="btn btn-info btn-fill"><i class="fa fa-dot-circle-o"></i> Submit</button>
+                                <button type="reset" class="btn btn-danger btn-fill"><i class="fa fa-ban"></i> Reset</button>
                             </div>
                         </div>
 

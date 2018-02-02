@@ -32,11 +32,11 @@
                     <div class="col-sm-12">
 
                         <div class="card">
-                            <div class="card-header">
-                                <strong>Add Annual</strong>
-                                <small>Form</small>
+                            <div class="header">
+                                <h4 class="title">Add Annual</h4>
+                                <p class="category">Please fill all the information</p>
                             </div>
-                            <div class="card-body">
+                            <div class="content">
                                 <div class="row">
                                     <div class="col-sm-6">
                                         @if($errors->any())
@@ -49,18 +49,18 @@
 
                                         <div class="form-group">
                                             <label for="actual">Actual</label>
-                                            <input type="text" value="{{ old('actual') }}" class="form-control" name="actual" placeholder="Enter Actual ">
+                                            <input type="text" value="{{ old('actual') }}" class="form-control border-input" name="actual" placeholder="Enter Actual ">
                                         </div>
 
 
                                         <div class="form-group">
                                             <label for="min">Minimum</label>
-                                            <input type="text" value="{{ old('min') }}" class="form-control" name="min" placeholder="Enter Minimum">
+                                            <input type="text" value="{{ old('min') }}" class="form-control border-input" name="min" placeholder="Enter Minimum">
                                         </div>
 
                                         <div class="form-group">
                                             <label for="max">Maximum</label>
-                                            <input type="text" value="{{ old('max') }}" class="form-control" name="max" placeholder="Enter Maximum">
+                                            <input type="text" value="{{ old('max') }}" class="form-control border-input" name="max" placeholder="Enter Maximum">
                                         </div>
 
                                     </div>
@@ -97,9 +97,9 @@
                                 </div>
                             </div>
 
-                            <div class="card-footer">
-                                <button type="submit" class="btn btn-sm btn-primary"><i class="fa fa-dot-circle-o"></i> Submit</button>
-                                <button type="reset" class="btn btn-sm btn-danger"><i class="fa fa-ban"></i> Reset</button>
+                            <div class="footer">
+                                <button type="submit" class="btn btn-info btn-fill"><i class="fa fa-dot-circle-o"></i> Submit</button>
+                                <button type="reset" class="btn btn-danger btn-fill"><i class="fa fa-ban"></i> Reset</button>
                             </div>
                         </div>
 

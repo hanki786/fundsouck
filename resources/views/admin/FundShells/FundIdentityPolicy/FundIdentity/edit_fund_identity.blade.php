@@ -28,11 +28,11 @@
                 <div class="row">
                     <div class="col-md-12">
                         <div class="card">
-                            <div class="card-header">
-                                <strong>Edit Fund Identity</strong>
-                                <small>Form</small>
+                            <div class="header">
+                                <h4 class="title">Edit Fund Identity</h4>
+                                <p class="category">Please fill all the information</p>
                             </div>
-                            <div class="card-body">
+                            <div class="content">
                                 <div class="row">
                                     <div class="col-md-3"></div>
                                     <div class="col-sm-6">
@@ -51,12 +51,12 @@
 
                                         <div class="form-group">
                                             <label for="name">Fund Name</label>
-                                            <input type="text" class="form-control" id="name" name="fund_name"
+                                            <input type="text" class="form-control border-input" id="name" name="fund_name"
                                                    placeholder="Enter fund name" value="{{$fund_identity->fund_name}}">
                                         </div>
                                         <div class="form-group">
                                             <label for="short_name">Fund Short Name</label>
-                                            <input type="text" class="form-control" id="short_name" name="fund_short_name"
+                                            <input type="text" class="form-control border-input" id="short_name" name="fund_short_name"
                                                    placeholder="Enter fund short name" value="{{$fund_identity->fund_short_name}}">
                                         </div>
                                     </div>
@@ -64,11 +64,11 @@
                                 </div>
                             </div>
 
-                            <div class="card-footer">
-                                <button type="submit" class="btn btn-primary"><i class="fa fa-save"></i>
+                            <div class="footer">
+                                <button type="submit" class="btn btn-info btn-fill"><i class="fa fa-save"></i>
                                     Save
                                 </button>
-                                <button type="reset" class="btn btn-danger"><i class="fa fa-ban"></i> Cancel
+                                <button type="reset" class="btn btn-danger btn-fill"><i class="fa fa-ban"></i> Cancel
                                 </button>
                             </div>
                         </div>
