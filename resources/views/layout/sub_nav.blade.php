@@ -26,7 +26,7 @@
                     </a>
                     <ul class="dropdown-menu">
                         @foreach($fund_identities as $fund_identity)
-                            <li><a href="#{{ $fund_identity->id }}">{{ $fund_identity->fund_name }}</a></li>
+                            <li><a href="?fund_identity_id={{ $fund_identity->id }}">{{ $fund_identity->fund_name }}</a></li>
                         @endforeach
                     </ul>
                 </li>

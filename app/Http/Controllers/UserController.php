@@ -2,7 +2,15 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\FundShells\FundAssetAttributes;
+use App\Models\FundShells\FundBenchmarks;
+use App\Models\FundShells\FundClassificationBenchmark;
+use App\Models\FundShells\FundClassificationScheme;
+use App\Models\FundShells\FundKeyAttributes;
 use App\Models\FundShells\FundObjectiveStrategy;
+use App\Models\FundShells\FundSalesDistribution;
+use App\Models\FundShells\Redemption;
+use App\Models\FundShells\Subscription;
 use Illuminate\Http\Request;
 
 use App\Http\Requests;
@@ -19,12 +27,32 @@ use Illuminate\Support\Facades\Input;
 
 class UserController extends Controller
 {
-    public function fund_overview(){
+    public function fund_overview(Request $request){
 
         $fund_identities = FundIdentity::all();
 
+        $fi = FundIdentity::whereId($request['fund_identity_id'])->first();
+        $fos = FundObjectiveStrategy::whereFundIdentityId($request['fund_identity_id'])->first();
+        $faa = FundAssetAttributes::whereFundIdentityId($request['fund_identity_id'])->first();
+        $fcb = FundClassificationScheme::whereFundIdentityId($request['fund_identity_id'])->first();
+        $fcb1 = FundBenchmarks::whereFundIdentityId($request['fund_identity_id'])->first();
+        $fka = FundKeyAttributes::whereFundIdentityId($request['fund_identity_id'])->first();
+        $fsd = FundSalesDistribution::whereFundIdentityId($request['fund_identity_id'])->first();
+        $s = Subscription::whereFundIdentityId($request['fund_identity_id'])->first();
+        $r = Redemption::whereFundIdentityId($request['fund_identity_id'])->first();
+
         $data_array = [
-            'fund_identities' => $fund_identities
+            'fund_identity_id' => $request['fund_identity_id'],
+            'fund_identities' => $fund_identities,
+            'fi' => $fi,
+            'fos' => $fos,
+            'faa' => $faa,
+            'fcb' => $fcb,
+            'fcb1' => $fcb1,
+            'fka' => $fka,
+            'fsd' => $fsd,
+            's' => $s,
+            'r' => $r,
         ];
         return view('website.fund_overview',$data_array);
     }

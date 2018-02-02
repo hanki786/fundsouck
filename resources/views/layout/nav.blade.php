@@ -717,7 +717,7 @@
                     <li data-toggle="collapse" data-target="#products50" class="collapsed">
                         <a href="#"><i class="ti-ink-pen"></i> Index Shell</a>
                     </li>
-                    <ul class="sub-menu collapse" id="products50">
+                    <ul class="sub-menu collapse in" id="products50">
                         <ul class="nav collapse in">
                             <li data-toggle="collapse" data-target="#products51" class="collapsed">
                                 <a href="#"><i class="ti-pulse"></i> Indices Information </a>
@@ -763,7 +763,7 @@
                     <li data-toggle="collapse" data-target="#products54" class="collapsed">
                         <a href="#"><i class="ti-shield"></i> Company Shell</a>
                     </li>
-                    <ul class="sub-menu collapse" id="products54">
+                    <ul class="sub-menu collapse in" id="products54">
                         <ul class="nav collapse in">
                             <li data-toggle="collapse" data-target="#products55" class="collapsed">
                                 <a href="#"><i class="ti-info"></i> Company Information </a>
