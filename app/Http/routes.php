@@ -48,7 +48,17 @@ Route::get('/fund_overview', [
         'uses' => 'UserController@fund_overview',
         'as' => 'fund_overview'
 ]);
-    
+
+Route::get('/fund_attributes', [
+    'uses' => 'UserController@fund_attributes',
+    'as' => 'fund_attributes'
+]);
+
+
+Route::get('/historical_prices_charts', [
+    'uses' => 'UserController@historical_prices_charts',
+    'as' => 'historical_prices_charts'
+]);
 
 Route::get('login', function () {
 

@@ -15,13 +15,14 @@
                 <li>
                     <a href="#" class="dropdown-toggle" data-toggle="dropdown">
                         <i class="ti-panel"></i>
-                        <p>Stats</p>
+                        <p>Fund Statistics</p>
                     </a>
                 </li>
                 <li class="dropdown">
+                    <?php $fund_identity = App\Models\FundShells\FundIdentity::whereId(@$_REQUEST['fund_identity_id'])->first(); ?>
                     <a href="#" class="dropdown-toggle" data-toggle="dropdown">
                         <i class="ti-pie-chart"></i>
-                        <p>Fund Identities</p>
+                        <p>{{ $fund_identity? $fund_identity->fund_name : "Fund Identities" }}</p>
                         <b class="caret"></b>
                     </a>
                     <ul class="dropdown-menu">

@@ -33,34 +33,34 @@
                     </li>
                     <ul class="sub-menu collapse" id="products">
                         <li>
-                            <a href="{{ route('fund_overview') }}"> Fund Overview </a>
+                            <a href="{{ route('fund_overview') }}?fund_identity_id=17"> Fund Overview </a>
                         </li>
                         <li>
-                            <a href="{{ route('dashboard') }}"> Fund Attributes </a>
+                            <a href="{{ route('fund_attributes') }}?fund_identity_id=17"> Fund Attributes </a>
                         </li>
                         <li>
-                            <a href="{{ route('dashboard') }}"> Historical Prices & Charts </a>
+                            <a href="{{ route('historical_prices_charts') }}?fund_identity_id=17"> Historical Prices & Charts </a>
                         </li>
                         <li>
-                            <a href="{{ route('dashboard') }}"> Asset Valuation & Flows </a>
+                            <a href="{{ route('dashboard') }}?fund_identity_id=17"> Asset Valuation & Flows </a>
                         </li>
                         <li>
-                            <a href="{{ route('dashboard') }}"> Fees & Expenses </a>
+                            <a href="{{ route('dashboard') }}?fund_identity_id=17"> Fees & Expenses </a>
                         </li>
                         <li>
-                            <a href="{{ route('dashboard') }}"> Performance & Risk Analytics </a>
+                            <a href="{{ route('dashboard') }}?fund_identity_id=17"> Performance & Risk Analytics </a>
                         </li>
                         <li>
-                            <a href="{{ route('dashboard') }}"> Fund Holdings </a>
+                            <a href="{{ route('dashboard') }}?fund_identity_id=17"> Fund Holdings </a>
                         </li>
                         <li>
-                            <a href="{{ route('dashboard') }}"> Fund Documents </a>
+                            <a href="{{ route('dashboard') }}?fund_identity_id=17"> Fund Documents </a>
                         </li>
                         <li>
-                            <a href="{{ route('dashboard') }}"> Fund People </a>
+                            <a href="{{ route('dashboard') }}?fund_identity_id=17"> Fund People </a>
                         </li>
                         <li>
-                            <a href="{{ route('dashboard') }}"> Fund Service Providers </a>
+                            <a href="{{ route('dashboard') }}?fund_identity_id=17"> Fund Service Providers </a>
                         </li>
                     </ul>
 

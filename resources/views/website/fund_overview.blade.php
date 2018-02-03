@@ -1,6 +1,6 @@
 @extends('layout.header')
 @section('title')
-    Fund Overview
+    Fund Overview &reg;
 @endsection
 @section('content')
 
