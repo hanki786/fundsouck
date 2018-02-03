@@ -15,24 +15,23 @@
 <div class="wrapper">
 <?php
 $fund_identities = App\Models\FundShells\FundIdentity::all(); ?>
-    @include('layout.nav')
-    <!-- Main content -->
-        <div class="main-panel">
-            <!-- START: PAGE CONTAINER -->
+@include('layout.nav')
+<!-- Main content -->
+    <div class="main-panel">
+        <!-- START: PAGE CONTAINER -->
 
         @include('layout.sub_nav')
-            <br>
+        <br>
         @yield('content')
-        <!-- END: PAGE CONTAINER -->
-            <!-- /.conainer-fluid -->
-        </div>
+    <!-- END: PAGE CONTAINER -->
+        @include('layout.footer')
+    </div>
     <!-- START: PAGE LEVEL SCRIPTS -->
 @yield('page_scripts')
 <!-- END: PAGE LEVEL SCRIPTS -->
 
 
-@include('layout.footer')
-<!-- START: PAGE FOOTER SCRIPTS -->
+    <!-- START: PAGE FOOTER SCRIPTS -->
 @include('layout.footer_script')
 <!-- END: PAGE FOOTER SCRIPTS -->
 </div>
