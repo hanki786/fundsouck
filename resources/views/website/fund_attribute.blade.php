@@ -16,7 +16,6 @@
                             </div>
                             <div class="content table-responsive table-full-width table-upgrade">
                                 <table class="table">
-
                                     <tbody>
                                     @if($fh)
                                         <tr>

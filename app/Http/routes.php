@@ -60,6 +60,47 @@ Route::get('/historical_prices_charts', [
     'as' => 'historical_prices_charts'
 ]);
 
+
+Route::get('/asset_valuation_flows', [
+    'uses' => 'UserController@asset_valuation_flows',
+    'as' => 'asset_valuation_flows'
+]);
+
+Route::get('/fees_expenses', [
+    'uses' => 'UserController@fees_expenses',
+    'as' => 'fees_expenses'
+]);
+
+Route::get('/performance_risk_analytics', [
+    'uses' => 'UserController@performance_risk_analytics',
+    'as' => 'performance_risk_analytics'
+]);
+
+Route::get('/fund_holdings', [
+    'uses' => 'UserController@fund_holdings',
+    'as' => 'fund_holdings'
+]);
+
+Route::get('/fund_documents', [
+    'uses' => 'UserController@fund_documents',
+    'as' => 'fund_documents'
+]);
+
+Route::get('/fund_people', [
+    'uses' => 'UserController@fund_people',
+    'as' => 'fund_people'
+]);
+
+Route::get('/fund_service_providers', [
+    'uses' => 'UserController@fund_service_providers',
+    'as' => 'fund_service_providers'
+]);
+
+Route::get('/fund_compliance_regulations', [
+    'uses' => 'UserController@fund_compliance_regulations',
+    'as' => 'fund_compliance_regulations'
+]);
+
 Route::get('login', function () {
 
     return view('auth.login');

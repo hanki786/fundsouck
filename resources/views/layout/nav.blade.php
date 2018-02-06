@@ -42,25 +42,28 @@
                             <a href="{{ route('historical_prices_charts') }}?fund_identity_id=17"> Historical Prices & Charts </a>
                         </li>
                         <li>
-                            <a href="{{ route('dashboard') }}?fund_identity_id=17"> Asset Valuation & Flows </a>
+                            <a href="{{ route('asset_valuation_flows') }}?fund_identity_id=17"> Asset Valuation & Flows </a>
                         </li>
                         <li>
-                            <a href="{{ route('dashboard') }}?fund_identity_id=17"> Fees & Expenses </a>
+                            <a href="{{ route('fees_expenses') }}?fund_identity_id=17"> Fees & Expenses </a>
                         </li>
                         <li>
-                            <a href="{{ route('dashboard') }}?fund_identity_id=17"> Performance & Risk Analytics </a>
+                            <a href="{{ route('performance_risk_analytics') }}?fund_identity_id=17"> Performance & Risk Analytics </a>
                         </li>
                         <li>
-                            <a href="{{ route('dashboard') }}?fund_identity_id=17"> Fund Holdings </a>
+                            <a href="{{ route('fund_holdings') }}?fund_identity_id=17"> Fund Holdings </a>
                         </li>
                         <li>
-                            <a href="{{ route('dashboard') }}?fund_identity_id=17"> Fund Documents </a>
+                            <a href="{{ route('fund_documents') }}?fund_identity_id=17"> Fund Documents </a>
                         </li>
                         <li>
-                            <a href="{{ route('dashboard') }}?fund_identity_id=17"> Fund People </a>
+                            <a href="{{ route('fund_people') }}?fund_identity_id=17"> Fund People </a>
                         </li>
                         <li>
-                            <a href="{{ route('dashboard') }}?fund_identity_id=17"> Fund Service Providers </a>
+                            <a href="{{ route('fund_service_providers') }}?fund_identity_id=17"> Fund Service Providers </a>
+                        </li>
+                        <li>
+                            <a href="{{ route('fund_compliance_regulations') }}?fund_identity_id=17"> Fund Compliance & Regulations</a>
                         </li>
                     </ul>
 

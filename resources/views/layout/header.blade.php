@@ -10,7 +10,14 @@
     <!-- START: PAGE LEVEL STYLE SHEET -->
 @yield('page_style')
 <!-- END: PAGE LEVEL STYLE SHEET -->
+
+    <style>
+        .zoom-out {
+            zoom: 0.77;
+        }
+    </style>
 </head>
+
 <body>
 <div class="wrapper">
 <?php

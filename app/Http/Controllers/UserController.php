@@ -2,23 +2,50 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\FundShells\Annual;
+use App\Models\FundShells\AnnualReport;
+use App\Models\FundShells\AnnualReportFeesBreakdown;
+use App\Models\FundShells\AssetClassAllocation;
+use App\Models\FundShells\Authorization;
+use App\Models\FundShells\BoardMembers;
+use App\Models\FundShells\Charges;
+use App\Models\FundShells\ChargesRedemption;
+use App\Models\FundShells\ComplianceOfficer;
+use App\Models\FundShells\CountryAllocation;
+use App\Models\FundShells\CurrencyAllocation;
+use App\Models\FundShells\DebtorQualityAllocation;
 use App\Models\FundShells\FundAssetAttributes;
 use App\Models\FundShells\FundBenchmarks;
 use App\Models\FundShells\FundClassificationBenchmark;
 use App\Models\FundShells\FundClassificationScheme;
 use App\Models\FundShells\FundCode;
+use App\Models\FundShells\FundDocuments;
 use App\Models\FundShells\FundFlag;
 use App\Models\FundShells\FundHistory;
 use App\Models\FundShells\FundIncomeSetting;
 use App\Models\FundShells\FundKeyAttributes;
+use App\Models\FundShells\FundManager;
 use App\Models\FundShells\FundNote;
 use App\Models\FundShells\FundObjectiveStrategy;
+use App\Models\FundShells\FundPerformance;
+use App\Models\FundShells\FundRiskRatio;
 use App\Models\FundShells\FundSalesDistribution;
+use App\Models\FundShells\FundTimeSeries;
+use App\Models\FundShells\Initial;
 use App\Models\FundShells\InvestorType;
+use App\Models\FundShells\KeyInvestorInformationDocument;
+use App\Models\FundShells\LawsRegulation;
+use App\Models\FundShells\MaturityDateAllocation;
 use App\Models\FundShells\Redemption;
 use App\Models\FundShells\RelatedFund;
+use App\Models\FundShells\SemiAnnualReport;
+use App\Models\FundShells\ShariaCommittee;
+use App\Models\FundShells\SourcedStatistic;
 use App\Models\FundShells\Subscription;
+use App\Models\FundShells\TermsCondition;
 use App\Models\FundShells\ThemesAttributes;
+use App\Models\FundShells\TopAllocation;
+use App\Models\FundShells\ValuationFrequency;
 use Illuminate\Http\Request;
 
 use App\Http\Requests;
@@ -104,6 +131,158 @@ class UserController extends Controller
             'fn' => $fn,
         ];
         return view('website.historical_prices_charts',$data_array);
+    }
+
+    public function asset_valuation_flows(Request $request){
+
+        $fund_identities = FundIdentity::all();
+
+        $fts = FundTimeSeries::whereFundIdentityId($request['fund_identity_id'])->first();
+        $vf = ValuationFrequency::whereFundIdentityId($request['fund_identity_id'])->first();
+
+        $data_array = [
+            'fund_identity_id' => $request['fund_identity_id'],
+            'fund_identities' => $fund_identities,
+            'fts' => $fts,
+            'vf' => $vf,
+        ];
+        return view('website.asset_valuation_flows',$data_array);
+    }
+
+    public function fees_expenses(Request $request){
+
+        $fund_identities = FundIdentity::all();
+
+        $i = Initial::whereFundIdentityId($request['fund_identity_id'])->first();
+        $a = Annual::whereFundIdentityId($request['fund_identity_id'])->first();
+        $cr = ChargesRedemption::whereFundIdentityId($request['fund_identity_id'])->first();
+        $arfb = AnnualReportFeesBreakdown::whereFundIdentityId($request['fund_identity_id'])->first();
+
+        $data_array = [
+            'fund_identity_id' => $request['fund_identity_id'],
+            'fund_identities' => $fund_identities,
+            'i' => $i,
+            'a' => $a,
+            'r' => $cr,
+            'arfb' => $arfb,
+        ];
+        return view('website.fees_expenses',$data_array);
+    }
+
+    public function performance_risk_analytics(Request $request){
+
+        $fund_identities = FundIdentity::all();
+
+        $ss = SourcedStatistic::whereFundIdentityId($request['fund_identity_id'])->first();
+        $fp = AssetClassAllocation::whereFundIdentityId($request['fund_identity_id'])->first();
+        $frr = FundRiskRatio::whereFundIdentityId($request['fund_identity_id'])->first();
+
+        $data_array = [
+            'fund_identity_id' => $request['fund_identity_id'],
+            'fund_identities' => $fund_identities,
+            'ss' => $ss,
+            'fp' => $fp,
+            'frr' => $frr,
+        ];
+        return view('website.performance_risk_analytics',$data_array);
+    }
+
+    public function fund_holdings(Request $request){
+
+        $fund_identities = FundIdentity::all();
+
+        $ta = TopAllocation::whereFundIdentityId($request['fund_identity_id'])->orderBy('date','desc')->limit(10)->get();
+        $aca = AssetClassAllocation::whereFundIdentityId($request['fund_identity_id'])->orderBy('date','desc')->limit(10)->get();
+        $dqa = DebtorQualityAllocation::whereFundIdentityId($request['fund_identity_id'])->orderBy('date','desc')->limit(10)->get();
+        $ca = CurrencyAllocation::whereFundIdentityId($request['fund_identity_id'])->orderBy('date','desc')->limit(10)->get();
+        $ca1 = CountryAllocation::whereFundIdentityId($request['fund_identity_id'])->orderBy('date','desc')->limit(10)->get();
+        $mda = MaturityDateAllocation::whereFundIdentityId($request['fund_identity_id'])->orderBy('date','desc')->limit(10)->get();
+
+        $data_array = [
+            'fund_identity_id' => $request['fund_identity_id'],
+            'fund_identities' => $fund_identities,
+            'ta' => $ta,
+            'aca' => $aca,
+            'dqa' => $dqa,
+            'ca' => $ca,
+            'ca1' => $ca1,
+            'mda' => $mda,
+        ];
+        return view('website.fund_holdings',$data_array);
+    }
+
+    public function fund_documents(Request $request){
+
+        $fund_identities = FundIdentity::all();
+
+        $tc = TermsCondition::whereFundIdentityId($request['fund_identity_id'])->orderBy('prospectus_date','desc')->get();
+        $ar = AnnualReport::whereFundIdentityId($request['fund_identity_id'])->orderBy('financial_statement_year','desc')->get();
+        $sar = SemiAnnualReport::whereFundIdentityId($request['fund_identity_id'])->orderBy('semi_annual_report_date','desc')->get();
+        $kid = KeyInvestorInformationDocument::whereFundIdentityId($request['fund_identity_id'])->orderBy('date','desc')->get();
+
+        $data_array = [
+            'fund_identity_id' => $request['fund_identity_id'],
+            'fund_identities' => $fund_identities,
+            'tc' => $tc,
+            'ar' => $ar,
+            'sar' => $sar,
+            'kid' => $kid,
+        ];
+        return view('website.fund_documents',$data_array);
+    }
+
+    public function fund_people(Request $request){
+
+        $fund_identities = FundIdentity::all();
+
+        $fm = FundManager::whereFundIdentityId($request['fund_identity_id'])->get();
+        $bm = BoardMembers::whereFundIdentityId($request['fund_identity_id'])->get();
+        $sc = ShariaCommittee::whereFundIdentityId($request['fund_identity_id'])->get();
+
+        $data_array = [
+            'fund_identity_id' => $request['fund_identity_id'],
+            'fund_identities' => $fund_identities,
+            'fm' => $fm,
+            'bm' => $bm,
+            'sc' => $sc,
+        ];
+        return view('website.fund_people',$data_array);
+    }
+
+    public function fund_service_providers(Request $request){
+
+        $fund_identities = FundIdentity::all();
+
+        $fm = FundManager::whereFundIdentityId($request['fund_identity_id'])->get();
+        $bm = BoardMembers::whereFundIdentityId($request['fund_identity_id'])->get();
+        $sc = ShariaCommittee::whereFundIdentityId($request['fund_identity_id'])->get();
+
+        $data_array = [
+            'fund_identity_id' => $request['fund_identity_id'],
+            'fund_identities' => $fund_identities,
+            'fm' => $fm,
+            'bm' => $bm,
+            'sc' => $sc,
+        ];
+        return view('website.fund_service_providers',$data_array);
+    }
+
+    public function fund_compliance_regulations(Request $request){
+
+        $fund_identities = FundIdentity::all();
+
+        $co = ComplianceOfficer::whereFundIdentityId($request['fund_identity_id'])->first();
+        $a = Authorization::whereFundIdentityId($request['fund_identity_id'])->first();
+        $lr = LawsRegulation::whereFundIdentityId($request['fund_identity_id'])->first();
+
+        $data_array = [
+            'fund_identity_id' => $request['fund_identity_id'],
+            'fund_identities' => $fund_identities,
+            'co' => $co,
+            'a' => $a,
+            'lr' => $lr,
+        ];
+        return view('website.fund_compliance_regulations',$data_array);
     }
 
     public function getAdminDashboard(){
