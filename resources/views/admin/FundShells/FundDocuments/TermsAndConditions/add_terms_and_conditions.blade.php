@@ -55,7 +55,7 @@
                                         <div class="form-group">
                                             <label for="propsectus">Propsectus</label>
                                             <input type="file" value="{{ old('propsectus') }}"
-                                                   class="form-control border-input" name="propsectus"  >
+                                                   class="form-control border-input" name="propsectus[]" multiple  >
                                         </div>
 
                                         <div class="form-group">

@@ -56,7 +56,7 @@
                                         <div class="form-group">
                                             <label for="financial_statement">Financial Statement</label>
                                             <input type="file" value="{{ old('financial_statement') }}"
-                                                   class="form-control border-input" name="financial_statement"  >
+                                                   class="form-control border-input" name="financial_statement[]" multiple  >
                                         </div>
 
                                         <div class="form-group">

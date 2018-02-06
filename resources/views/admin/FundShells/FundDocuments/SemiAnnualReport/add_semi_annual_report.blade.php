@@ -56,7 +56,7 @@
                                         <div class="form-group">
                                             <label for="semi_annual_report">Semi Annual Report</label>
                                             <input type="file" value="{{ old('semi_annual_report') }}"
-                                                   class="form-control border-input" name="semi_annual_report"  >
+                                                   class="form-control border-input" name="semi_annual_report[]" multiple  >
                                         </div>
 
                                         <div class="form-group">

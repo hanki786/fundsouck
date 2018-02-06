@@ -42,12 +42,14 @@ use App\Models\FundShells\Subscription;
 use App\Models\FundShells\ThemesAttributes;
 use App\Models\FundShells\FundIdentityPolicy;
 use App\Models\IndexShells\IndexTimeSeries;
+use Illuminate\Database\QueryException;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Input;
 
 use App\Http\Requests;
 use Illuminate\Support\Facades\Hash;
+use Illuminate\Support\Facades\Storage;
 use Validator;
 use View;
 
@@ -2640,7 +2642,8 @@ class FundShellController extends Controller
     }
 
     //  Terms And Conditions
-    public function generateRandomString($length = 10) {
+    public function generateRandomString($length = 10)
+    {
         $characters = '0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ';
         $charactersLength = strlen($characters);
         $randomString = '';
@@ -2649,13 +2652,13 @@ class FundShellController extends Controller
         }
         return $randomString;
     }
-    
+
     public function createTermsAndConditions(Request $request)
     {
 
         $validator = Validator::make($request->all(), [
             'fund_identity_id' => 'required|exists:fund_identities,id',
-            'propsectus' => 'required|mimes:doc,docx,pdf',
+            'propsectus' => 'required',
             'prospectus_date' => 'required',
         ]);
         if ($validator->fails()) {
@@ -2666,20 +2669,22 @@ class FundShellController extends Controller
 
         $user = Auth::user();
 
-        if($file = $request->hasFile('propsectus')) {
-            $rand_str = $this->generateRandomString(10);
-            $file = $request->file('propsectus') ;
-            $fileName = $file->getClientOriginalName() ;
-            $destinationPath = public_path().'/images/'.$rand_str. '/' ;
-            $file->move($destinationPath,$fileName);
-            
-            TermsCondition::create([
-                'user_id' => $user->id,
-                'fund_identity_id' => $request->fund_identity_id,
-                'prospectus' => $fileName,
-                'file_path' => '/images/'.$rand_str.'/'.(string)$fileName,
-                'prospectus_date' => $request->prospectus_date,
-            ]);
+        if ($request->hasFile('propsectus')) {
+            foreach($request->file('propsectus') as $file){
+                $rand_str = $this->generateRandomString(10);
+                $fileName = $file->getClientOriginalName();
+                $destinationPath = public_path() . '/images/' . $rand_str . '/';
+                $file->move($destinationPath, $fileName);
+
+                //Storage::disk('s3')->put('avatars/1', $file);
+                TermsCondition::create([
+                    'user_id' => $user->id,
+                    'fund_identity_id' => $request->fund_identity_id,
+                    'prospectus' => $fileName,
+                    'file_path' => '/images/' . $rand_str . '/' . (string)$fileName,
+                    'prospectus_date' => $request->prospectus_date,
+                ]);
+            }
         }
 
         return redirect()->back()->withErrors('Congrats! Term And Condition is added successfully.');
@@ -2732,21 +2737,31 @@ class FundShellController extends Controller
 
         $user = Auth::user();
 
-        if($file = $request->hasFile('financial_statement')) {
-            $rand_str = $this->generateRandomString(10);
-            $file = $request->file('financial_statement') ;
-            $fileName = $file->getClientOriginalName() ;
-            $destinationPath = public_path().'/images/'.$rand_str. '/' ;
-            $file->move($destinationPath,$fileName);
-            
-            AnnualReport::create([
-                'user_id' => $user->id,
-                'fund_identity_id' => $request->fund_identity_id,
-                'file_path' => '/images/'.$rand_str.'/'.(string)$fileName,
-                'financial_statement' => $fileName,
-                'financial_statement_year' => $request->financial_statement_year,
-                'financial_statement_date' => $request->financial_statement_date,
-            ]);
+        if ($request->hasFile('financial_statement')) {
+
+            foreach ($request->file('financial_statement') as $file) {
+                if (!empty($file)) {
+                    try{
+
+                        $rand_str = $this->generateRandomString(10);
+                        $fileName = $file->getClientOriginalName();
+                        $destinationPath = public_path() . '/images/' . $rand_str . '/';
+                        $file->move($destinationPath, $fileName);
+
+                        AnnualReport::create([
+                            'user_id' => $user->id,
+                            'fund_identity_id' => $request->fund_identity_id,
+                            'file_path' => '/images/' . $rand_str . '/' . (string)$fileName,
+                            'financial_statement' => $fileName,
+                            'financial_statement_year' => $request->financial_statement_year,
+                            'financial_statement_date' => $request->financial_statement_date,
+                        ]);
+                    } catch (\Exception $e){
+                        return redirect()->back()->withErrors('Oops! duplicate file name/files not allowed into database.');
+                    }
+                }
+            }
+
         }
 
         return redirect()->back()->withErrors('Congrats! Annual Report is added successfully.');
@@ -2801,21 +2816,22 @@ class FundShellController extends Controller
 
         $user = Auth::user();
 
-        if($file = $request->hasFile('semi_annual_report')) {
-            $rand_str = $this->generateRandomString(10);
-            $file = $request->file('semi_annual_report') ;
-            $fileName = $file->getClientOriginalName() ;
-            $destinationPath = public_path().'/images/'.$rand_str. '/' ;
-            $file->move($destinationPath,$fileName);
-            
-            SemiAnnualReport::create([
-                'user_id' => $user->id,
-                'fund_identity_id' => $request->fund_identity_id,
-                'file_path' => '/images/'.$rand_str.'/'.(string)$fileName,
-                'semi_annual_report' => $fileName,
-                'semi_annual_report_year' => $request->semi_annual_report_year,
-                'semi_annual_report_date' => $request->semi_annual_report_date,
-            ]);
+        if ($request->hasFile('semi_annual_report')) {
+            foreach($request->file('semi_annual_report') as $file){
+                $rand_str = $this->generateRandomString(10);
+                $fileName = $file->getClientOriginalName();
+                $destinationPath = public_path() . '/images/' . $rand_str . '/';
+                $file->move($destinationPath, $fileName);
+
+                SemiAnnualReport::create([
+                    'user_id' => $user->id,
+                    'fund_identity_id' => $request->fund_identity_id,
+                    'file_path' => '/images/' . $rand_str . '/' . (string)$fileName,
+                    'semi_annual_report' => $fileName,
+                    'semi_annual_report_year' => $request->semi_annual_report_year,
+                    'semi_annual_report_date' => $request->semi_annual_report_date,
+                ]);
+            }
         }
 
         return redirect()->back()->withErrors('Congrats! Semi Annual Report is added successfully.');
@@ -3181,7 +3197,8 @@ class FundShellController extends Controller
 
 
     //  Address
-    public function createAddress(Request $request){
+    public function createAddress(Request $request)
+    {
 
         $validator = Validator::make($request->all(), [
             'line_1' => 'required',
@@ -3200,7 +3217,7 @@ class FundShellController extends Controller
 
         Address::create([
             'user_id' => $user->id,
-            'line_1' =>$request->line_1,
+            'line_1' => $request->line_1,
             'line_2' => $request->line_2,
             'city' => $request->city,
             'postal_code' => $request->postal_code,
@@ -3212,7 +3229,8 @@ class FundShellController extends Controller
         return redirect()->back()->withErrors('Congrats! Address record is added successfully.');
     }
 
-    public function updateAddress(Request $request,$id){
+    public function updateAddress(Request $request, $id)
+    {
 
         $validator = Validator::make($request->all(), [
             'line_1' => 'required',
@@ -3227,8 +3245,8 @@ class FundShellController extends Controller
             }
         }
 
-        $address= Address::find($id);
-        $address->user_id =$request->user_id ;
+        $address = Address::find($id);
+        $address->user_id = $request->user_id;
         $address->line_1 = $request->line_1;
         $address->line_2 = $request->line_2;
         $address->city = $request->city;
@@ -3242,7 +3260,7 @@ class FundShellController extends Controller
 
     public function removeAddress($id)
     {
-        $address= Address::find($id);
+        $address = Address::find($id);
         $address->delete();
         return redirect()->back()->withErrors('Address is deleted successfully.');
     }
