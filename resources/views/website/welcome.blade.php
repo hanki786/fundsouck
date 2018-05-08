@@ -42,252 +42,273 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 <!-- start-smoth-scrolling -->
 <style>
     .no-display{ display:none !important; }
+	.agile-header{
+		padding: 10px 10px;
+		background-color: #fff;
+		color: #7b7b7d;
+	}
+	.agileits-contact-info ul li span, .agileits-contact-info ul li a, .agileits-contact-info ul li, .w3_agileits_social_media ul li a{
+		color: black;
+	}
+	nav.navbar.navbar-default{ padding: 10px 10px;}
+	.banner {
+		background-color: #049ddc;
+		/* background: url(../images/bannerO.jpg) no-repeat 0px 0px; */
+		background: #049ddc;
+		background-size: cover;
+		-webkit-background-size: cover;
+		-moz-background-size: cover;
+		-o-background-size: cover;
+		-ms-background-size: cover;
+		min-height: 130px;
+	}
+	.CurverContainer {
+		background: url('http://fundata.com/images/BGCurveContainerDark.png') repeat 0 0;
+		border: 1px solid #ccc;
+		background-color: #fff;
+		margin-bottom: 10px;
+		font-size: 13px;
+		display: block;
+		width: 100%;
+	}
+	table.HomePageList {
+		border-collapse: collapse;
+		width: 100%;
+	}
+	table.HomePageList ul {
+		margin-left: 20px;
+	}
+	table.HomePageList li {
+		padding-bottom: 10px;
+		padding-right: 10px;
+		list-style: none;
+		list-style-image: url(../images/BulletBlue.png);
+	}
+	table.HomePageList a {
+		text-decoration: none;
+		font-size: 14px;
+	}
 </style>
 </head>
 	
 <body>
 <!-- banner -->
 	<div class="banner">
-	    <iframe scrolling="no" allowtransparency="true" frameborder="0" width="100%" height="66" src="https://s.tradingview.com/tickerswidgetembed/#%7B%22symbols%22%3A%5B%7B%22proName%22%3A%22INDEX%3ASPX%22%2C%22title%22%3A%22S%26P%20500%22%7D%2C%7B%22proName%22%3A%22INDEX%3AIUXX%22%2C%22title%22%3A%22Nasdaq%20100%22%7D%2C%7B%22proName%22%3A%22FX_IDC%3AEURUSD%22%2C%22title%22%3A%22EUR%2FUSD%22%7D%2C%7B%22proName%22%3A%22NYMEX%3ACL1!%22%2C%22title%22%3A%22Crude%20Oil%22%7D%2C%7B%22proName%22%3A%22FX_IDC%3AXAUUSD%22%2C%22title%22%3A%22Gold%22%7D%5D%2C%22locale%22%3A%22en%22%2C%22linkPageTemplate%22%3A%22http%3A%2F%2Fwww.bryket.com%3Ftvwidgetsymbol%3D%7B%7BproName%7D%7D%22%2C%22width%22%3A%22100%25%22%2C%22height%22%3A104%2C%22utm_source%22%3A%22www.tradingview.com%22%2C%22utm_medium%22%3A%22widget%22%2C%22utm_campaign%22%3A%22tickers%22%7D" style="border-radius:0;padding-bottom: 0;"></iframe>
-		<div class="container">
+		<div class="container" style="padding:0;">
 			@include('website.nav')
-			<div class="w3l_banner_info">
-				<section class="slider col-md-6">
-				    <h3 style="color:yellow">News Updates</h3>
-					<div class="flexslider">
-						<ul class="slides">
-							<li>
-								<div class="wthree_banner_info_grid">
-									<h4>Latin literature</h4>
-									<h3>It has roots in a piece of classical Latin </h3>
-									<h5>classical Latin</h5>
-								</div>
-							</li>
-							<li>
-								<div class="wthree_banner_info_grid">
-									<h4>simply random</h4>
-									<h3>Lorem Ipsum is not simply random text.</h3>
-									<h5>classical Latin</h5>
-								</div>
-							</li>
-							<li>
-								<div class="wthree_banner_info_grid">
-									<h4>Latin literature</h4>
-									<h3>It has roots in a piece of classical Latin</h3>
-									<h5>classical Latin</h5>
-								</div>
-							</li>
-							<li>
-								<div class="wthree_banner_info_grid">
-									<h4>simply random</h4>
-									<h3>Lorem Ipsum is not simply random text.</h3>
-									<h5>classical Latin</h5>
-								</div>
-							</li>
-							<li>
-								<div class="wthree_banner_info_grid">
-									<h4>Latin literature</h4>
-									<h3>It has roots in a piece of classical Latin</h3>
-									<h5>classical Latin</h5>
-								</div>
-							</li>
-						</ul>
-					</div>
-                </section>
-				<!-- flexSlider -->
-					<script defer src="{{ asset('website/js/jquery.flexslider.js') }}"></script>
-					<script type="text/javascript">
-						$(window).load(function(){
-							$('.flexslider').flexslider({
-								animation: "slide",
-								start: function(slider){
-								$('body').removeClass('loading');
-								}
-							  });
-							});
-					</script>
-            
-            
-            <section class="col-md-6">
-                <div class="row">
-                    <div class="col-md-6">
-                    <form class="form-horizontal">
-                        <div class="form-group">
-                            <div class="col-sm-12">    
-                                <select class="form-control">
-                                    <option>Mustard</option>
-                                    <option>Ketchup</option>
-                                    <option>Relish</option>
-                                </select>
-                            </div>
-                        </div>
-                        <div class="form-group">
-                            <div class="col-sm-12">    
-                                <select class="form-control">
-                                    <option>Mustard</option>
-                                    <option>Ketchup</option>
-                                    <option>Relish</option>
-                                </select>
-                            </div>
-                        </div>
-                        <div class="form-group">
-                            <div class="col-sm-12">    
-                                <select class="form-control">
-                                    <option>Mustard</option>
-                                    <option>Ketchup</option>
-                                    <option>Relish</option>
-                                </select>
-                            </div>
-                        </div>
-                    </form>   
-                    </div>
-                    <div class="col-md-6">
-                        <div class="form-group">
-                            <button type="button" class="btn btn-default" style="width:100%" data-toggle="modal" data-target="#calc">Calculator</button>
-                        </div>
-                        <div class="form-group">
-                            <button type="button" class="btn btn-default"  style="width:100%" data-toggle="modal" data-target="#map">World Map</button>
-                        </div>
-                        <div class="form-group">
-                            <button type="button" class="btn btn-default"  style="width:100%" data-toggle="modal" data-target="#cc">Currency Converter</button>
-                        </div>
-                    </div>
-                    <!-- Modal -->
-
-
-<div id="portfolio" class="modal fade" role="dialog">
-  <div class="modal-dialog">
-
-    <!-- Modal content-->
-    <div class="modal-content">
-      <div class="modal-header">
-        <button type="button" class="close" data-dismiss="modal">&times;</button>
-        <h4 class="modal-title">Our Portfolio</h4>
-      </div>
-      <div class="modal-body">
-          <h2> Update Soon</h2>
-      </div>
-    </div>
-
-  </div>
-</div>
-
-<div id="about" class="modal fade" role="dialog">
-  <div class="modal-dialog">
-
-    <!-- Modal content-->
-    <div class="modal-content">
-      <div class="modal-header">
-        <button type="button" class="close" data-dismiss="modal">&times;</button>
-        <h4 class="modal-title">About Company</h4>
-      </div>
-      <div class="modal-body">
-          <h2> Update Soon</h2>
-      </div>
-    </div>
-
-  </div>
-</div>
-
-<div id="contact" class="modal fade" role="dialog">
-  <div class="modal-dialog">
-
-    <!-- Modal content-->
-    <div class="modal-content">
-      <div class="modal-header">
-        <button type="button" class="close" data-dismiss="modal">&times;</button>
-        <h4 class="modal-title">Contact us</h4>
-      </div>
-      <div class="modal-body">
-     <h2> Update Soon</h2>
-      </div>
-    </div>
-
-  </div>
-</div>
-
-                    
-<div id="cc" class="modal fade" role="dialog">
-  <div class="modal-dialog modal-lg">
-
-    <!-- Modal content-->
-    <div class="modal-content">
-      <div class="modal-header">
-        <button type="button" class="close" data-dismiss="modal">&times;</button>
-        <h4 class="modal-title">Currency Converter</h4>
-      </div>
-      <div class="modal-body">
-      <!--Currency Converter widget by FreeCurrencyRates.com -->
-
-<div id='gcw_mainFxBqTkJjs' class='gcw_mainFxBqTkJjs'></div>
-<script>function reloadFxBqTkJjs(){ var sc = document.getElementById('scFxBqTkJjs');if (sc) sc.parentNode.removeChild(sc);sc = document.createElement('script');sc.type = 'text/javascript';sc.charset = 'UTF-8';sc.async = true;sc.id='scFxBqTkJjs';sc.src = 'https://freecurrencyrates.com/en/widget-table?iso=USDEURGBPRUB&df=2&p=FxBqTkJjs&v=fi&source=fcr&width=600&width_title=0&firstrowvalue=1&thm=A6C9E2,FCFDFD,4297D7,5C9CCC,FFFFFF,C5DBEC,FCFDFD,2E6E9E,000000&title=Currency%20Converter&tzo=-300';var div = document.getElementById('gcw_mainFxBqTkJjs');div.parentNode.insertBefore(sc, div);} reloadFxBqTkJjs(); </script>
-<!-- put custom styles here: .gcw_mainFxBqTkJjs{}, .gcw_headerFxBqTkJjs{}, .gcw_ratesFxBqTkJjs{}, .gcw_sourceFxBqTkJjs{} -->
-<!--End of Currency Converter widget by FreeCurrencyRates.com -->               
-    </div>
-    </div>
-
-  </div>
-</div>
-
-<div id="calc" class="modal fade" role="dialog">
-  <div class="modal-dialog">
-
-    <!-- Modal content-->
-    <div class="modal-content">
-      <div class="modal-header">
-        <button type="button" class="close" data-dismiss="modal">&times;</button>
-        <h4 class="modal-title">Calculator</h4>
-      </div>
-      <div class="modal-body">
-      <iframe width="219" height="302" src="http://www.calculator-1.com/outdoor/?f=666666&r=666666" scrolling="no" frameborder="0"></iframe>
-      </div>
-    </div>
-
-  </div>
-</div>
-
-
-<div id="offshore" class="modal fade" role="dialog">
-  <div class="modal-dialog modal-lg">
-
-    <!-- Modal content-->
-    <div class="modal-content">
-      <div class="modal-header">
-        <button type="button" class="close" data-dismiss="modal">&times;</button>
-        <h4 class="modal-title">Windfarm Offshore</h4>
-      </div>
-      <div class="modal-body">
-      
-<iframe width="819" height="402" src="http://services.4coffshore.com/widgets/windfarms.html?org=OWT&amp;special" frameborder="0"></iframe>
-</div>
-    </div>
-
-  </div>
-</div>
-
-<div id="map" class="modal fade" role="dialog">
-  <div class="modal-dialog modal-lg">
-
-    <!-- Modal content-->
-    <div class="modal-content">
-      <div class="modal-header">
-        <button type="button" class="close" data-dismiss="modal">&times;</button>
-        <h4 class="modal-title">World Map</h4>
-      </div>
-      <div class="modal-body">
-      <div style="width: 100%"><iframe width="100%" height="400" src="https://www.mapsdirections.info/en/custom-google-maps/map.php?width=100%&height=400&hl=ru&q=Malet%20St%2C%20London%20WC1E%207HU%2C%20United%20Kingdom+(Your%20Business%20Name)&ie=UTF8&t=&z=14&iwloc=A&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"><a href="https://www.mapsdirections.info/en/custom-google-maps/">www.mapsdirections.info</a> by <a href="https://www.mapsdirections.info/en/">Measure area on map</a></iframe>  
-    </div>
-    </div>
-
-  </div>
-</div>
-                </div>
-                </section>			
-
-            <!-- //flexSlider -->
-            </div>
-            
 		</div>
+	</div>
+
+	<div class="container">
+		<div class="w3l_banner_info">
+	<section class="slider col-md-7">
+        <div id="myCarousel" class="carousel slide" data-ride="carousel">
+            <!-- Indicators -->
+            <ol class="carousel-indicators">
+                <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                <li data-target="#myCarousel" data-slide-to="1"></li>
+                <li data-target="#myCarousel" data-slide-to="2"></li>
+            </ol>
+
+            <!-- Wrapper for slides -->
+            <div class="carousel-inner">
+                <div class="item active">
+                    <img src="{{ asset('website/images/Fundatat-Analytics-HP.png') }}" >
+                </div>
+				<div class="item">
+					<img src="{{ asset('website/images/Fund-Custom-Web-Solutions-HP.png') }}" >
+				</div>
+				<div class="item">
+					<img src="{{ asset('website/images/Mutual-Fund-Indices-HP.png') }}" >
+				</div>
+				<div class="item">
+					<img src="{{ asset('website/images/Mutual-Fund-Marketing-HP.png') }}" >
+				</div>
+				<div class="item">
+					<img src="{{ asset('website/images/Mutual-Fund-Risk-Ratings-HP.png') }}" >
+				</div>
+				<div class="item">
+					<img src="{{ asset('website/images/Mutual-Fund-ETF-Stock-Data-Feeds-Slider.png') }}" >
+				</div>
+
+            </div>
+
+            <!-- Left and right controls -->
+            <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+                <span class="glyphicon glyphicon-chevron-left"></span>
+                <span class="sr-only">Previous</span>
+            </a>
+            <a class="right carousel-control" href="#myCarousel" data-slide="next">
+                <span class="glyphicon glyphicon-chevron-right"></span>
+                <span class="sr-only">Next</span>
+            </a>
+        </div>
+		<div class="DataFeedTitle">Quick Links</div>
+		<div style="width:100%; padding-top:20px; padding-bottom:20px;">
+			<table class="HomePageList" "="">
+			<tbody><tr>
+				<td>
+					<ul>
+						<li><a href="Analytics/MutualFunds.aspx">Mutual Funds</a></li>
+						<li><a href="Analytics/Etfs.aspx" id="ContentPlaceHolder1_A1">Exchange Traded Funds (ETFs)</a></li>
+						<li><a href="Analytics/Equities.aspx" id="ContentPlaceHolder1_A2">Equities</a></li>
+					</ul>
+				</td>
+				<td>
+					<ul>
+						<li><a href="Analytics/Calculators.aspx" id="ContentPlaceHolder1_A3">Calculators</a></li>
+						<li><a href="LinksResources/IndustryLinks.aspx" id="ContentPlaceHolder1_A4">Industry Links</a></li>
+						<li><a href="ProductsServices/ListingServices.aspx" id="ContentPlaceHolder1_A5">Listing Services</a></li>
+					</ul>
+				</td>
+				<td>
+					<ul>
+						<li><a href="ProductsServices/DataFeeds.aspx" id="ContentPlaceHolder1_A6">Data Feeds</a></li>
+						<li><a href="ProductsServices/FundProfiler.aspx" id="ContentPlaceHolder1_A7">FundProfiler</a></li>
+						<li><a href="ProductsServices/FundGrade.aspx" id="ContentPlaceHolder1_A8">FundGrade Ratings</a></li>
+					</ul>
+				</td>
+			</tr>
+			</tbody></table>
+		</div>
+	</section>
+
+	<section class="col-md-5">
+			<img style=" width: 100%;" src="{{ asset('website/images/FundGradeAwards-Ad-2017-PostAwards.png') }}" >
+			</br>
+			<!-- Modal -->
+
+			<div id="portfolio" class="modal fade" role="dialog">
+				<div class="modal-dialog">
+
+					<!-- Modal content-->
+					<div class="modal-content">
+						<div class="modal-header">
+							<button type="button" class="close" data-dismiss="modal">&times;</button>
+							<h4 class="modal-title">Our Portfolio</h4>
+						</div>
+						<div class="modal-body">
+							<h2> Update Soon</h2>
+						</div>
+					</div>
+
+				</div>
+			</div>
+
+			<div id="about" class="modal fade" role="dialog">
+				<div class="modal-dialog">
+
+					<!-- Modal content-->
+					<div class="modal-content">
+						<div class="modal-header">
+							<button type="button" class="close" data-dismiss="modal">&times;</button>
+							<h4 class="modal-title">About Company</h4>
+						</div>
+						<div class="modal-body">
+							<h2> Update Soon</h2>
+						</div>
+					</div>
+
+				</div>
+			</div>
+
+			<div id="contact" class="modal fade" role="dialog">
+				<div class="modal-dialog">
+
+					<!-- Modal content-->
+					<div class="modal-content">
+						<div class="modal-header">
+							<button type="button" class="close" data-dismiss="modal">&times;</button>
+							<h4 class="modal-title">Contact us</h4>
+						</div>
+						<div class="modal-body">
+							<h2> Update Soon</h2>
+						</div>
+					</div>
+
+				</div>
+			</div>
+
+
+			<div id="cc" class="modal fade" role="dialog">
+				<div class="modal-dialog modal-lg">
+
+					<!-- Modal content-->
+					<div class="modal-content">
+						<div class="modal-header">
+							<button type="button" class="close" data-dismiss="modal">&times;</button>
+							<h4 class="modal-title">Currency Converter</h4>
+						</div>
+						<div class="modal-body">
+							<!--Currency Converter widget by FreeCurrencyRates.com -->
+
+							<div id='gcw_mainFxBqTkJjs' class='gcw_mainFxBqTkJjs'></div>
+							<script>function reloadFxBqTkJjs(){ var sc = document.getElementById('scFxBqTkJjs');if (sc) sc.parentNode.removeChild(sc);sc = document.createElement('script');sc.type = 'text/javascript';sc.charset = 'UTF-8';sc.async = true;sc.id='scFxBqTkJjs';sc.src = 'https://freecurrencyrates.com/en/widget-table?iso=USDEURGBPRUB&df=2&p=FxBqTkJjs&v=fi&source=fcr&width=600&width_title=0&firstrowvalue=1&thm=A6C9E2,FCFDFD,4297D7,5C9CCC,FFFFFF,C5DBEC,FCFDFD,2E6E9E,000000&title=Currency%20Converter&tzo=-300';var div = document.getElementById('gcw_mainFxBqTkJjs');div.parentNode.insertBefore(sc, div);} reloadFxBqTkJjs(); </script>
+							<!-- put custom styles here: .gcw_mainFxBqTkJjs{}, .gcw_headerFxBqTkJjs{}, .gcw_ratesFxBqTkJjs{}, .gcw_sourceFxBqTkJjs{} -->
+							<!--End of Currency Converter widget by FreeCurrencyRates.com -->
+						</div>
+					</div>
+
+				</div>
+			</div>
+
+			<div id="calc" class="modal fade" role="dialog">
+				<div class="modal-dialog">
+
+					<!-- Modal content-->
+					<div class="modal-content">
+						<div class="modal-header">
+							<button type="button" class="close" data-dismiss="modal">&times;</button>
+							<h4 class="modal-title">Calculator</h4>
+						</div>
+						<div class="modal-body">
+							<iframe width="219" height="302" src="http://www.calculator-1.com/outdoor/?f=666666&r=666666" scrolling="no" frameborder="0"></iframe>
+						</div>
+					</div>
+
+				</div>
+			</div>
+
+
+			<div id="offshore" class="modal fade" role="dialog">
+				<div class="modal-dialog modal-lg">
+
+					<!-- Modal content-->
+					<div class="modal-content">
+						<div class="modal-header">
+							<button type="button" class="close" data-dismiss="modal">&times;</button>
+							<h4 class="modal-title">Windfarm Offshore</h4>
+						</div>
+						<div class="modal-body">
+
+							<iframe width="819" height="402" src="http://services.4coffshore.com/widgets/windfarms.html?org=OWT&amp;special" frameborder="0"></iframe>
+						</div>
+					</div>
+
+				</div>
+			</div>
+
+			<div id="map" class="modal fade" role="dialog">
+				<div class="modal-dialog modal-lg">
+
+					<!-- Modal content-->
+					<div class="modal-content">
+						<div class="modal-header">
+							<button type="button" class="close" data-dismiss="modal">&times;</button>
+							<h4 class="modal-title">World Map</h4>
+						</div>
+						<div class="modal-body">
+							<div style="width: 100%"><iframe width="100%" height="400" src="https://www.mapsdirections.info/en/custom-google-maps/map.php?width=100%&height=400&hl=ru&q=Malet%20St%2C%20London%20WC1E%207HU%2C%20United%20Kingdom+(Your%20Business%20Name)&ie=UTF8&t=&z=14&iwloc=A&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"><a href="https://www.mapsdirections.info/en/custom-google-maps/">www.mapsdirections.info</a> by <a href="https://www.mapsdirections.info/en/">Measure area on map</a></iframe>
+							</div>
+						</div>
+
+					</div>
+				</div>
+			</div>
+	</section>
+
+	<!-- //flexSlider -->
+</div>
 	</div>
 <!-- //banner -->
 
@@ -297,35 +318,12 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 		 <div class="welcome-top">
              <div class="row">
                  <div class="col-md-12">
-                 <script src="http://widgets.macroaxis.com/widgets/url.jsp?t=42"></script>
                  </div>
                     <div class="col-md-6">
                     
              <h4>Advanced Real-Time World Trades</h4>    
                     <!-- TradingView Widget BEGIN -->
-                    <script type="text/javascript" src="https://s3.tradingview.com/tv.js"></script>
-                    <script type="text/javascript">
-                    new TradingView.widget({
-                      "width": 585,
-                      "height": 350,
-                      "symbol": "NASDAQ:AAPL",
-                      "interval": "D",
-                      "timezone": "Etc/UTC",
-                      "theme": "Dark",
-                      "style": "0",
-                      "locale": "en",
-                      "toolbar_bg": "#f1f3f6",
-                      "enable_publishing": false,
-                      "allow_symbol_change": false,
-                      "details": true,
-                      "hotlist": true,
-                      "news": [
-                        "stocktwits",
-                        "headlines"
-                      ],
-                      "hideideasbutton": false
-                    });
-                    </script>
+
                     <!-- TradingView Widget END -->
                     
 
@@ -334,48 +332,11 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
             <div class="col-md-6">
                 <h4>Forex Chart Live</h4>
                 <!-- TradingView Widget BEGIN -->
-		<script type="text/javascript" src="https://d33t3vvu2t2yu5.cloudfront.net/tv.js"></script>
-		<script type="text/javascript">
-			new TradingView.widget( {
-				'width'               : 585,
-				'height'              : 350,
-				'symbol'              : 'FX:EURUSD',
-				'interval'            : 'D',
-				'timezone'            : 'Etc/UTC',
-				'theme'               : 'White',
-				'style'               : '1',
-				'locale'              : 'en',
-				'toolbar_bg'          : '#f1f3f6',
-				'enable_publishing'   : false,
-				'allow_symbol_change' : false,
-				'hideideas'           : false,
-				'show_popup_button'   : false,
-				'popup_width'         : '1000',
-				'popup_height'        : '650'
-			} );
-		</script>
+
 		<!-- TradingView Widget END -->
             </div>
             </div>
         </div>
-		  <div class="charitys">
-			  <div class="col-md-6 chrt_grid" style="visibility: visible; -webkit-animation-delay: 0.4s;">
-              <h4>World Market Map</h4>  
-              <iframe border="0" frameborder="0" height="350" width="585" src="http://widgets.macroaxis.com/widgets/previewWidget.jsp?widgetCode=/widgets/url.jsp&amp;t=56"></iframe>
-			  </div>
-			  <div class="col-md-6 chrt_grid" style="visibility: visible; -webkit-animation-delay: 0.4s;">
-              <h4>Global Index Heat Map</h4>
-              <iframe border="0" frameborder="0" height="350" width="585" src="http://widgets.macroaxis.com/widgets/previewWidget.jsp?widgetCode=/widgets/url.jsp&amp;t=47"></iframe>
-			  
-                </div>
-			  <div class="clearfix"></div>
-		 </div>	
-		 <div class="row">
-		     <div class="col-md-12">
-		         <iframe id="tradingview_b9e5c" src="https://www.tradingview.com/mediumwidgetembed/?symbols=Apple,Google,Microsoft&amp;Apple=AAPL%20&amp;Google=GOOGL&amp;Microsoft=MSFT&amp;locale=en&amp;trendLineColor=%234bafe9&amp;underLineColor=%23dbeffb&amp;fontColor=%2383888D&amp;gridLineColor=%23e9e9ea&amp;width=1000px&amp;height=400px&amp;utm_source=www.tradingview.com&amp;utm_medium=widget&amp;utm_campaign=symbol-overview" style="margin: 0 !important; padding: 0 !important; width: 100%; height: 400px; display:none;" frameborder="0" allowtransparency="true" scrolling="no">ab</iframe>
-		     </div>
-		     <div class="col-md-12" style="background:#fff;"></div>
-		 </div>
 	 </div>
 </div>
 <!-- //welcome -->
