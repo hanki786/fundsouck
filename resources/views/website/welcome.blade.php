@@ -425,7 +425,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
             <li class="active"><a data-toggle="tab" href="#home">LATEST NEWS</a></li>
         </ul>
 		<?php 
-			$news = DB::table('latest_news')->orderBy('desc','id')->limit(5)->get();
+			$news = DB::table('latest_news')->orderBy('id','desc')->limit(5)->get();
         ?>
         <div class="tab-content">
             <div id="home" class="tab-pane fade in active">
