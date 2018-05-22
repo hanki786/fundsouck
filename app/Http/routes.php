@@ -24,7 +24,6 @@
 Route::get('/', function () {
 
     if (!Auth::check()) {
-
         return view('website.welcome');
 
     } else

@@ -422,12 +422,17 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
     <div class="container">
         <h3 class="">News Feeds</h3>
         <ul class="nav nav-tabs">
-            <li class="active"><a data-toggle="tab" href="#home">LATEST</a></li>
+            <li class="active"><a data-toggle="tab" href="#home">LATEST NEWS</a></li>
         </ul>
-
+		<?php 
+			$news = DB::table('latest_news')->orderBy('desc','id')->limit(5)->get();
+        ?>
         <div class="tab-content">
             <div id="home" class="tab-pane fade in active">
-                <h3>No News Yet</h3>
+				@foreach($news as $n)
+                <h3>{{ $n->title }}</h3>
+				<p>{{ $n->body }}</p><br>
+				@endforeach
             </div>
         </div>
     </div>
