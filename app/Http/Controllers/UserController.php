@@ -56,6 +56,7 @@ use Carbon\Carbon;
 use DB;
 use Auth;
 use Hash;
+use Illuminate\Http\Response;
 use Validator;
 use View;
 use Illuminate\Support\Facades\Input;
@@ -64,20 +65,37 @@ class UserController extends Controller
 {
     public function fund_overview(Request $request){
 
+        $fund_key = null;
+        if(isset($request['fund_key'])){
+            $fund_key = $request['fund_key'];
+        }
         $fund_identities = FundIdentity::all();
 
-        $fi = FundIdentity::whereId($request['fund_identity_id'])->first();
-        $fos = FundObjectiveStrategy::whereFundIdentityId($request['fund_identity_id'])->first();
-        $faa = FundAssetAttributes::whereFundIdentityId($request['fund_identity_id'])->first();
-        $fcb = FundClassificationScheme::whereFundIdentityId($request['fund_identity_id'])->first();
-        $fcb1 = FundBenchmarks::whereFundIdentityId($request['fund_identity_id'])->first();
-        $fka = FundKeyAttributes::whereFundIdentityId($request['fund_identity_id'])->first();
-        $fsd = FundSalesDistribution::whereFundIdentityId($request['fund_identity_id'])->first();
-        $s = Subscription::whereFundIdentityId($request['fund_identity_id'])->first();
-        $r = Redemption::whereFundIdentityId($request['fund_identity_id'])->first();
+        if($fund_key){
+            $fi = FundIdentity::where('fund_name', 'LIKE', "%$fund_key%")
+                ->orwhere('fund_short_name', 'LIKE', "%$fund_key%")->first();
+            $fos = FundObjectiveStrategy::whereFundIdentityId($fi->id)->first();
+            $faa = FundAssetAttributes::whereFundIdentityId($fi->id)->first();
+            $fcb = FundClassificationScheme::whereFundIdentityId($fi->id)->first();
+            $fcb1 = FundBenchmarks::whereFundIdentityId($fi->id)->first();
+            $fka = FundKeyAttributes::whereFundIdentityId($fi->id)->first();
+            $fsd = FundSalesDistribution::whereFundIdentityId($fi->id)->first();
+            $s = Subscription::whereFundIdentityId($fi->id)->first();
+            $r = Redemption::whereFundIdentityId($fi->id)->first();
+        }else{
+            $fi = FundIdentity::whereId($request['fund_identity_id'])->first();
+            $fos = FundObjectiveStrategy::whereFundIdentityId($request['fund_identity_id'])->first();
+            $faa = FundAssetAttributes::whereFundIdentityId($request['fund_identity_id'])->first();
+            $fcb = FundClassificationScheme::whereFundIdentityId($request['fund_identity_id'])->first();
+            $fcb1 = FundBenchmarks::whereFundIdentityId($request['fund_identity_id'])->first();
+            $fka = FundKeyAttributes::whereFundIdentityId($request['fund_identity_id'])->first();
+            $fsd = FundSalesDistribution::whereFundIdentityId($request['fund_identity_id'])->first();
+            $s = Subscription::whereFundIdentityId($request['fund_identity_id'])->first();
+            $r = Redemption::whereFundIdentityId($request['fund_identity_id'])->first();
+        }
 
         $data_array = [
-            'fund_identity_id' => $request['fund_identity_id'],
+            'fund_identity_id' => $request['fund_identity_id'] or $fund_key,
             'fund_identities' => $fund_identities,
             'fi' => $fi,
             'fos' => $fos,
@@ -90,6 +108,73 @@ class UserController extends Controller
             'r' => $r,
         ];
         return view('website.fund_overview',$data_array);
+    }
+
+    public function fund_overview_result(Request $request){
+
+        $fund_key = null;
+        if(isset($request['fund_key'])){
+            $fund_key = $request['fund_key'];
+        }
+        $fund_identities = FundIdentity::all();
+
+        if($fund_key){
+            $fi = FundIdentity::where('fund_name', 'LIKE', "%$fund_key%")
+                ->orwhere('fund_short_name', 'LIKE', "%$fund_key%")->first();
+            $fos = FundObjectiveStrategy::whereFundIdentityId($fi->id)->first();
+            $faa = FundAssetAttributes::whereFundIdentityId($fi->id)->first();
+            $fcb = FundClassificationScheme::whereFundIdentityId($fi->id)->first();
+            $fcb1 = FundBenchmarks::whereFundIdentityId($fi->id)->first();
+            $fka = FundKeyAttributes::whereFundIdentityId($fi->id)->first();
+            $fsd = FundSalesDistribution::whereFundIdentityId($fi->id)->first();
+            $s = Subscription::whereFundIdentityId($fi->id)->first();
+            $r = Redemption::whereFundIdentityId($fi->id)->first();
+        }else{
+            $fi = FundIdentity::whereId($request['fund_identity_id'])->first();
+            $fos = FundObjectiveStrategy::whereFundIdentityId($request['fund_identity_id'])->first();
+            $faa = FundAssetAttributes::whereFundIdentityId($request['fund_identity_id'])->first();
+            $fcb = FundClassificationScheme::whereFundIdentityId($request['fund_identity_id'])->first();
+            $fcb1 = FundBenchmarks::whereFundIdentityId($request['fund_identity_id'])->first();
+            $fka = FundKeyAttributes::whereFundIdentityId($request['fund_identity_id'])->first();
+            $fsd = FundSalesDistribution::whereFundIdentityId($request['fund_identity_id'])->first();
+            $s = Subscription::whereFundIdentityId($request['fund_identity_id'])->first();
+            $r = Redemption::whereFundIdentityId($request['fund_identity_id'])->first();
+        }
+
+        $data_array = [
+            'fund_identity_id' => $request['fund_identity_id'] or $fund_key,
+            'fund_identities' => $fund_identities,
+            'fi' => $fi,
+            'fos' => $fos,
+            'faa' => $faa,
+            'fcb' => $fcb,
+            'fcb1' => $fcb1,
+            'fka' => $fka,
+            'fsd' => $fsd,
+            's' => $s,
+            'r' => $r,
+        ];
+        return view('website.fund_overview_result',$data_array);
+    }
+
+    public function fund_overview_search(Request $request){
+
+        $fund_key = null;
+        if(isset($request['fund_key'])){
+            $fund_key = $request['fund_key'];
+        }
+        $fund_identities = FundIdentity::all();
+        $fi = FundIdentity::where('fund_name', 'LIKE', "%$fund_key%")
+            ->orwhere('fund_short_name', 'LIKE', "%$fund_key%")->get();
+
+
+        $data_array = [
+            'fund_identity_id' => $request['fund_identity_id'] or $fund_key,
+            'fund_identities' => $fund_identities,
+            'fi' => $fi,
+        ];
+        $body = View::make('website.search',$data_array)->render();
+        return response()->json($body);
     }
 
     public function fund_attributes(Request $request){
@@ -123,12 +208,19 @@ class UserController extends Controller
 
         $fis = FundIncomeSetting::whereFundIdentityId($request['fund_identity_id'])->first();
         $fn = FundNote::whereFundIdentityId($request['fund_identity_id'])->first();
-
+        $fund_net_assets = FundTimeSeries::whereFundIdentityId($request['fund_identity_id'])->select('fund_net_assets')->limit(9)->orderBy('last_valuation_date','desc')->get();
+        $fund_net_asset = array();
+        $f=0;
+        foreach($fund_net_assets as $key => $fund_net){
+            //$fund_net_asset[$f] = $fund_net['fund_net_assets'];
+            $f = $f + 1;
+        }
         $data_array = [
             'fund_identity_id' => $request['fund_identity_id'],
             'fund_identities' => $fund_identities,
             'fis' => $fis,
             'fn' => $fn,
+            'fund_net_assets' => ($fund_net_assets),
         ];
         return view('website.historical_prices_charts',$data_array);
     }

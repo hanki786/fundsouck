@@ -88,6 +88,9 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 		text-decoration: none;
 		font-size: 14px;
 	}
+    input, button, select, textarea {
+        color: black;
+    }
 </style>
 </head>
 	
@@ -314,30 +317,120 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 
 <!-- welcome -->
 <div class="welcome">
-	 <div class="container">
-		 <div class="welcome-top">
-             <div class="row">
-                 <div class="col-md-12">
-                 </div>
-                    <div class="col-md-6">
-                    
-             <h4>Advanced Real-Time World Trades</h4>    
-                    <!-- TradingView Widget BEGIN -->
+    <div class="container">
+        <h3 class="">Fund Top Performers</h3>
+        <ul class="nav nav-tabs">
+            <li class="active"><a data-toggle="tab" href="#home">TOP</a></li>
+            <li><a data-toggle="tab" href="#menu1">BOTTOM</a></li>
+        </ul>
 
-                    <!-- TradingView Widget END -->
-                    
-
+        <div class="tab-content">
+            <div id="home" class="tab-pane fade in active">
+                <h3>NO TOP PERFORMERS</h3>
+                <table class="table" style="display:none">
+                    <thead>
+                    <tr>
+                        <th>Firstname</th>
+                        <th>Lastname</th>
+                        <th>Email</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <tr>
+                        <td>Default</td>
+                        <td>Defaultson</td>
+                        <td>def@somemail.com</td>
+                    </tr>
+                    <tr class="success">
+                        <td>Success</td>
+                        <td>Doe</td>
+                        <td>john@example.com</td>
+                    </tr>
+                    <tr class="danger">
+                        <td>Danger</td>
+                        <td>Moe</td>
+                        <td>mary@example.com</td>
+                    </tr>
+                    <tr class="info">
+                        <td>Info</td>
+                        <td>Dooley</td>
+                        <td>july@example.com</td>
+                    </tr>
+                    <tr class="warning">
+                        <td>Warning</td>
+                        <td>Refs</td>
+                        <td>bo@example.com</td>
+                    </tr>
+                    <tr class="active">
+                        <td>Active</td>
+                        <td>Activeson</td>
+                        <td>act@example.com</td>
+                    </tr>
+                    </tbody>
+                </table>
             </div>
-            
-            <div class="col-md-6">
-                <h4>Forex Chart Live</h4>
-                <!-- TradingView Widget BEGIN -->
-
-		<!-- TradingView Widget END -->
-            </div>
+            <div id="menu1" class="tab-pane fade">
+                <h3>BOTTOM PERFORMERS</h3>
+                <table class="table" style="display:none">
+                    <thead>
+                    <tr>
+                        <th>Firstname</th>
+                        <th>Lastname</th>
+                        <th>Email</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <tr>
+                        <td>Default</td>
+                        <td>Defaultson</td>
+                        <td>def@somemail.com</td>
+                    </tr>
+                    <tr class="success">
+                        <td>Success</td>
+                        <td>Doe</td>
+                        <td>john@example.com</td>
+                    </tr>
+                    <tr class="danger">
+                        <td>Danger</td>
+                        <td>Moe</td>
+                        <td>mary@example.com</td>
+                    </tr>
+                    <tr class="info">
+                        <td>Info</td>
+                        <td>Dooley</td>
+                        <td>july@example.com</td>
+                    </tr>
+                    <tr class="warning">
+                        <td>Warning</td>
+                        <td>Refs</td>
+                        <td>bo@example.com</td>
+                    </tr>
+                    <tr class="active">
+                        <td>Active</td>
+                        <td>Activeson</td>
+                        <td>act@example.com</td>
+                    </tr>
+                    </tbody>
+                </table>
             </div>
         </div>
-	 </div>
+    </div>
+</div>
+
+
+<div class="welcome">
+    <div class="container">
+        <h3 class="">News Feeds</h3>
+        <ul class="nav nav-tabs">
+            <li class="active"><a data-toggle="tab" href="#home">LATEST</a></li>
+        </ul>
+
+        <div class="tab-content">
+            <div id="home" class="tab-pane fade in active">
+                <h3>No News Yet</h3>
+            </div>
+        </div>
+    </div>
 </div>
 <!-- //welcome -->
 <script>
@@ -445,8 +538,8 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 				              </div>
 						</div>
 						<!--//screen-gallery-->
-		</div>
-	</div>	
+        </div>
+    </div>
 	<!--//client-->
 <!-- what -->
 	<div class="what-w3ls no-display">
@@ -498,6 +591,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 				</div>
 		</div>
 	</div>
+
 <!-- //what -->
 <!-- footer -->
 	<div class="footer">
@@ -576,6 +670,24 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 			</div>
 		</div>
 	</div>
+
+
+<div id="searchKey" class="modal fade" role="dialog">
+    <div class="modal-dialog">
+
+        <!-- Modal content-->
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                <h4 class="modal-title">Search...</h4>
+            </div>
+            <div class="modal-body" id="searchResult">
+            </div>
+        </div>
+
+    </div>
+</div>
+
 <!-- //footer -->
 <!-- for bootstrap working -->
 	<script src="{{ asset('website/js/bootstrap.js') }}"></script>
@@ -593,7 +705,25 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 			*/
 								
 			$().UItoTop({ easingType: 'easeOutQuart' });
-								
+
+			$('#search').click(function(){
+                var domna = $('#fundKey').val();
+
+                var request = $.ajax({
+                    url: "{{ route('fund_overview_search')  }}?fund_key=" + domna,
+                    type: "GET",
+                    dataType: "json"
+                });
+
+                request.done(function(msg) {
+                    $('#searchKey').modal('show');
+                    $("#searchResult").html( msg );
+                });
+
+                request.fail(function(jqXHR, textStatus) {
+                    alert( "Request failed: " + textStatus );
+                });
+            });
 			});
 	</script>
 <!-- //here ends scrolling icon -->

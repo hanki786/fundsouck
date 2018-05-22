@@ -49,6 +49,16 @@ Route::get('/fund_overview', [
         'as' => 'fund_overview'
 ]);
 
+Route::get('/fund_overview_result', [
+        'uses' => 'UserController@fund_overview_result',
+        'as' => 'fund_overview_result'
+]);
+
+Route::get('/fund_overview_search', [
+    'uses' => 'UserController@fund_overview_search',
+    'as' => 'fund_overview_search'
+]);
+
 Route::get('/fund_attributes', [
     'uses' => 'UserController@fund_attributes',
     'as' => 'fund_attributes'

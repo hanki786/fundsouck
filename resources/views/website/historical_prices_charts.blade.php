@@ -5,7 +5,7 @@
 @section('content')
     <style>
         .zoom-out {
-            zoom: 0.77;
+            zoom: 0.57;
         }
     </style>
     <div class="content">
@@ -50,8 +50,9 @@
                                 <p class="category">Following records on based on UNIQUE fund.</p>
                             </div>
                             <div class="content">
-                                <h4 class="text-center">To reserve this area to display fund performance chart with
+                                <h4 class="text-center" style="display:none">To reserve this area to display fund performance chart with
                                     possibility to change periods, add another fund or benchmark for comparison</h4>
+                                <div id="chartActivity1" class="ct-chart"></div>
                             </div>
                         </div>
                         <div class="card">
@@ -177,4 +178,45 @@
     </div>
     <!-- Main content -->
     <!-- /.container-fluid -->
+
+    <script type="text/javascript" src="{{ asset('website/js/move-top.js') }}"></script>
+    <script type="text/javascript" src="{{ asset('website/js/easing.js') }}"></script>
+    <script type="text/javascript" src="{{ asset('website/js/chartist.min.js') }}"></script>
+    <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js"></script>
+    <script type="text/javascript" src="{{ asset('website/js/paper-dashboard.js') }}"></script>
+    <script type="text/javascript" src="{{ asset('website/js/demo.js') }}"></script>
+    <script type="text/javascript">
+        $(document).ready(function() {
+            var fund_net_assets = '{{ $fund_net_assets }}';
+            console.log(fund_net_assets)
+            var data = {
+                labels: ['Jan', 'Feb', 'Mar', 'Apr', 'Mai', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'],
+                series: [
+                    [542, 543, 520, 680, 653, 753, 326, 434, 568, 610, 756, 895],
+                    [230, 293, 380, 480, 503, 553, 600, 664, 698, 710, 736, 795]
+                ]
+            };
+
+            var options = {
+                seriesBarDistance: 10,
+                axisX: {
+                    showGrid: true
+                },
+                height: "245px"
+            };
+
+            var responsiveOptions = [
+                ['screen and (max-width: 640px)', {
+                    seriesBarDistance: 5,
+                    axisX: {
+                        labelInterpolationFnc: function (value) {
+                            return value[0];
+                        }
+                    }
+                }]
+            ];
+
+            Chartist.Line('#chartActivity1', data, options, responsiveOptions);
+        });
+</script>
 @endsection

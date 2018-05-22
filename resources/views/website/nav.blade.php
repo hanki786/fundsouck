@@ -2,15 +2,18 @@
 <div class="agile-header">
     <div class="agileits-contact-info text-right">
         <ul>
-            <li><span class="glyphicon glyphicon-envelope" aria-hidden="true"></span><a href="mailto:ahsan.shaokat@gmail.com">mail@anova.com</a></li>
-            <li><span class="glyphicon glyphicon-earphone" aria-hidden="true"></span>+92 301 4860789</li>
+            <li><span class="glyphicon glyphicon-envelope" aria-hidden="true"></span><a href="mailto:example@gmail.com">mail@fundsouk.com</a></li>
+            <li><span class="glyphicon glyphicon-earphone" aria-hidden="true"></span>+92 301 2345678</li>
         </ul>
     </div>
     <div class="w3_agileits_social_media">
         <ul>
-            <li class="agileinfo_share"><a href="#">Middle East/North Africa</a></li>
-            <li class="agileinfo_share"><a href="#">Hong Kong</a></li>
-            <li class="agileinfo_share"><a  data-toggle="modal" href="#offshore">Offshore</a></li>
+            <li class="agileinfo_share">
+                <div class="search-container">
+                        <input type="text" placeholder="Search.." name="fund_key" id="fundKey">
+                        <button type="submit" id="search"><i class="fa fa-search"></i></button>
+                </div>
+            </li>
             <li class="agileinfo_share"><a href="{{ route('login') }}">Log In</a></li>
             <li class="agileinfo_share"><a href="register_auth0">REGISTER</a></li>
             <li><a href="#" class="wthree_facebook"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
