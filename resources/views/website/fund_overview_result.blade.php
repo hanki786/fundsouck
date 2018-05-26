@@ -545,14 +545,6 @@
 
                 Chartist.Line('#chartActivity', data, options, responsiveOptions);
 
-                $.notify({
-                    icon: 'ti-gift',
-                    message: "Welcome to <b>Fundsouk Explore</b>."
-
-                },{
-                    type: 'success',
-                    timer: 4000
-                });
 
             });
         </script>
