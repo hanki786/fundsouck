@@ -378,7 +378,7 @@ class UserController extends Controller
     }
 
     public function getAdminDashboard(){
-        if(!(Auth::check()){
+        if(Auth::check()){
             return redirect('/');
         }
         $fund_identities = FundIdentity::all();
