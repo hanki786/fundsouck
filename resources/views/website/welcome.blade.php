@@ -711,6 +711,31 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 								
 			$().UItoTop({ easingType: 'easeOutQuart' });
 
+			$('#fundKey').kepress(function(e){
+				if(e.which == 13) {
+					var domna = $('#fundKey').val();
+					if(domna.length > 0){
+
+					var request = $.ajax({
+						url: "{{ route('fund_overview_search')  }}?fund_key=" + domna,
+						type: "GET",
+						dataType: "json"
+					});
+
+					request.done(function(msg) {
+						$('#searchKey').modal('show');
+						$("#searchResult").html( msg );
+					});
+
+					request.fail(function(jqXHR, textStatus) {
+						alert( "Request failed: " + textStatus );
+					});
+					}else{
+						$('#searchKey').modal('show');
+						$("#searchResult").html( "Nothing found..");
+					}
+				}
+			});
 			$('#search').click(function(){
                 var domna = $('#fundKey').val();
 				if(domna.length > 0){
@@ -730,7 +755,8 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
                     alert( "Request failed: " + textStatus );
                 });
 				}else{
-					alert("Sorry! you did not specify any identity fund.")
+                    $('#searchKey').modal('show');
+                    $("#searchResult").html( "Nothing found..");
 				}
             });
 			});
