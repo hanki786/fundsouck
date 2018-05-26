@@ -4,3 +4,6 @@
         <p>{{ $fund_identity->fund_souk_code }} - {{ $fund_identity->fund_short_name }}</p>
         <hr>
 @endforeach
+@if(count($fi) == 0)
+        <h2>Nothing found</h2>
+@endif

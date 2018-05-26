@@ -37,7 +37,7 @@
             <h1><a class="navbar-brand" href="/">FundSouk</a></h1>
         </div>
         <!-- Collect the nav links, forms, and other content for toggling -->
-        <div class="collapse navbar-collapse navbar-right" id="bs-example-navbar-collapse-1">
+        <div class="collapse navbar-collapse navbar-right" id="bs-example-navbar-collapse-1" style="    margin-top: 10px;">
             <nav class="menu menu--iris">
                 <ul class="nav navbar-nav menu__list">
                     <li class="menu__item menu__item--current"><a href="/" class="menu__link">About</a></li>
