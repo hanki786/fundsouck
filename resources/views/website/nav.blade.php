@@ -41,55 +41,12 @@
             <nav class="menu menu--iris">
                 <ul class="nav navbar-nav menu__list">
                     <li class="menu__item menu__item--current"><a href="/" class="menu__link">About</a></li>
-                    <li class="dropdown">
-                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Products & Services <span class="caret"></span></a>
-                        <ul class="dropdown-menu">
-                            <li><a href="#">Action</a></li>
-                            <li><a href="#">Another action</a></li>
-                            <li><a href="#">Something else here</a></li>
-                            <li role="separator" class="divider"></li>
-                            <li><a href="#">Separated link</a></li>
-                            <li role="separator" class="divider"></li>
-                            <li><a href="#">One more separated link</a></li>
-                        </ul>
-                    </li>
-                    <li class="dropdown">
-                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Products & Services <span class="caret"></span></a>
-                        <ul class="dropdown-menu">
-                            <li><a href="#">Action</a></li>
-                            <li><a href="#">Another action</a></li>
-                            <li><a href="#">Something else here</a></li>
-                            <li role="separator" class="divider"></li>
-                            <li><a href="#">Separated link</a></li>
-                            <li role="separator" class="divider"></li>
-                            <li><a href="#">One more separated link</a></li>
-                        </ul>
-                    </li>
-                    <li class="dropdown">
-                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Links & Resources<span class="caret"></span></a>
-                        <ul class="dropdown-menu">
-                            <li><a href="#">Action</a></li>
-                            <li><a href="#">Another action</a></li>
-                            <li><a href="#">Something else here</a></li>
-                            <li role="separator" class="divider"></li>
-                            <li><a href="#">Separated link</a></li>
-                            <li role="separator" class="divider"></li>
-                            <li><a href="#">One more separated link</a></li>
-                        </ul>
-                    </li>
                     <li class="menu__item"><a href="#cc" data-toggle="modal" class="menu__link">News & Events</a></li>
                     <li class="menu__item"><a href="#contact" data-toggle="modal" class="menu__link">Contact</a></li>
                     <li class="menu__item"><a href="#about" data-toggle="modal" class="menu__link">Careers</a></li>
                 </ul>
             </nav>
-            <nav class="menu menu--iris" style="zoom:0.7">
-                <ul class="nav navbar-nav menu__list">
-                    <li class="menu__item">
-                        <a href="profile" class="dropdown-toggle menu__link ">Company Profile<b class="caret"></b></a></li>
-                    <li class="menu__item">
-                        <a href="saudia" class="dropdown-toggle menu__link ">Fund Profile<b class="caret"></b></a></li>
-                </ul>
-            </nav>
+           
         </div>
     </nav>
 
