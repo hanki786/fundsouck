@@ -318,7 +318,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 <!-- welcome -->
 <div class="welcome">
     <div class="container style="    padding-bottom: 25px;">
-        <h3 class="">Fund Top Performers</h3>
+        <h3 style="    background-color: #a0cae8;padding: 10px 10px;" class="">Fund Top Performers</h3>
         <ul class="nav nav-tabs">
             <li class="active"><a data-toggle="tab" href="#home">TOP</a></li>
             <li><a data-toggle="tab" href="#menu1">BOTTOM</a></li>
@@ -420,7 +420,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 
 <div class="welcome">
     <div class="container">
-        <h3 class="">News Feeds</h3>
+        <h3 style="    background-color: #a0cae8;padding: 10px 10px;" class="">News Feeds</h3>
         <ul class="nav nav-tabs">
             <li class="active"><a data-toggle="tab" href="#home">LATEST NEWS</a></li>
         </ul>
