@@ -378,8 +378,8 @@ class UserController extends Controller
     }
 
     public function getAdminDashboard(){
-        if(Auth::check()){
-            return redirect('/');
+        if(!Auth::check()){
+            return redirect()->back()->withErrors('Sorry you have no access to this page.');
         }
         $fund_identities = FundIdentity::all();
         $fund_objective_strategies = FundObjectiveStrategy::all();
