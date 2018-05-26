@@ -79,8 +79,8 @@
     <div class="banner">
         <div class="container" style="padding:0;">
             @include('website.nav')
-            <h3 ><a style="color:white" href="/">Fundsouk</a></h3>
-            <h4 style="color:white">Search Result...</h4>
+            <h2 ><a style="color:white" href="/">Fundsouk</a></h2>
+            
             <ul id="menu-content" class="nav menu-content collapse in">
                 <li data-toggle="collapse" data-target="#products" class="collapsed active">
                     <a href="#"><i class="ti-user"></i> Fund Profile &copy; <span class="arrow"></span></a>
