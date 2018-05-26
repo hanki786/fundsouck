@@ -17,6 +17,10 @@
         .zoom-out {
             zoom: 0.77;
         }
+        a {
+    color: #337ab7;
+    text-decoration: none;
+}
     </style>
 </head>
 
@@ -67,25 +71,54 @@ $fund_identities = App\Models\FundShells\FundIdentity::all(); ?>
         }
 
         $(document).ready(function(){
-        $('#search').click(function(){
-            var domna = $('#fundKey').val();
+        $('#fundKey').keypress(function(e){
+				if(e.which == 13) {
+					var domna = $('#fundKey').val();
+					if(domna.length > 0){
 
-            var request = $.ajax({
-                url: "{{ route('fund_overview_search')  }}?fund_key=" + domna,
-                type: "GET",
-                dataType: "json"
-            });
+					var request = $.ajax({
+						url: "{{ route('fund_overview_search')  }}?fund_key=" + domna,
+						type: "GET",
+						dataType: "json"
+					});
 
-            request.done(function(msg) {
-                $('#searchKey').modal('show');
-                $("#searchResult").html( msg );
-            });
+					request.done(function(msg) {
+						$('#searchKey').modal('show');
+						$("#searchResult").html( msg );
+					});
 
-            request.fail(function(jqXHR, textStatus) {
-                alert( "Request failed: " + textStatus );
-            });
-        });
-        });
+					request.fail(function(jqXHR, textStatus) {
+						alert( "Request failed: " + textStatus );
+					});
+					}else{
+						$('#searchKey').modal('show');
+						$("#searchResult").html( "Nothing found..");
+					}
+				}
+			});
+			$('#search').click(function(){
+                var domna = $('#fundKey').val();
+				if(domna.length > 0){
+
+                var request = $.ajax({
+                    url: "{{ route('fund_overview_search')  }}?fund_key=" + domna,
+                    type: "GET",
+                    dataType: "json"
+                });
+
+                request.done(function(msg) {
+                    $('#searchKey').modal('show');
+                    $("#searchResult").html( msg );
+                });
+
+                request.fail(function(jqXHR, textStatus) {
+                    alert( "Request failed: " + textStatus );
+                });
+				}else{
+                    $('#searchKey').modal('show');
+                    $("#searchResult").html( "Nothing found..");
+				}
+            });        });
     </script>
 </div>
 </body>
