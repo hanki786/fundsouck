@@ -44,7 +44,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
     .no-display{ display:none !important; }
 	.agile-header{
 		padding: 10px 10px;
-		background-color: #fff;
+		background-color: #049ddc;
 		color: #7b7b7d;
 	}
 	.agileits-contact-info ul li span, .agileits-contact-info ul li a, .agileits-contact-info ul li, .w3_agileits_social_media ul li a{
