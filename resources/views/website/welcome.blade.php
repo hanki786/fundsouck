@@ -317,7 +317,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 
 <!-- welcome -->
 <div class="welcome">
-    <div class="container">
+    <div class="container style="    padding-bottom: 25px;">
         <h3 class="">Fund Top Performers</h3>
         <ul class="nav nav-tabs">
             <li class="active"><a data-toggle="tab" href="#home">TOP</a></li>
@@ -325,7 +325,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
         </ul>
 
         <div class="tab-content">
-            <div id="home" class="tab-pane fade in active">
+            <div id="home" class="tab-pane fade in active" style="    padding: 10px 10px;">
                 <h3>NO TOP PERFORMERS</h3>
                 <table class="table" style="display:none">
                     <thead>
@@ -428,7 +428,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 			$news = DB::table('latest_news')->orderBy('id','desc')->limit(5)->get();
         ?>
         <div class="tab-content">
-            <div id="home" class="tab-pane fade in active">
+            <div id="home" class="tab-pane fade in active"  style="    padding: 10px 10px;">
 				@foreach($news as $n)
                 <h3>{{ $n->title }}</h3>
 				<p>{{ $n->body }}</p><br>
