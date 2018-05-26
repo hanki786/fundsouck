@@ -378,6 +378,9 @@ class UserController extends Controller
     }
 
     public function getAdminDashboard(){
+        if(!Auth::check()){
+            return view('website.welcome');
+        }       
         $fund_identities = FundIdentity::all();
         $fund_objective_strategies = FundObjectiveStrategy::all();
 
