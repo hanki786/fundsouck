@@ -34,9 +34,9 @@
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
             </button>
-            <h1><a class="navbar-brand" href="\">
-                <img src="http://fundsouk.com/website/images/logo.png" alt="" width="500" height="500">
-            </a></h1>
+            <a class="navbar-brand" href="\">
+                <img src="http://fundsouk.com/website/images/logo.png" alt="" width="100" height="100">
+            </a>
         </div>
         <!-- Collect the nav links, forms, and other content for toggling -->
         <div class="collapse navbar-collapse navbar-right" id="bs-example-navbar-collapse-1" style="    margin-top: 10px;">

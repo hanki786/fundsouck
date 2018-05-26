@@ -60,7 +60,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 		-moz-background-size: cover;
 		-o-background-size: cover;
 		-ms-background-size: cover;
-		min-height: 130px;
+		min-height: 180px;
 	}
 	.CurverContainer {
 		background: url('http://fundata.com/images/BGCurveContainerDark.png') repeat 0 0;
