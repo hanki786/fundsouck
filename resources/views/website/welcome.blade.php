@@ -711,7 +711,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 								
 			$().UItoTop({ easingType: 'easeOutQuart' });
 
-			$('#fundKey').kepress(function(e){
+			$('#fundKey').keypress(function(e){
 				if(e.which == 13) {
 					var domna = $('#fundKey').val();
 					if(domna.length > 0){
