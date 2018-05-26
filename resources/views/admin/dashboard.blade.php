@@ -21,6 +21,15 @@
     </ol>
 @endsection
 @section('content')
+@if(!Auth::check())
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-md-12">
+                    <h2>You are not logged in</h2>
+                    </div>
+                    </div>
+                    </div>
+ @else       
         <div class="container-fluid">
                 <div class="row">
                     <div class="col-md-12">
@@ -67,8 +76,11 @@
 
                     <div class="col-md-12">
                         <!-- TradingView Widget BEGIN -->
-		<script type="text/javascript" src="https://d33t3vvu2t2yu5.cloudfront.net/tv.js"></script>
-		<script type="text/javascript">
+		
+        
+        <script type="text/javascript" src="https://d33t3vvu2t2yu5.cloudfront.net/tv.js"></script>
+		@endif
+        <script type="text/javascript">
 			new TradingView.widget( {
 				'width'               : '100%',
 				'height'              : 350,
