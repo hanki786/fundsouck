@@ -713,6 +713,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 
 			$('#search').click(function(){
                 var domna = $('#fundKey').val();
+				if(domna.length > 0){
 
                 var request = $.ajax({
                     url: "{{ route('fund_overview_search')  }}?fund_key=" + domna,
@@ -728,6 +729,9 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
                 request.fail(function(jqXHR, textStatus) {
                     alert( "Request failed: " + textStatus );
                 });
+				}else{
+					alert("Sorry! you did not specify any identity fund.")
+				}
             });
 			});
 	</script>
